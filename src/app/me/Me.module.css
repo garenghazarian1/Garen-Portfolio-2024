@@ -1,0 +1,21 @@
+/* styles.css */
+.nav {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgb(192,192,70) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+    opacity: 0.4;
+  }
+  
+  .nav:hover {
+    opacity: 1;
+    background:rgb(192,192,70) ;
+    transform: scale(1.05);
+  }
+  
