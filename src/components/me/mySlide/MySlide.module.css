@@ -85,4 +85,23 @@
   .swiperSlideTextSpan{
     font-size: 1rem;
   }
+  .swiperSlideImg { 
+    max-height: 250px;
+  }
+}
+
+@media (max-width: 375px) {
+
+  .container{
+    height: 100vh;
+  }
+  .swiperSlideTextP{
+    font-size: 1rem;
+  }
+  .swiperSlideTextSpan{
+    font-size: 1rem;
+  }
+  .swiperSlideImg { 
+    max-height: 150px;
+  }
 }
