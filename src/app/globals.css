@@ -43,6 +43,14 @@ Image {
   font-size: 20px !important; /* Adjust icon size */
 }
 
-.swiper-slide{
-  
+.swiper-pagination-progressbar-fill {
+  background-color: rgb(213, 235, 15) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(208, 243, 112) !important; 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgb(139, 160, 19) !important; 
 }

@@ -26,9 +26,8 @@
 
 .imageSlider1 {
     margin: 1rem;
-    align-self: flex-end;
-    
-       
+    align-self: flex-end; 
+        
 }
 
  .swiper{
@@ -42,6 +41,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 20px;
+  text-align: center;
   }
 
   .swiperSlide1 {
@@ -90,11 +91,12 @@ overflow: auto;
 .infoH1 {
     font-size: 3rem;
     font-weight: bold;
-    color: #ffffff;
+    color: #444;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeIn 2s ease-in-out;
     padding: 1rem;
 }
+
 
 .infoP {
     font-size: 1rem;
@@ -146,4 +148,29 @@ overflow: auto;
      .infoH1{
         font-size: 1rem;
      }
+     .infoP{
+        font-size: 0.8rem;
+     }
+}
+
+@media (max-width: 380px) {
+
+  
+    .imageSlider {
+        width: 100vw;
+     }
+     
+     .infoH1{
+        font-size: 0.5rem;
+     }
+     .infoP{
+        font-size: 0.5rem;
+     }
+     .swiperSlide, .swiperSlide1, .swiperSlide2, .swiperSlide3{
+        font-size: 0.5rem;
+     }
+     .swiper{
+        width: 100vw;
+        height: 100%;
+    } 
 }
