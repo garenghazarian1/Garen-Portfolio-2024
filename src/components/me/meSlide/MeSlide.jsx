@@ -29,7 +29,7 @@ export default function MeSlide() {
           <div className={styles.swiperSlideText}>
             <p className={styles.swiperSlideTextP}> 
               <span className={styles.swiperSlideTextSpan}>Introduction:</span><br />
-                Hello, I'm Garen Ghazarian. Today is May 14, 2024. I was born in 1986 in the vibrant city of Qamishli, Syria. I'm excited to share with you my journey from a law student and computer shop owner in Syria to a chef in Belgium, and now a full-stack developer in Germany.
+                Hello, I&apos;m Garen Ghazarian. Today is May 14, 2024. I was born in 1986 in the vibrant city of Qamishli, Syria. I&apos;m excited to share with you my journey from a law student and computer shop owner in Syria to a chef in Belgium, and now a full-stack developer in Germany.
             </p>
           </div>
         </SwiperSlide>
@@ -75,7 +75,7 @@ export default function MeSlide() {
           <div className={styles.swiperSlideTextRight}>
           <p className={styles.swiperSlideTextP}>
              <span className={styles.swiperSlideTextSpan}>Current Project:</span><br />
-              I'm now working on a challenging full-stack development project for a client from Abu Dhabi. The project involves creating a comprehensive application for a chain of beauty salons. This app organizes appointments, tracks monthly income, and automates calculations for two stores with 40 employees. It&rsquo;s designed to streamline operations and enhance business efficiency.</p>
+             I&apos;m now working on a challenging full-stack development project for a client from Abu Dhabi. The project involves creating a comprehensive application for a chain of beauty salons. This app organizes appointments, tracks monthly income, and automates calculations for two stores with 40 employees. It&rsquo;s designed to streamline operations and enhance business efficiency.</p>
         </div>
         </SwiperSlide>
 
