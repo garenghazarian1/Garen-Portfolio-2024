@@ -158,6 +158,10 @@ overflow: auto;
      .infoP{
         font-size: 0.8rem;
      }
+     .swiper{
+        width: 80vw;
+        height: 100%;
+    } 
 }
 
 @media (max-width: 380px) {
