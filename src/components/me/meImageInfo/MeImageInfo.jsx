@@ -30,9 +30,10 @@ export default function MeImageInfo() {
         modules={[EffectCube, Pagination]}
         className="mySwiper"
       >  
-                    <SwiperSlide className={styles.swiperSlide}>- Me Passport<Image src="/g01.jpg" alt="Profile Image" width={500} height={500}  className={styles.img} /></SwiperSlide>
+                    <SwiperSlide className={styles.swiperSlide}>- Me Passport<Image src="/g01a.jpg" alt="Profile Image" width={500} height={500}  className={styles.img} /></SwiperSlide>
                     <SwiperSlide className={styles.swiperSlide}>- Me Nature<Image src="/g02.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
                     <SwiperSlide className={styles.swiperSlide}>- Me Grand Place<Image src="/g03.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
+                    <SwiperSlide className={styles.swiperSlide}>- Me Grand Place<Image src="/g01.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
                 </Swiper>
                 
             </div>
@@ -49,9 +50,9 @@ export default function MeImageInfo() {
         pagination={true}
         modules={[EffectCube, Pagination]}
         className="mySwiper">
-              <SwiperSlide className={styles.swiperSlide1}>- My Name<div className={styles.img}><h1 className={styles.infoH1}>Garen Ghazarian</h1></div></SwiperSlide>
-              <SwiperSlide className={styles.swiperSlide2}>- My Name<div className={styles.img}><h1 className={styles.infoH1}>Garen Ghazarian</h1></div></SwiperSlide>
-              <SwiperSlide className={styles.swiperSlide3}>- My Name<div className={styles.img}><h1 className={styles.infoH1}>Garen Ghazarian</h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide1}>- My Name:<div className={styles.img}><h1 className={styles.infoH1}>Garen Ghazarian</h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide2}>- Profession:<div className={styles.img}><h1 className={styles.infoH1}>Full Stack Developer</h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide3}>- Hobbies:<div className={styles.img}><h1 className={styles.infoH1}>Coding, Cooking, Traveling</h1></div></SwiperSlide>
               </Swiper>
               </div>
             </div>
