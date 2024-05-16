@@ -2,8 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-    background-color: rgb(20, 20, 20);
-color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
+Image {
+    width: auto;
+    height: auto;
+  }
+
+  /* Swipe Navigation Button */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff !important; /* Change color to white */
+  background-color: rgba(0, 0, 0, 0.5) !important; /* Add semi-transparent background */
+  padding: 1px !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.3s ease-in-out !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Darker background on hover */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important; /* Adjust icon size */
+}
+
+.swiper-slide{
+  
+}

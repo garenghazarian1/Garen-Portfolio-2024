@@ -18,7 +18,7 @@
     left: 1;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+   
     width: 49.5%;
     height: 100vh;
     min-height: 200px;
@@ -30,7 +30,7 @@
     left: 0;
     right: 1;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    
     width: 51.5%;
     height: 100vh;
   }
@@ -38,7 +38,7 @@
   .swiperSlideTextP { 
     font-size: 1.5rem;
     line-height: 1.6;
-    color: #EFEFEF;
+    color: #000000;
     padding: 1rem;
     overflow:hidden;
 }
