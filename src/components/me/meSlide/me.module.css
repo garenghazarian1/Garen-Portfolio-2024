@@ -76,6 +76,7 @@
   }
   .swiperSlideTextP{
     font-size: 0.7rem;
+    overflow: auto;
   }
   .swiperSlideTextSpan{
     font-size: 1rem;
