@@ -115,28 +115,7 @@ overflow: auto;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.infoA {
-    font-size: 0.8rem;
-    color: white;
-    background:rgb(192,192,70) ;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-    margin-top: 1rem;
-    padding: 0.7rem;
-    border-radius: 1.5rem;
-    margin-bottom: 1rem;
-}
 
-.infoA:hover {
-    
-    transform: scale(1.1);
-}
-
-.socialLinks {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
 
 @keyframes fadeIn {
     from {

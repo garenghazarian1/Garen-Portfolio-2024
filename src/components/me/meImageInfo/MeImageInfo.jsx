@@ -30,7 +30,7 @@ export default function MeImageInfo() {
                 modules={[EffectCube, Pagination]}
                 className={styles.swiper}
             >  <div>
-                    <SwiperSlide className={styles.swiperSlide}>- Me in EU p.<Image src="/g01a.jpg" alt="Profile Image" width={500} height={500}  className={styles.img} /></SwiperSlide>
+                    <SwiperSlide className={styles.swiperSlide}>- Me in EU p.<Image src="/g01a.png" alt="Profile Image" width={500} height={500}  className={styles.img} /></SwiperSlide>
                     <SwiperSlide className={styles.swiperSlide}>- Me Nature<Image src="/g02.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
                     <SwiperSlide className={styles.swiperSlide}>- Me Grand Place<Image src="/g03.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
                     </div>  
@@ -51,6 +51,7 @@ export default function MeImageInfo() {
         modules={[EffectCube, Pagination]}
         className={styles.swiper}>
               <SwiperSlide className={styles.swiperSlide1}>- My Name:<div className={styles.img}><h1 className={styles.infoH1}>Garen Ghazarian</h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide2}>- Birthday: <div className={styles.img}><h1 className={styles.infoH1}>01/01/1986</h1></div></SwiperSlide>
               <SwiperSlide className={styles.swiperSlide2}>- Profession:<div className={styles.img}><h1 className={styles.infoH1}>Full Stack Developer</h1></div></SwiperSlide>
               <SwiperSlide className={styles.swiperSlide3}>- Hobbies:<div className={styles.img}><h1 className={styles.infoH1}>Coding, Cooking, Traveling</h1></div></SwiperSlide>
               <SwiperSlide className={styles.swiperSlide1}>- Skills 1:<div className={styles.img}><h1 className={styles.infoH1}>HTML, MARKUP</h1></div></SwiperSlide>
@@ -59,26 +60,20 @@ export default function MeImageInfo() {
               <SwiperSlide className={styles.swiperSlide1}>- Skills 4:<div className={styles.img}><h1 className={styles.infoH1}>GIT, GITHUB, JAVASCRIPT, DOM, NODEJS, EXPRESS  </h1></div></SwiperSlide>
               <SwiperSlide className={styles.swiperSlide2}>- Skills 5:<div className={styles.img}><h1 className={styles.infoH1}>MONGODB, MONGOOSE, FIREBASE, API </h1></div></SwiperSlide>
               <SwiperSlide className={styles.swiperSlide3}>- Important Skills :<div className={styles.img}><h1 className={styles.infoH1}>Problem solving, Team work</h1></div></SwiperSlide>
-              
               </Swiper>
               </div>
       </div>
-            <div className={styles.profileContainer1}>
+           {/* <div className={styles.profileContainer1}>
             <div className={styles.info}>
                 
-                <p className={styles.infoP}><strong>Birthday:</strong>&nbsp;&nbsp;&nbsp;&nbsp; 01/01/1986</p>
+                 <p className={styles.infoP}><strong>Birthday:</strong>&nbsp;&nbsp;&nbsp;&nbsp; 01/01/1986</p>
                 <p className={styles.infoP}><strong>Profession:</strong> Full Stack Developer</p>
                 <p className={styles.infoP}><strong>Skills:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript, React, Next.js, Node.js, MongoDB</p>
-                <p className={styles.infoP}><strong>Hobbies:</strong> &nbsp;&nbsp;&nbsp;&nbsp;Coding, Cooking, Traveling</p>
+                <p className={styles.infoP}><strong>Hobbies:</strong> &nbsp;&nbsp;&nbsp;&nbsp;Coding, Cooking, Traveling</p> 
                 
-                <div className={styles.socialLinks}>
-                    
-                    <a className={styles.infoA} href="/GAREN-CV-FIRST-PAGE-25-04-2024.pdf" target="_blank">Download Resume</a>
-                    <a className={styles.infoA} href="https://www.linkedin.com/in/garen-ghazarian-1692812a5/" target="_blank">LinkedIn</a>
-                    <a className={styles.infoA} href="https://github.com/garenghazarian1" target="_blank">GitHub</a>
-                </div>
+                
             </div>
-        </div>
+        </div>*/}
       </div>
     
     </>

@@ -2,6 +2,7 @@ import MeImageInfo from '@/components/me/meImageInfo/MeImageInfo'
 import MySlide from '@/components/me/mySlide/MySlide'
 import Link from 'next/link'
 import styles from "./Me.module.css"
+import Footer from '@/components/footer/Footer'
 
 export default function page() {
   return (
@@ -10,6 +11,7 @@ export default function page() {
     <Link href="/" className={styles.nav} >Back to Home</Link>
         <MySlide />
        <MeImageInfo /> 
+       <Footer/>
        </div>
     </>
   )
