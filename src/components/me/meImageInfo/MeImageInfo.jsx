@@ -53,7 +53,13 @@ export default function MeImageInfo() {
               <SwiperSlide className={styles.swiperSlide1}>- My Name:<div className={styles.img}><h1 className={styles.infoH1}>Garen Ghazarian</h1></div></SwiperSlide>
               <SwiperSlide className={styles.swiperSlide2}>- Profession:<div className={styles.img}><h1 className={styles.infoH1}>Full Stack Developer</h1></div></SwiperSlide>
               <SwiperSlide className={styles.swiperSlide3}>- Hobbies:<div className={styles.img}><h1 className={styles.infoH1}>Coding, Cooking, Traveling</h1></div></SwiperSlide>
-              <SwiperSlide className={styles.swiperSlide3}>- Skills:<div className={styles.img}><h1 className={styles.infoH1}>JavaScript, React, Next.js, Node.js, MongoDB ...</h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide1}>- Skills 1:<div className={styles.img}><h1 className={styles.infoH1}>HTML, MARKUP</h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide2}>- Skills 2:<div className={styles.img}><h1 className={styles.infoH1}>CSS, BOOTSTRAP, TAILWIND, SASS, Responsive Design,Performance Optimization,Accessibility Standards ...</h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide3}>- Skills 3:<div className={styles.img}><h1 className={styles.infoH1}>REACT, VITE, NEXTJS, REACT NATIVE </h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide1}>- Skills 4:<div className={styles.img}><h1 className={styles.infoH1}>GIT, GITHUB, JAVASCRIPT, DOM, NODEJS, EXPRESS  </h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide2}>- Skills 5:<div className={styles.img}><h1 className={styles.infoH1}>MONGODB, MONGOOSE, FIREBASE, API </h1></div></SwiperSlide>
+              <SwiperSlide className={styles.swiperSlide3}>- Important Skills :<div className={styles.img}><h1 className={styles.infoH1}>Problem solving, Team work</h1></div></SwiperSlide>
+              
               </Swiper>
               </div>
       </div>
