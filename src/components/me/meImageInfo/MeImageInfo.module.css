@@ -79,7 +79,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 width:100%;
-
+text-align: center;
 margin-bottom: 1rem;
 overflow: auto;
 }
@@ -173,7 +173,7 @@ overflow: auto;
      }
      
      .infoH1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
      }
      .infoP{
         font-size: 0.8rem;
@@ -189,7 +189,7 @@ overflow: auto;
      }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
 
   
     .imageSlider {
@@ -197,10 +197,10 @@ overflow: auto;
      }
      
      .infoH1{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
      }
      .infoP{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
      }
      .swiperSlide, .swiperSlide1, .swiperSlide2, .swiperSlide3{
         font-size: 0.8rem;
