@@ -30,7 +30,7 @@ export default function MeImageInfo() {
                 modules={[EffectCube, Pagination]}
                 className={styles.swiper}
             >  <div>
-                    <SwiperSlide className={styles.swiperSlide}>- Me in EU p.<Image src="/g01a.png" alt="Profile Image" width={500} height={500}  className={styles.img} /></SwiperSlide>
+                    <SwiperSlide className={styles.swiperSlide}>- Me in EU p.<Image src="/g01a.jpg" alt="Profile Image" width={500} height={500}  className={styles.img} /></SwiperSlide>
                     <SwiperSlide className={styles.swiperSlide}>- Me Nature<Image src="/g02.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
                     <SwiperSlide className={styles.swiperSlide}>- Me Grand Place<Image src="/g03.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
                     </div>  

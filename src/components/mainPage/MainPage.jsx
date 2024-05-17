@@ -31,7 +31,7 @@ export default function MainPage() {
       <div className={styles.container}>
         <div className={styles.container1} >
             <Link href="/me" className={styles.child1}>ME</Link>
-            <Link href="/works" className={styles.child2}>MY WORKS</Link>
+            <Link href="/projects" className={styles.child2}>PROJECTS</Link>
         </div>
         <div className={styles.container1} >
             <Link href="/contact" className={styles.child3}>CONTACT</Link>
