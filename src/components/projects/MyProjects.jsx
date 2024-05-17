@@ -6,6 +6,7 @@ export default function MyProjects() {
     <>
     <h1 className={styles.h1}>MY PROJECTS</h1>
     <div className={styles.projectPreview}>
+    <h2 className={styles.h2}>KEN Beauty Center: Project Overview</h2>
     <div className={styles.iframeContainer}>
     <iframe
       src="https://ken-salon.vercel.app/"
@@ -14,7 +15,7 @@ export default function MyProjects() {
       allowFullScreen>
     </iframe>
   </div>
-  <h2 className={styles.h2}>KEN Beauty Center: Project Overview</h2>
+  
   <p className={styles.p}>
     KEN Beauty Center is my inaugural real-world project, developed for a client in Abu Dhabi. This comprehensive application empowers the business owner to seamlessly manage multiple salon locations through a single interface. Key features include:
     <ul>
@@ -26,7 +27,10 @@ export default function MyProjects() {
   </p>
 </div>
 
+
+
 <div className={styles.projectPreview}>
+<h2 className={styles.h2}>Game Interface</h2>
       <div className={styles.iframeContainer}>
         <iframe
           src="https://garenghazarian1.github.io/Kostas-Garen-group-project/#"
@@ -35,9 +39,42 @@ export default function MyProjects() {
           allowFullScreen>
         </iframe>
       </div>
-      <h2 className={styles.h2}>Game Interface</h2>
+      
       <p className={styles.p}>
         This project showcases an educational game web application, developed as a group endeavor. It features a user-friendly hero page designed to engage and educate users through interactive gaming experiences. The application combines aesthetic appeal with functional design, ensuring an intuitive user interface and a seamless gameplay experience.
+      </p>
+    </div>
+
+    <div className={styles.projectPreview}>
+    <h2 className={styles.h2}>NIght moon</h2>
+      <div className={styles.iframeContainer}>
+        <iframe
+          src="https://garenghazarian1.github.io/night-moon/#"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen>
+        </iframe>
+      </div>
+      
+      <p className={styles.p}>
+        This project showcases an educational java script website, scroll effect.
+      </p>
+    </div>
+
+
+    <div className={styles.projectPreview}>
+    <h2 className={styles.h2}>Portfolio</h2>
+      <div className={styles.iframeContainer}>
+        <iframe
+          src="https://garenghazarian1.github.io/portfolio-28-06-2023/index.html"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen>
+        </iframe>
+      </div>
+      
+      <p className={styles.p}>
+        nice styled Portfolio website
       </p>
     </div>
 
