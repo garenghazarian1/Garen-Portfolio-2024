@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2e8f0; 
+    margin: 16px;
+  }
+  .content {
+    text-align: center;
+    margin: 16px;
+  }
+  .header {
+    font-size: 48px; 
+    font-weight: bold;
+    color: #2d3748; 
+  }
+  .subHeader {
+    font-size: 20px; 
+   
+    color: #718096; 
+  }
+  .description {
+    color: #a0aec0; 
+    margin-top: 8px;
+    margin-bottom: 1rem;
+  }
+  .linkButton {
+    font-size: 0.8rem;
+    color: white;
+    background:rgb(192,192,70) ;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .linkButton:hover {
+    transform: scale(1.1); 
+  }
+  .linkButton:focus {
+    outline: none;
+  
+  }
+  
