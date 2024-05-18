@@ -63,17 +63,7 @@ export default function MeImageInfo() {
               </Swiper>
               </div>
       </div>
-           {/* <div className={styles.profileContainer1}>
-            <div className={styles.info}>
-                
-                 <p className={styles.infoP}><strong>Birthday:</strong>&nbsp;&nbsp;&nbsp;&nbsp; 01/01/1986</p>
-                <p className={styles.infoP}><strong>Profession:</strong> Full Stack Developer</p>
-                <p className={styles.infoP}><strong>Skills:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript, React, Next.js, Node.js, MongoDB</p>
-                <p className={styles.infoP}><strong>Hobbies:</strong> &nbsp;&nbsp;&nbsp;&nbsp;Coding, Cooking, Traveling</p> 
-                
-                
-            </div>
-        </div>*/}
+
       </div>
     
     </>
