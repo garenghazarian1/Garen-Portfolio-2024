@@ -1,0 +1,13 @@
+import React from 'react'
+import styles from "./Qualifications.module.css"
+import Qualification from '@/components/qualification/Qualification'
+import Link from 'next/link'
+
+export default function page() {
+  return (
+    <>
+    <Link href="/" className={styles.nav} >Back to Home</Link>
+    <Qualification/>
+    </>
+  )
+}

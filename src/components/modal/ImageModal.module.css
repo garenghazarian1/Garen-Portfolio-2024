@@ -1,0 +1,50 @@
+/* components/ImageModal.module.css */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 90%; /* Ensures the modal does not exceed screen width */
+  max-height: 90%; /* Ensures the modal does not exceed screen height */
+  overflow: hidden; /* Ensures content does not overflow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 100%; /* Ensures the image does not exceed the modal width */
+  height: auto;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 80vh; /* Ensures the image does not exceed screen height */
+  border-radius: 8px;
+}
+
+.closeButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #f5c518; /* Gold color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
