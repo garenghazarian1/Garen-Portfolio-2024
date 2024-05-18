@@ -1,4 +1,5 @@
 // MyProjects.js
+import Link from "next/link";
 import styles from "./MyProjects.module.css";
 
 export default function MyProjects() {
@@ -7,6 +8,7 @@ export default function MyProjects() {
     <h1 className={styles.h1}>MY PROJECTS</h1>
     <div className={styles.projectPreview}>
     <h2 className={styles.h2}>KEN Beauty Center: Project Overview</h2>
+    <Link href="https://ken-salon.vercel.app/" className={styles.h2} target="_blank">CLick here to open the link</Link>
     <div className={styles.iframeContainer}>
     <iframe
       src="https://ken-salon.vercel.app/"
@@ -31,6 +33,8 @@ export default function MyProjects() {
 
 <div className={styles.projectPreview}>
 <h2 className={styles.h2}>Game Interface</h2>
+
+<Link href="https://garenghazarian1.github.io/Kostas-Garen-group-project/#" className={styles.h2} target="_blank">CLick here to open the link</Link>
       <div className={styles.iframeContainer}>
         <iframe
           src="https://garenghazarian1.github.io/Kostas-Garen-group-project/#"
@@ -47,6 +51,7 @@ export default function MyProjects() {
 
     <div className={styles.projectPreview}>
     <h2 className={styles.h2}>NIght moon</h2>
+    <Link href="https://garenghazarian1.github.io/night-moon/#" className={styles.h2} target="_blank">CLick here to open the link</Link>
       <div className={styles.iframeContainer}>
         <iframe
           src="https://garenghazarian1.github.io/night-moon/#"
@@ -64,6 +69,7 @@ export default function MyProjects() {
 
     <div className={styles.projectPreview}>
     <h2 className={styles.h2}>Portfolio</h2>
+    <Link href="https://garenghazarian1.github.io/portfolio-28-06-2023/index.html" className={styles.h2} target="_blank">CLick here to open the link</Link>
       <div className={styles.iframeContainer}>
         <iframe
           src="https://garenghazarian1.github.io/portfolio-28-06-2023/index.html"
