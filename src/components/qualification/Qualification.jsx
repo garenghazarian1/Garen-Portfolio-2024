@@ -7,11 +7,18 @@ import ImageModal from '@/components/modal/ImageModal';
 
 const certifications = [
     {
+        title: 'Further training as a web and software developer',
+        issuer: 'DCI Digital Career Institute gGmbH',
+        date: '06/2024',
+        description: 'Folgende berufspraktische und theoretische Schulungen hat der Teilnehmende bereits absolviert:',
+        image: '/Dci01GermanA.jpg'
+      },
+    {
         title: 'Testing Center for Professions',
         issuer: 'DCI Digital Career Institute gGmbH',
         date: '04/2023',
         description: 'Während der Maßnahme hat der Teilnehmende berufspraktische und theoretisch Schulungen in der Bereichen Web-Development und Online Marketing absolviert.',
-        image: '/Dci01German.jpg' // Added image for consistency
+        image: '/Dci01German.jpg'
       },
   {
     title: 'Certified German Language B1',
@@ -20,8 +27,14 @@ const certifications = [
     description: 'DEUTSCH-TEST FÜR ZUWANDERER.',
     image: '/b1.jpg'
   },
+  {
+    title: 'Bachelor of Laws',
+    issuer: 'University of Damascus Syria',
+    date: '09/2011',
+    description: 'Bachelor of Laws',
+    image: '/lawFrench.jpg'
+  },
   
-  // Add more certifications as needed
 ];
 
 const containerVariants = {
