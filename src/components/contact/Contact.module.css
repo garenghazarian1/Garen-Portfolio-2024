@@ -1,108 +1,95 @@
 .container {
-    margin: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f7f2e0; 
-width: 100%;
-height: 100vh;
-}
-
-.flex {
+    padding: 20px;
+    background-color: #f0f0f0; 
+  }
+  
+  .flex {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 1rem;
-
-}
-
-.section {
-    text-align: center;
-    background: white;
     width: 100%;
-    height: 90vh;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow:
-        5px 5px 15px rgba(194, 178, 128, 0.4), 
-        -5px -5px 15px rgba(194, 178, 128, 0.4), 
-        inset 0 0 15px rgba(255, 215, 0, 0.2); /* Gold toned shadows for depth */
-   
-    transform: rotateY(5deg); 
-    transition: transform 0.3s ease-in-out; 
-}
-
-.section:hover {
-    transform: rotateY(0deg); 
-    box-shadow:
-        10px 10px 20px rgba(194, 178, 128, 0.5), 
-        -10px -10px 20px rgba(194, 178, 128, 0.5), 
-        inset 0 0 20px rgba(255, 215, 0, 0.3); /* Enhanced shadow on hover */
-}
-
-.mapContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 600px;
+    height: 80vh; 
+    background-color: rgb(233, 241, 219);
+  }
+  
+  .imageWrapper {
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 8px;
     overflow: hidden;
-    margin: 2rem;
-}
-
-.sectionHeader {
-    font-size: 24px;
-    font-weight: 600;
-    color: #c2b280; /* Soft gold color */
-    margin-bottom: 15px;
-}
-
-.p {
-    color: #7a6f55; /* Darker gold tone for text */
-    line-height: 1.6;
-}
-
-.a {
-    color: #d4af37; /* Vibrant gold color for links */
-    text-decoration: none;
-}
-
-.a:hover {
-    color: #ffd700; /* Brighter gold on hover */
-    text-decoration: underline;
-}
-
-.error, .loading {
-    color: #e0b04b; /* Gold styled error and loading messages */
-    font-size: 18px;
-    text-align: center;
+  }
+  
+  .section {
     padding: 20px;
-}
-
-@media (max-width: 1024px) {
-    .container {
-        margin: 2rem auto;
-    }
-
-    .section, .mapContainer {
-        flex: 1 1 100%; /* Full width on smaller desktops and tablets */
-    }
-
-    .sectionHeader {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .flex {
-        flex-direction: column;
-    }
-
-    .sectionHeader {
-        font-size: 18px;
-    }
-
-    .mapContainer {
-        height: 250px;
-    }
-}
-
+  }
+  
+  .sectionHeader {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .textarea {
+    height: 100px;
+    resize: vertical; /* Allows the user to resize the textarea vertically */
+  }
+  
+  .button {
+    background-color: #0056b3; /* Blue background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #004494; /* Darker blue on hover */
+  }
+  
+  .mapContainer {
+    width: 100%;
+    height: 200px; /* Fixed height for the map */
+    margin-top: 20px;
+  }
+  
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .a {
+    color: #0066cc; /* Link color */
+    text-decoration: none;
+  }
+  
+  .a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

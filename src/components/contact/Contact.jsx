@@ -6,31 +6,32 @@ const Contact = () => {
   
   const store = {
     mobile: '+49 (0)15257398979',
-    email: 'garenghazarian1@gmail.com',
+    email: 'garen@garenghazarian.de',
     street: 'Ottilie-Hoffmann-Straße 40',
     city: 'Bremen',
     state: 'Bremen', 
     zipCode: '28213'
   };
 
-  return (
+
+ return (
     <div className={styles.container}>
       <div className={styles.flex}>
         
-        <Tilt
+        {/* <Tilt
           className={styles.imageWrapper}
           tiltMaxAngleX={10}
           tiltMaxAngleY={10}
           glareEnable={true}
           glareMaxOpacity={0.5}
           scale={1.05}
-        >
+        > */}
           <div className={styles.section}>
             <h2 className={styles.sectionHeader}>Contact Me</h2>
             <div>
-              <p className={styles.p}>{store.street}</p>
-              <p className={styles.p}>{store.city}, {store.zipCode}</p>
-              <p className={styles.p}>Germany</p>
+              <p className={styles.p}>Street: {store.street}</p>
+              <p className={styles.p}>City: {store.city}, {store.zipCode}</p>
+              <p className={styles.p}>Country: Germany</p>
             </div>
             <div style={{ marginTop: '32px' }}>
               <p className={styles.p}>Mobile: <a className={styles.a} href={`tel:${store.mobile}`}>{store.mobile}</a></p>
@@ -46,7 +47,7 @@ const Contact = () => {
               ></iframe>
             </div>
           </div>
-        </Tilt>
+        {/* </Tilt> */}
       </div>
     </div>
   );
