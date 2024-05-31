@@ -65,14 +65,13 @@
                 font-size: 6rem;
 }
 
-.child1:focus, .child2:focus, .child3:focus, .child4:focus{
+.child1:focus, .child2:focus{
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     z-index: 999;
-
 }
 
 
