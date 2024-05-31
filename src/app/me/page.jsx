@@ -9,7 +9,19 @@ export default function page() {
     <>
     <div className={styles.container}>
     <Link href="/" className={styles.nav} >Back to Home</Link>
-        <MySlide />
+    <main>
+            <div className={styles.container}>
+                <div className={styles.container1}>
+                    <Link href="/me/mySlides" className={` ${styles.child1}`}>My Slide</Link>
+                    <Link href="/projects" className={` ${styles.child2}`}>My Photos</Link>
+                </div>
+                <div className={styles.container1}>
+                    <Link href="/contact" className={` ${styles.child3}`}>other</Link>
+                    <Link href="/qualifications" className={` ${styles.child4}`}>other</Link>
+                </div>
+            </div>
+        </main>
+        {/* <MySlide /> */}
        {/* <MeImageInfo />  */}
        {/* <Footer/> */}
        </div>
