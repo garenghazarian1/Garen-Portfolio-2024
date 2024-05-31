@@ -3,14 +3,11 @@ import { useState, useEffect } from 'react';
 import Loading from '@/components/loading/Loading';
 import styles from "./Main.module.css"
 import Link from 'next/link';
-import {Bad_Script
-} from "next/font/google";
 
-const inter =  Bad_Script({ 
-  subsets: ["latin"],
-weight: ["400"]
-});
+import {abril, sevillana, bad, pt} from "@/app/ui/fonts"
 
+
+// className={`${abril.className} `}
 export default function MainPage() {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -27,15 +24,15 @@ export default function MainPage() {
   }
   return (
     <>
-    <main className={inter.className}>
+    <main >
       <div className={styles.container}>
         <div className={styles.container1} >
-            <Link href="/me" className={styles.child1}>ME</Link>
-            <Link href="/projects" className={styles.child2}>PROJECTS</Link>
+            <Link href="/me" className={`${sevillana.className} ${styles.child1}`}>ME</Link>
+            <Link href="/projects" className={`${abril.className}  ${styles.child2}`}>PROJECTS</Link>
         </div>
         <div className={styles.container1} >
-            <Link href="/contact" className={styles.child3}>CONTACT</Link>
-            <Link href="/qualifications" className={styles.child4}>QUALIFICATIONS</Link>
+            <Link href="/contact" className={`${bad.className}  ${styles.child3}`}>CONTACT</Link>
+            <Link href="/qualifications" className={`${pt.className}  ${styles.child4}`}>QUALIFICATIONS</Link>
             </div>
             </div>
         </main>

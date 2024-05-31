@@ -11,8 +11,9 @@
 }
 html, body {
   width: 100%;
-  overflow-x: hidden; /* This will prevent horizontal scrolling */
+  overflow-x: hidden;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 Image {
