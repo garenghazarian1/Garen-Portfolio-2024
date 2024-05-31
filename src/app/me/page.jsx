@@ -1,5 +1,5 @@
 import MeImageInfo from '@/components/me/meImageInfo/MeImageInfo'
-import MySlide from '@/components/me/mySlide/MySlide'
+
 import Link from 'next/link'
 import styles from "./Me.module.css"
 import Footer from '@/components/footer/Footer'
@@ -21,7 +21,7 @@ export default function page() {
                 </div>
             </div>
         </main>
-        {/* <MySlide /> */}
+      
        {/* <MeImageInfo />  */}
        {/* <Footer/> */}
        </div>
