@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6rem;
+    font-size: 5rem;
     color: rgba(255, 255, 255, 0.705);
     transition: 0.3s ease,0.3s ease, 0.3s ease;
 }
@@ -62,7 +62,7 @@
                 rgba(0, 0, 0, 0.09) 0px 8px 4px, 
                 rgba(0, 0, 0, 0.09) 0px 16px 8px, 
                 rgba(0, 0, 0, 0.09) 0px 32px 16px;
-                font-size: 7rem;
+                font-size: 6rem;
 }
 
 .child1:focus, .child2:focus, .child3:focus, .child4:focus{
@@ -78,29 +78,29 @@
 /* Responsive adjustments */
 @media (max-width: 1250px) {
     .child1, .child2, .child3, .child4 {
-        font-size: 3rem; 
+        font-size: 2.5rem; 
         flex: 100%; 
     }
     .child1:hover, .child2:hover, .child3:hover, .child4:hover{
-        font-size: 4rem; 
+        font-size: 3rem; 
     }
 }
 
 @media (max-width: 768px) {
     .child1, .child2, .child3, .child4 {
-        font-size: 2rem; 
+        font-size: 1.5rem; 
         flex: 100%; 
     }
     .child1:hover, .child2:hover, .child3:hover, .child4:hover{
-        font-size: 2.5rem; 
+        font-size: 2rem; 
     }
 }
 
 @media (max-width: 480px) {
     .child1, .child2, .child3, .child4 {
-        font-size: 1.5rem;   
+        font-size: 1rem;   
     }
     .child1:hover, .child2:hover, .child3:hover, .child4:hover{
-        font-size: 2rem; 
+        font-size: 1.5rem; 
     }
 }

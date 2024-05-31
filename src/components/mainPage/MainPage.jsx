@@ -24,18 +24,18 @@ export default function MainPage() {
   }
   return (
     <>
-    <main >
-      <div className={styles.container}>
-        <div className={styles.container1} >
-            <Link href="/me" className={`${sevillana.className} ${styles.child1}`}>ME</Link>
-            <Link href="/projects" className={`${abril.className}  ${styles.child2}`}>PROJECTS</Link>
-        </div>
-        <div className={styles.container1} >
+      <main >
+        <div className={styles.container}>
+          <div className={styles.container1} >
+            <Link href="/me" className={`${bad.className} ${styles.child1}`}>ME</Link>
+            <Link href="/projects" className={`${bad.className}  ${styles.child2}`}>PROJECTS</Link>
+          </div>
+          <div className={styles.container1} >
             <Link href="/contact" className={`${bad.className}  ${styles.child3}`}>CONTACT</Link>
-            <Link href="/qualifications" className={`${pt.className}  ${styles.child4}`}>QUALIFICATIONS</Link>
-            </div>
-            </div>
-        </main>
+            <Link href="/qualifications" className={`${bad.className}  ${styles.child4}`}>QUALIFICATIONS</Link>
+          </div>
+        </div>
+      </main>
     </>
   )
 }
