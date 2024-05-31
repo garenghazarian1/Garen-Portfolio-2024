@@ -15,17 +15,17 @@ export default function MySlide() {
         pagination={{type: 'progressbar'}}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className={styles.swiper}
+         className={styles.swiper}
       >
         <SwiperSlide className={styles.swiperSlide}>
           <div className={styles.swiperSlideImg}>
-          <Image  src="/001.png"  width={250} height={250}  cover alt='001.png' className={styles.img}   />
+          <Image  src="/001.png"  width={500} height={500} objectFit alt='001.png' className={styles.img}   />
           </div> 
           <div className={styles.swiperSlideText}>
-            <p className={styles.swiperSlideTextP}> 
-              <span className={styles.swiperSlideTextSpan}>Introduction:</span><br />
-                Hello, I&apos;m Garen Ghazarian. Today is May 14, 2024. I was born in 1986 in the vibrant city of Qamishli, Syria. I&apos;m excited to share with you my journey from a law student and computer shop owner in Syria to a chef in Belgium, and now a full-stack developer in Germany.
-            </p>
+            <h2 className={styles.swiperSlideTextH}> 
+              Introduction:</h2>
+              <p className={styles.swiperSlideTextP}>Hello, I&apos;m Garen Ghazarian. Today is May 14, 2024. I was born in 1986 in the vibrant city of Qamishli, Syria. I&apos;m excited to share with you my journey from a law student and computer shop owner in Syria to a chef in Belgium, and now a full-stack developer in Germany.</p>
+            
           </div>
         </SwiperSlide>
 

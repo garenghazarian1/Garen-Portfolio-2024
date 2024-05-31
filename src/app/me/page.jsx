@@ -10,8 +10,8 @@ export default function page() {
     <div className={styles.container}>
     <Link href="/" className={styles.nav} >Back to Home</Link>
         <MySlide />
-       <MeImageInfo /> 
-       <Footer/>
+       {/* <MeImageInfo />  */}
+       {/* <Footer/> */}
        </div>
     </>
   )
