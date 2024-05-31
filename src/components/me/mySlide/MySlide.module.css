@@ -107,22 +107,13 @@
 
     }
   }
-  
-  /* @media (max-width: 601px) {
+
+  @media (max-width: 400px){
     .swiperSlideTextP {
+      color: rgb(16, 68, 3);
       font-size: 1rem;
-    }
-    .swiperSlideTextSpan {
-      font-size: 1rem;
-    }
+   
+       }
   }
   
-  @media (max-width: 376px) {
-    .swiperSlideTextP {
-      font-size: 1rem;
-    }
-    .swiperSlideTextSpan {
-      font-size: 1rem;
-    }
-  }
-   */
+ 
