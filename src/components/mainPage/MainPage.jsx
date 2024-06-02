@@ -45,7 +45,7 @@ export default function MainPage() {
                     <div className={styles.childDiv}>
                       <Link href="/me/mySlides" className={` ${styles.child}`}>Slide</Link>
                       <Link href="/me/myPhoto" className={` ${styles.child}`}>Photos</Link>
-                      <Link href="/contact" className={` ${styles.child}`}>other</Link>
+                      <Link href="/me/about" className={` ${styles.child}`}>About Me</Link>
                       <Link href="/qualifications" className={` ${styles.child}`}>other</Link>
                       </div>
                     </Link>

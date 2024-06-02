@@ -139,6 +139,7 @@
     .childDiv{
         flex-wrap: wrap;
         justify-content: center;
+        
     }
     .child{
         width: 100px;

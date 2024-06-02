@@ -1,4 +1,4 @@
-import MeImageInfo from '@/components/me/meImageInfo/MeImageInfo'
+
 
 import Link from 'next/link'
 import styles from "./Me.module.css"
@@ -16,13 +16,13 @@ export default function page() {
                     <Link href="/me/myPhoto" className={` ${styles.child2}`}>My Photos</Link>
                 </div>
                 <div className={styles.container1}>
-                    <Link href="/contact" className={` ${styles.child3}`}>other</Link>
+                    <Link href="/me/about" className={` ${styles.child3}`}>About Me</Link>
                     <Link href="/qualifications" className={` ${styles.child4}`}>other</Link>
                 </div>
             </div>
         </main>
       
-       {/* <MeImageInfo />  */}
+       
        {/* <Footer/> */}
        </div>
     </>
