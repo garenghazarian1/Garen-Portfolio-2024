@@ -6,9 +6,15 @@ export default function Footer() {
     <>
         <div className={styles.socialLinks}>     
             <a className={styles.infoA} href="/GAREN-CV-FIRST-PAGE-18-05-2024.pdf" target="_blank">
+              <p>
               Download Resume
-              <div className={styles.imageContainer}>
-              PDF
+              </p>
+              
+              <div >
+                <p className={styles.imageContainer}>
+                PDF
+                </p>
+              
               </div>
             </a>
             <a className={styles.infoA} href="https://www.linkedin.com/in/garen-ghazarian-1692812a5/" target="_blank">LinkedIn</a>
