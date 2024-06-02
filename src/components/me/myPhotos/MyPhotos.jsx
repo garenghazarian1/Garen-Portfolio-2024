@@ -1,39 +1,49 @@
-"use client"
+"use client";
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/effect-cube';
+import 'swiper/css/effect-flip';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { EffectCube, Pagination, Navigation } from 'swiper/modules';
+import { EffectFlip, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-import styles from "./MyPhotos.module.css"
+import styles from "./MyPhotos.module.css";
+
+const images = [
+  "/g01a.jpg",
+  "/g02.jpg",
+  "/g03.jpg"
+];
 
 export default function MyPhotos() {
+  const [backgroundImage, setBackgroundImage] = useState(images[0]);
+
+  const handleSlideChange = (swiper) => {
+    setBackgroundImage(images[swiper.activeIndex]);
+  };
+
   return (
-    
-        
-            <div className={styles.imageSlider}>
-            <Swiper
-                effect={'cube'}
-                grabCursor={true}
-                cubeEffect={{
-                  shadow: true,
-                  slideShadows: true,
-                  shadowOffset: 20,
-                  shadowScale: 0.94,
-                }}
-                 pagination={true}
-                modules={[EffectCube, Pagination]}
-                className={styles.swiper}
-            >  <div>
-                    <SwiperSlide className={styles.swiperSlide}>- Me in EU p.<Image src="/g01a.jpg" alt="Profile Image" width={500} height={500}  className={styles.img} /></SwiperSlide>
-                    <SwiperSlide className={styles.swiperSlide}>- Me Nature<Image src="/g02.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
-                    <SwiperSlide className={styles.swiperSlide}>- Me Grand Place<Image src="/g03.jpg" alt="Profile Image" width={500} height={500} className={styles.img}/></SwiperSlide>
-                    </div>  
-                </Swiper>
-                
-            </div>
-            
-            
-  )
+    <div className={styles.imageSlider} style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <Swiper
+        effect="flip"
+        grabCursor={true}
+        flipEffect={{
+          slideShadows: true,
+        }}
+        pagination={{ clickable: true }}
+        modules={[EffectFlip, Pagination]}
+        className={styles.swiper}
+        onSlideChange={handleSlideChange}
+      >
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image src="/g01a.jpg" alt="Me in EU" layout="fill" className={styles.img} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image src="/g02.jpg" alt="Me in Nature" layout="fill" className={styles.img} />
+        </SwiperSlide>
+        <SwiperSlide className={styles.swiperSlide}>
+          <Image src="/g03.jpg" alt="Me at Grand Place" layout="fill" className={styles.img} />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
 }

@@ -1,33 +1,59 @@
-
 .imageSlider {
-    width: 100%;
-    height: 100vh;
-   
-    align-self: flex-start;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: grid;
+  place-items: center; /* Center content both horizontally and vertically */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-image 0.5s ease-in-out;
 }
 
-.swiper{
-    width: 100vw;
-    height: 100%;
-    justify-content: center;
-    align-items: center; 
-    
-} 
+.imageSlider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(210deg, rgba(78, 73, 2, 0.8) 0%, rgba(192, 192, 192, 0.8) 100%);
+  pointer-events: none;
+}
+
+.swiper {
+  width: 80%; /* Default to 80% width for better responsiveness */
+  max-width: 600px; /* Fixed max-width */
+  aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
 
 .swiperSlide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    min-height: 400px;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%; /* Ensure image fills the SwiperSlide */
+  height: 100%; /* Ensure image fills the SwiperSlide */
+  border-radius: 12px; /* Ensure images have rounded corners */
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .swiper {
+    width: 90%; /* Adjust width for tablets */
   }
-  .img{
-    width: 60%;
-    height: auto;
+}
+
+@media (max-width: 480px) {
+  .swiper {
+    width: 95%; /* Adjust width for mobile devices */
   }
+}
