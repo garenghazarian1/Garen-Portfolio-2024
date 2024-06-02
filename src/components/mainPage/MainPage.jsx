@@ -40,7 +40,15 @@ export default function MainPage() {
         <main>
             <div className={styles.container}>
                 <div className={styles.container1}>
-                    <Link href="/me" className={`${fontClass} ${styles.child1}`}>ME</Link>
+                    <Link href="/me" className={`${fontClass} ${styles.child1}`}>Me
+                    <div className={styles.spacer}></div>
+                    <div className={styles.childDiv}>
+                      <Link href="/me/mySlides" className={` ${styles.child}`}>Slide</Link>
+                      <Link href="/me/myPhoto" className={` ${styles.child}`}>Photos</Link>
+                      <Link href="/contact" className={` ${styles.child}`}>other</Link>
+                      <Link href="/qualifications" className={` ${styles.child}`}>other</Link>
+                      </div>
+                    </Link>
                     <Link href="/projects" className={`${bad.className} ${styles.child2}`}>PROJECTS</Link>
                 </div>
                 <div className={styles.container1}>
