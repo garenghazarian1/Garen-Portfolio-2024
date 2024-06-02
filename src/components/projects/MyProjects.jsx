@@ -8,10 +8,10 @@ export default function MyProjects() {
     <h1 className={styles.h1}>MY PROJECTS</h1>
     <div className={styles.projectPreview}>
     <h2 className={styles.h2}>KEN Beauty Center: Project Overview</h2>
-    <Link href="https://ken-salon.vercel.app/" className={styles.h2} target="_blank">CLick here to open the link</Link>
+    <Link href="https://kenbeautysalon.com/" className={styles.h2} target="_blank">CLick here to open the link</Link>
     <div className={styles.iframeContainer}>
     <iframe
-      src="https://ken-salon.vercel.app/"
+      src="https://kenbeautysalon.com/"
       frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen>

@@ -13,7 +13,7 @@ export default function page() {
             <div className={styles.container}>
                 <div className={styles.container1}>
                     <Link href="/me/mySlides" className={` ${styles.child1}`}>My Slide</Link>
-                    <Link href="/projects" className={` ${styles.child2}`}>My Photos</Link>
+                    <Link href="/me/myPhoto" className={` ${styles.child2}`}>My Photos</Link>
                 </div>
                 <div className={styles.container1}>
                     <Link href="/contact" className={` ${styles.child3}`}>other</Link>

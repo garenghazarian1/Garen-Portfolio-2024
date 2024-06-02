@@ -1,0 +1,33 @@
+
+.imageSlider {
+    width: 100%;
+    height: 100vh;
+   
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    overflow: hidden;
+}
+
+.swiper{
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+    
+} 
+
+.swiperSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 400px;
+    
+  }
+  .img{
+    width: 60%;
+    height: auto;
+  }
