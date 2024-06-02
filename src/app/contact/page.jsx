@@ -9,7 +9,7 @@ export default function page() {
   return (
     <>
     <div className={styles.container}>
-    <Link href="/" className={styles.nav} >Back to Home</Link>
+    <Link href="/" className="nav" >Back to Home</Link>
     <Contact/>
     {/* <ContactTest/> */}
     <Footer/>

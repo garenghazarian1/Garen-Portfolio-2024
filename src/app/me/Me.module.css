@@ -36,20 +36,21 @@
 }
 
 .child1 {
-  background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(192,192,70,1) 100%);
 }
 
 .child2 {
-  background: linear-gradient(210deg, rgba(0,0,0,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(210deg, rgba(0,0,0,1) 0%, rgba(192,192,70,1) 100%);
 }
 
 .child3 {
-  background: linear-gradient(70deg, rgba(0,0,0,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(70deg, rgba(0,0,0,1) 0%, rgba(192,192,70,1) 100%);
 }
 
 .child4 {
-  background: linear-gradient(300deg, rgba(0,0,0,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(300deg, rgba(0,0,0,1) 0%, rgba(192,192,70,1) 100%);
 }
+
 
 
 .child1:hover, .child2:hover, .child3:hover, .child4:hover {

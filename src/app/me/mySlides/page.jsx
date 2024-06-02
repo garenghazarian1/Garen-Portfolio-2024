@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function page() {
   return (
     <>
-     <Link href="/me" className={styles.nav} >Back to Home</Link>
+     <Link href="/me" className={styles.nav} >Back to ME Page</Link>
     <MySlide />
     </>
   )
