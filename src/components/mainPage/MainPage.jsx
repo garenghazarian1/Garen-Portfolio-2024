@@ -46,7 +46,7 @@ export default function MainPage() {
                       <Link href="/me/mySlides" className={` ${styles.child}`}>Slide</Link>
                       <Link href="/me/myPhoto" className={` ${styles.child}`}>Photos</Link>
                       <Link href="/me/about" className={` ${styles.child}`}>About Me</Link>
-                      <Link href="/qualifications" className={` ${styles.child}`}>other</Link>
+                      <Link href="/me/follow" className={` ${styles.child}`}>Follow me</Link>
                       </div>
                     </Link>
                     <Link href="/projects" className={`${bad.className} ${styles.child2}`}>PROJECTS</Link>

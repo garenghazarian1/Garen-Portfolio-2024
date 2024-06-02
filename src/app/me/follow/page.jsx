@@ -1,13 +1,14 @@
 
-import styles from "./About.module.css"
+import styles from "./Follow.module.css"
 import Link from 'next/link';
-import AboutMe from '@/components/me/meImageInfo/AboutMe';
+
+import Footer from "@/components/footer/Footer";
 
 export default function page() {
   return (
     <>
      <Link href="/me" className="nav" >Back to ME Page</Link>
-    <AboutMe />
+    <Footer />
     </>
   )
 }

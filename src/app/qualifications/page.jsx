@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function page() {
   return (
     <>
-    <Link href="/" className={styles.nav} >Back to Home</Link>
+    <Link href="/" className="nav">Back to Home</Link>
     <Qualification/>
     </>
   )

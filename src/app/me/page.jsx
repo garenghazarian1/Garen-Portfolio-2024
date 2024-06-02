@@ -8,7 +8,7 @@ export default function page() {
   return (
     <>
     <div className={styles.container}>
-    <Link href="/" className={styles.nav} >Back to Home</Link>
+    <Link href="/" className="nav" >Back to Home</Link>
     <main>
             <div className={styles.container}>
                 <div className={styles.container1}>
@@ -17,7 +17,7 @@ export default function page() {
                 </div>
                 <div className={styles.container1}>
                     <Link href="/me/about" className={` ${styles.child3}`}>About Me</Link>
-                    <Link href="/qualifications" className={` ${styles.child4}`}>other</Link>
+                    <Link href="/me/follow" className={` ${styles.child4}`}>Follow me</Link>
                 </div>
             </div>
         </main>
