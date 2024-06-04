@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <>
         <div className={styles.socialLinks}>     
-            <a className={styles.infoA} href="/GAREN-CV-FIRST-PAGE-18-05-2024.pdf" target="_blank">
+            <a className={styles.infoA} href="/GAREN-CV-FIRST-PAGE-04-06-2024-gold-version.pdf" target="_blank">
               <p>
               Download Resume
               </p>
