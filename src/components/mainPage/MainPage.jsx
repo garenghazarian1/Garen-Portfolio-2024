@@ -40,7 +40,8 @@ export default function MainPage() {
         <main>
             <div className={styles.container}>
                 <div className={styles.container1}>
-                    <Link href="/me" className={`${fontClass} ${styles.child1}`}>Me
+                    <Link href="/me" className={`${fontClass} ${styles.child1}`}>
+                      <div className={styles.meMobile}>Me</div>
                     <div className={styles.spacer}></div>
                     <div className={styles.childDiv}>
                       <Link href="/me/mySlides" className={` ${styles.child}`}>Slide</Link>
