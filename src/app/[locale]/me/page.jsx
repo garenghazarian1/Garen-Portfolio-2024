@@ -6,7 +6,7 @@ import styles from "./Me.module.css"
 import Footer from '@/components/footer/Footer'
 import {useTranslations} from 'next-intl';
 
-export default function Page() {
+export default function page() {
    const t = useTranslations('Me');
   return (
     <>

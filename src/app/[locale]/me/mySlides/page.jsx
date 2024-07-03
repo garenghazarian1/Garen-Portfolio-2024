@@ -4,7 +4,7 @@ import styles from "./MySlides.module.css"
 import { Link } from '@/navigation';
 import {useTranslations} from 'next-intl';
 
-export default function Page() {
+export default function page() {
   const t = useTranslations('Me');
   return (
     <>
