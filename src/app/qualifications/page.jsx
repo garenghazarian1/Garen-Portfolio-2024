@@ -3,7 +3,7 @@ import styles from "./Qualifications.module.css"
 import Qualification from '@/components/qualification/Qualification'
 import Link from 'next/link'
 
-export default function page() {
+export default function Page() {
   return (
     <>
     <Link href="/" className="nav">Back to Home</Link>

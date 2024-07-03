@@ -1,12 +1,12 @@
 
-
+"use client"
 // import Link from 'next/link'
 import { Link } from '@/navigation';
 import styles from "./Me.module.css"
 import Footer from '@/components/footer/Footer'
 import {useTranslations} from 'next-intl';
 
-export default function page() {
+export default function Page() {
    const t = useTranslations('Me');
   return (
     <>
