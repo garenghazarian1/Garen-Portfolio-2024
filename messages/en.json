@@ -57,5 +57,64 @@
       "title": "Conclusion:",
       "text": "Looking ahead, I am eager to continue developing and leading projects that integrate technology with business needs..."
     }
+  },  "AboutMe": {
+    "myName": "My Name:",
+    "name": "Garen Ghazarian",
+    "birthday": "Birthday:",
+    "birthDate": "01/01/1986",
+    "profession": "Profession:",
+    "professionTitle": "Full Stack Developer",
+    "hobbies": "Hobbies:",
+    "hobbyList": "Coding, Cooking, Traveling",
+    "skills1": "Skills 1:",
+    "skills1List": "HTML, MARKUP",
+    "skills2": "Skills 2:",
+    "skills2List": "CSS, BOOTSTRAP, TAILWIND, SASS, Responsive Design, Performance Optimization, Accessibility Standards",
+    "skills3": "Skills 3:",
+    "skills3List": "REACT, VITE, NEXTJS, REACT NATIVE",
+    "skills4": "Skills 4:",
+    "skills4List": "GIT, GITHUB, JAVASCRIPT, DOM, NODEJS, EXPRESS",
+    "skills5": "Skills 5:",
+    "skills5List": "MONGODB, MONGOOSE, FIREBASE, API",
+    "importantSkills": "Important Skills:",
+    "importantSkillsList": "Problem solving, Team work"
+  },  
+  "Footer": {
+    "downloadResume": "Download Resume",
+    "downloadFullResume": "Download Full Resume",
+    "pdfLabel": "PDF",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "MyProjects": {
+    "title": "MY PROJECTS",
+    "projects": [
+      {
+        "name": "KEN Beauty Center: Project Overview",
+        "linkText": "Click here to open the link",
+        "description": "KEN Beauty Center is my inaugural real-world project, developed for a client in Abu Dhabi. This comprehensive application empowers the business owner to seamlessly manage multiple salon locations through a single interface.",
+        "features": [
+          "Store Management: Owners can establish new store locations, complete with customizable operational hours, off days, and service offerings.",
+          "Employee Coordination: The platform facilitates the hiring of new employees and the precise management of their schedules.",
+          "Service Booking: Clients can conveniently schedule appointments, choosing their preferred store, time, and service provider.",
+          "Quality Assurance: All functionalities are rigorously tested to maintain high standards of reliability and user satisfaction."
+        ]
+      },
+      {
+        "name": "Game Interface",
+        "linkText": "Click here to open the link",
+        "description": "This project showcases an educational game web application, developed as a group endeavor. It features a user-friendly hero page designed to engage and educate users through interactive gaming experiences."
+      },
+      {
+        "name": "Night Moon",
+        "linkText": "Click here to open the link",
+        "description": "This project showcases an educational JavaScript website with a scroll effect."
+      },
+      {
+        "name": "Portfolio",
+        "linkText": "Click here to open the link",
+        "description": "A nicely styled Portfolio website."
+      }
+    ]
   }
 }

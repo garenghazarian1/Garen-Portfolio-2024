@@ -7,10 +7,11 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
+import {useTranslations} from 'next-intl';
 import styles from './AboutMe.module.css';
 
 export default function AboutMe() {
+  const t = useTranslations('AboutMe');
   return (
     <>
       <div className={styles.profileContainer}>
@@ -34,40 +35,40 @@ export default function AboutMe() {
               className={styles.swiper}
             >
               <SwiperSlide className={styles.swiperSlide1}>
-                - My Name:
-                  <h2 className={styles.infoH1}>Garen Ghazarian</h2>
-                - Birthday:
-                  <h2 className={styles.infoH1}>01/01/1986</h2>
+              {t('myName')}
+                  <h2 className={styles.infoH1}> {t('name')}</h2>
+                  {t('birthday')}
+                  <h2 className={styles.infoH1}>{t('birthDate')}</h2>
               </SwiperSlide>
               
               <SwiperSlide className={styles.swiperSlide2}>
-                - Profession:
-                  <h2 className={styles.infoH1}>Full Stack Developer</h2>
-                  - Hobbies:
-                  <h2 className={styles.infoH1}>Coding, Cooking, Traveling</h2>
+              {t('profession')}
+                  <h2 className={styles.infoH1}>{t('professionTitle')}</h2>
+                  {t('hobbies')}
+                  <h2 className={styles.infoH1}>{t('hobbyList')}</h2>
               </SwiperSlide>
 
               <SwiperSlide className={styles.swiperSlide3}>
-                - Skills 1:
-                  <h2 className={styles.infoH1}>HTML, MARKUP</h2>
-                  - Skills 2:
+              {t('skills1')}
+                  <h2 className={styles.infoH1}>{t('skills1List')}</h2>
+                  {t('skills2')}
                   <h2 className={styles.infoH1}>
-                    CSS, BOOTSTRAP, TAILWIND, SASS, Responsive Design, Performance Optimization, Accessibility Standards ...
+                  {t('skills2List')}
                   </h2>
               </SwiperSlide>
 
               <SwiperSlide className={styles.swiperSlide1}>
-                - Skills 3:
-                  <h2 className={styles.infoH1}>REACT, VITE, NEXTJS, REACT NATIVE</h2>
-                  - Skills 4:
-                  <h2 className={styles.infoH1}>GIT, GITHUB, JAVASCRIPT, DOM, NODEJS, EXPRESS</h2>
+              {t('skills3')} 
+                  <h2 className={styles.infoH1}>{t('skills3List')}</h2>
+                  {t('skills4')}
+                  <h2 className={styles.infoH1}>{t('skills4List')}</h2>
               </SwiperSlide>
 
               <SwiperSlide className={styles.swiperSlide2}>
-                - Skills 5:
-                  <h2 className={styles.infoH1}>MONGODB, MONGOOSE, FIREBASE, API</h2>
-                - Important Skills:
-                  <h2 className={styles.infoH1}>Problem solving, Team work</h2>
+              {t('skills5')}
+                  <h2 className={styles.infoH1}>{t('skills5List')}</h2>
+                  {t('importantSkills')}
+                  <h2 className={styles.infoH1}>{t('importantSkillsList')}</h2>
               </SwiperSlide>
          
             </Swiper>

@@ -57,5 +57,65 @@
       "title": "Fazit:",
       "text": "Ich freue mich darauf, weiterhin Projekte zu entwickeln und zu leiten, die Technologie mit geschäftlichen Anforderungen integrieren, um innovative und effektive Lösungen zu schaffen. Meine Reise ist ein Zeugnis für die Kraft der Anpassungsfähigkeit an neue Gelegenheiten und kontinuierliches Lernen. Vielen Dank für Ihre Aufmerksamkeit, und ich freue mich auf das nächste Kapitel dieser spannenden Reise."
     }
+  },
+  "AboutMe": {
+    "myName": "Mein Name:",
+    "name": "Garen Ghazarian",
+    "birthday": "Geburtstag:",
+    "birthDate": "01/01/1986",
+    "profession": "Beruf:",
+    "professionTitle": "Full-Stack-Entwickler",
+    "hobbies": "Hobbys:",
+    "hobbyList": "Programmieren, Kochen, Reisen",
+    "skills1": "Fähigkeiten 1:",
+    "skills1List": "HTML, MARKUP",
+    "skills2": "Fähigkeiten 2:",
+    "skills2List": "CSS, BOOTSTRAP, TAILWIND, SASS, Responsive Design, Leistungsoptimierung, Barrierefreiheit Standards",
+    "skills3": "Fähigkeiten 3:",
+    "skills3List": "REACT, VITE, NEXTJS, REACT NATIVE",
+    "skills4": "Fähigkeiten 4:",
+    "skills4List": "GIT, GITHUB, JAVASCRIPT, DOM, NODEJS, EXPRESS",
+    "skills5": "Fähigkeiten 5:",
+    "skills5List": "MONGODB, MONGOOSE, FIREBASE, API",
+    "importantSkills": "Wichtige Fähigkeiten:",
+    "importantSkillsList": "Problemlösung, Teamarbeit"
+  },
+  "Footer": {
+    "downloadResume": "Lebenslauf herunterladen",
+    "downloadFullResume": "Vollständigen Lebenslauf herunterladen",
+    "pdfLabel": "PDF",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "MyProjects": {
+    "title": "MEINE PROJEKTE",
+    "projects": [
+      {
+        "name": "KEN Beauty Center: Projektübersicht",
+        "linkText": "Hier klicken, um den Link zu öffnen",
+        "description": "KEN Beauty Center ist mein erstes reales Projekt, entwickelt für einen Kunden in Abu Dhabi. Diese umfassende Anwendung ermöglicht es dem Geschäftsinhaber, mehrere Salonstandorte über eine einzige Schnittstelle nahtlos zu verwalten.",
+        "features": [
+          "Geschäftsmanagement: Eigentümer können neue Geschäftsstandorte einrichten, komplett mit anpassbaren Betriebszeiten, Ruhetagen und Dienstleistungsangeboten.",
+          "Mitarbeiterkoordination: Die Plattform erleichtert die Einstellung neuer Mitarbeiter und die genaue Verwaltung ihrer Zeitpläne.",
+          "Dienstleistungsbuchung: Kunden können Termine bequem buchen, indem sie ihren bevorzugten Laden, die Zeit und den Dienstleister auswählen.",
+          "Qualitätssicherung: Alle Funktionalitäten werden rigoros getestet, um hohe Standards an Zuverlässigkeit und Benutzerzufriedenheit aufrechtzuerhalten."
+        ]
+      },
+      {
+        "name": "Spieloberfläche",
+        "linkText": "Hier klicken, um den Link zu öffnen",
+        "description": "Dieses Projekt zeigt eine Bildungs-Spielwebanwendung, entwickelt als Gruppenprojekt. Es bietet eine benutzerfreundliche Helden-Seite, die darauf abzielt, Benutzer durch interaktive Spielerlebnisse zu engagieren und zu bilden."
+      },
+      {
+        "name": "Night Moon",
+        "linkText": "Hier klicken, um den Link zu öffnen",
+        "description": "Dieses Projekt zeigt eine Bildungs-Website mit JavaScript und einem Scroll-Effekt."
+      },
+      {
+        "name": "Portfolio",
+        "linkText": "Hier klicken, um den Link zu öffnen",
+        "description": "Eine schön gestaltete Portfolio-Website."
+      }
+    ]
   }
 }

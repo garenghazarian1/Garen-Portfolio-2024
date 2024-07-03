@@ -1,11 +1,13 @@
 // MyProjects.js
 import Link from "next/link";
 import styles from "./MyProjects.module.css";
+import {useTranslations} from 'next-intl';
 
 export default function MyProjects() {
+  const t = useTranslations('MyProjects');
   return (
     <>
-    <h1 className={styles.h1}>MY PROJECTS</h1>
+    <h1 className={styles.h1}>{t('title')}</h1>
     <div className={styles.projectPreview}>
     <h2 className={styles.h2}>KEN Beauty Center: Project Overview</h2>
     <Link href="https://kenbeautysalon.com/" className={styles.h2} target="_blank">CLick here to open the link</Link>
