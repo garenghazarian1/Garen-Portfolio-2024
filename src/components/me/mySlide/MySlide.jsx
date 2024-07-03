@@ -7,7 +7,10 @@ import styles from "./MySlide.module.css"
 import { Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 
+import {useTranslations} from 'next-intl';
+
 export default function MySlide() {
+  const t = useTranslations('Slides');
   return (
     <>
     <div className={styles.container}>
@@ -23,8 +26,8 @@ export default function MySlide() {
           </div> 
           <div className={styles.swiperSlideText}>
             <h2 className={styles.swiperSlideTextH}> 
-              Introduction:</h2>
-              <p className={styles.swiperSlideTextP}>Hello, I&apos;m Garen Ghazarian. Today is May 14, 2024. I was born in 1986 in the vibrant city of Qamishli, Syria. I&apos;m excited to share with you my journey from a law student and computer shop owner in Syria to a chef in Belgium, and now a full-stack developer in Germany.</p>
+            {t('introduction.title')}</h2>
+              <p className={styles.swiperSlideTextP}>{t('introduction.text')}</p>
             
           </div>
         </SwiperSlide>
@@ -34,9 +37,9 @@ export default function MySlide() {
         <Image  src="/002.png" width={500} height={500}   alt='002.png' className={styles.img} />
         </div>
         <div className={styles.swiperSlideText}>
-        <h2 className={styles.swiperSlideTextH}>Early Career in Syria:</h2>
+        <h2 className={styles.swiperSlideTextH}>{t('earlyCareer.title')}</h2>
         <p className={styles.swiperSlideTextP}>  
-            My professional journey began while I was studying law in Syria. During my studies, I also pursued my  passion for technology by opening and managing my own computer shop. This venture allowed me to repair and sell computer equipment, providing me with invaluable business and technical skills.</p>
+        {t('earlyCareer.text')}</p>
         </div>
         </SwiperSlide>
         
@@ -45,9 +48,9 @@ export default function MySlide() {
         <Image  src="/003.png" width={500} height={500}  alt='003.png' className={styles.img} />
         </div>
         <div className={styles.swiperSlideText}>
-        <h2 className={styles.swiperSlideTextH}>Moving to Belgium:</h2>
+        <h2 className={styles.swiperSlideTextH}>{t('movingToBelgium.title')}</h2>
         <p className={styles.swiperSlideTextP}> 
-                Destiny then took me to Belgium, where I initially worked in a restaurant. My dedication and love for culinary arts paid off quickly as I ascended to the position of chef. Within two years, my efforts helped transform our restaurant into the second-best in terms of quality across Belgium. It was a challenging yet rewarding experience that taught me a lot about perseverance and quality management.</p>
+        {t('movingToBelgium.text')}</p>
           </div>
         </SwiperSlide>
 
@@ -56,9 +59,9 @@ export default function MySlide() {
         <Image  src="/004.png" width={500} height={500} alt='004.png' className={styles.img} />
         </div>
         <div className={styles.swiperSlideText}>
-        <h2 className={styles.swiperSlideTextH}>Personal Life:</h2>
+        <h2 className={styles.swiperSlideTextH}>{t('personalLife.title')}</h2>
         <p className={styles.swiperSlideTextP}> 
-            While in Belgium, I also met my partner, and we got married. This period of my life was rich with personal and professional growth.</p>
+        {t('personalLife.text')}</p>
         </div>
         </SwiperSlide>
 
@@ -67,9 +70,9 @@ export default function MySlide() {
         <Image  src="/005.png" width={500} height={500}  alt='005.png' className={styles.img} />
         </div>
         <div className={styles.swiperSlideText}>
-        <h2 className={styles.swiperSlideTextH}>Shifting Focus to Tech in Germany:</h2>
+        <h2 className={styles.swiperSlideTextH}>{t('techInGermany.title')}</h2>
         <p className={styles.swiperSlideTextP}> 
-              Later, my journey brought me to Germany, where I seized the opportunity to turn my long-time computer hobby into a formal education. I enrolled in the DCI Institute, where I studied to become a full-stack developer. Recently, I graduated and am currently engaged in a significant project.</p>
+        {t('techInGermany.text')}</p>
         </div>
         </SwiperSlide>
 
@@ -78,9 +81,9 @@ export default function MySlide() {
         <Image  src="/006.png" width={500} height={500} alt='006.png' className={styles.img} />
         </div>
         <div className={styles.swiperSlideText}>
-        <h2 className={styles.swiperSlideTextH}>Current Project:</h2>
+        <h2 className={styles.swiperSlideTextH}>{t('currentProject.title')}</h2>
         <p className={styles.swiperSlideTextP}> 
-             I&apos;m now working on a challenging full-stack development project for a client from Abu Dhabi. The project involves creating a comprehensive application for a chain of beauty salons. This app organizes appointments, tracks monthly income, and automates calculations for two stores with 40 employees. It&rsquo;s designed to streamline operations and enhance business efficiency.</p>
+        {t('currentProject.text')}</p>
         </div>
         </SwiperSlide>
 
@@ -90,9 +93,9 @@ export default function MySlide() {
         <Image  src="/007.png" width={500} height={500} alt='007.png' className={styles.img} />
      </div> 
      <div className={styles.swiperSlideText}>
-     <h2 className={styles.swiperSlideTextH}>Conclusion:</h2>
+     <h2 className={styles.swiperSlideTextH}>{t('conclusion.title')}</h2>
      <p className={styles.swiperSlideTextP}> 
-              Looking ahead, I am eager to continue developing and leading projects that integrate technology with business needs to create innovative and effective solutions. My journey is a testament to the power of adapting to new opportunities and learning continuously. Thank you for watching, and I look forward to the next chapter of this exciting journey.</p>
+     {t('conclusion.text')}</p>
         </div>
         </SwiperSlide>
       </Swiper>

@@ -1,0 +1,61 @@
+{
+  "Index": {
+    "title": "Hello world!",
+    "me": "Me",
+    "slide": "Slide",
+    "photos": "Photos",
+    "aboutMe": "About Me",
+    "followMe": "Follow me",
+    "projects": "PROJECTS",
+    "contact": "CONTACT",
+    "qualifications": "QUALIFICATIONS"
+  },
+  "Me": {
+    "backToHome": "Back to Home",
+    "mySlide": "My Slide",
+    "myPhotos": "My Photos",
+    "aboutMe": "About Me",
+    "followMe": "Follow me"
+  },
+  "greeting": {
+    "tit": "Hi"
+  },
+  "Contact": {
+    "contactHeader": "Contact Me",
+    "street": "Street:",
+    "city": "City:",
+    "country": "Country: Germany",
+    "mobile": "Mobile:",
+    "email": "Email:"
+  },
+  "Slides": {
+    "introduction": {
+      "title": "Introduction:",
+      "text": "Hello, I'm Garen Ghazarian. Today is May 14, 2024. I was born in 1986 in the vibrant city of Qamishli, Syria. I'm excited to share with you my journey from a law student and computer shop owner in Syria to a chef in Belgium, and now a full-stack developer in Germany."
+    },
+    "earlyCareer": {
+      "title": "Early Career in Syria:",
+      "text": "My professional journey began while I was studying law in Syria. During my studies, I also pursued my passion for technology by opening and managing my own computer shop. This venture allowed me to repair and sell computer equipment, providing me with invaluable business and technical skills."
+    },
+    "movingToBelgium": {
+      "title": "Moving to Belgium:",
+      "text": "Destiny then took me to Belgium, where I initially worked in a restaurant..."
+    },
+    "personalLife": {
+      "title": "Personal Life:",
+      "text": "While in Belgium, I also met my partner, and we got married..."
+    },
+    "techInGermany": {
+      "title": "Shifting Focus to Tech in Germany:",
+      "text": "Later, my journey brought me to Germany, where I seized the opportunity to turn my long-time computer hobby into a formal education..."
+    },
+    "currentProject": {
+      "title": "Current Project:",
+      "text": "I'm now working on a challenging full-stack development project for a client from Abu Dhabi..."
+    },
+    "conclusion": {
+      "title": "Conclusion:",
+      "text": "Looking ahead, I am eager to continue developing and leading projects that integrate technology with business needs..."
+    }
+  }
+}
