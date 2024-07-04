@@ -11,7 +11,7 @@
     "qualifications": "QUALIFIKATIONEN"
   },
   "Me": {
-    "backToHome": "Zurück nach Hause",
+    "backToHome": "Zurück zur Startsite",
     "mySlide": "Diashow",
     "myPhotos": "Meine Fotos",
     "aboutMe": "Über mich",
@@ -31,7 +31,7 @@
   "Slides": {
     "introduction": {
       "title": "Einführung:",
-      "text": "Hallo, ich bin Garen Ghazarian. Heute ist der 14. Mai 2024. Ich wurde 1986 in der lebendigen Stadt Qamishli, Syrien, geboren. Ich freue mich darauf, Ihnen meine Reise vom Jura-Studenten und Computerladenbesitzer in Syrien über einen Koch in Belgien bis hin zu einem Full-Stack-Entwickler in Deutschland zu erzählen."
+      "text": "Hallo, ich bin Garen Ghazarian. Ich wurde 1986 in der lebendigen Stadt Qamishli in Syrien geboren. Ich freue mich darauf, Ihnen meine Reise vom Jura-Studenten und Computerladenbesitzer in Syrien über einen Koch in Belgien bis hin zu einem Full-Stack-Software-Entwickler in Deutschland zu erzählen."
     },
     "earlyCareer": {
       "title": "Frühe Karriere in Syrien:",
@@ -39,7 +39,7 @@
     },
     "movingToBelgium": {
       "title": "Umzug nach Belgien:",
-      "text": "Das Schicksal führte mich anschließend nach Belgien, wo ich zunächst in einem Restaurant arbeitete. Meine Hingabe und Liebe zur Kochkunst zahlten sich schnell aus, als ich zum Koch aufstieg. Innerhalb von zwei Jahren halfen meine Bemühungen, unser Restaurant zur zweitbesten Qualitätseinrichtung in Belgien zu machen. Es war eine herausfordernde, aber lohnende Erfahrung, die mich viel über Ausdauer und Qualitätsmanagement lehrte."
+      "text": "Das Schicksal führte mich anschließend nach Belgien, wo ich zunächst in einem Restaurant arbeitete. Meine Hingabe und Liebe zur Kochkunst zahlten sich schnell aus, als ich zum Chefkoch aufstieg. Innerhalb von zwei Jahren halfen meine Bemühungen, unser Restaurant zur zweitbesten  exklusiv Restaurant in Belgien zu machen. Es war eine herausfordernde, aber lohnende Erfahrung, die mich viel über Ausdauer und Qualitätsmanagement lehrte."
     },
     "personalLife": {
       "title": "Privatleben:",
@@ -47,7 +47,7 @@
     },
     "techInGermany": {
       "title": "Fokuswechsel zur Technik in Deutschland:",
-      "text": "Später brachte mich meine Reise nach Deutschland, wo ich die Gelegenheit ergriff, mein langjähriges Computerhobby in eine formale Ausbildung umzuwandeln. Ich meldete mich am DCI-Institut an, wo ich zum Full-Stack-Entwickler ausgebildet wurde. Kürzlich habe ich mein Studium abgeschlossen und arbeite derzeit an einem bedeutenden Projekt."
+      "text": "Später brachte mich meine Reise nach Deutschland, wo ich die Gelegenheit ergriff, mein langjähriges Computerhobby in eine formale Ausbildung umzuwandeln. Ich meldete mich am DCI-Institut an, wo ich zum Full-Stack-Software-Entwickler ausgebildet wurde. Kürzlich habe ich mein Studium abgeschlossen und arbeite derzeit an einem bedeutenden Projekt."
     },
     "currentProject": {
       "title": "Aktuelles Projekt:",
@@ -64,7 +64,7 @@
     "birthday": "Geburtstag:",
     "birthDate": "01/01/1986",
     "profession": "Beruf:",
-    "professionTitle": "Full-Stack-Entwickler",
+    "professionTitle": "Full-Stack-Software-Entwickler",
     "hobbies": "Hobbys:",
     "hobbyList": "Programmieren, Kochen, Reisen",
     "skills1": "Fähigkeiten 1:",
@@ -81,8 +81,8 @@
     "importantSkillsList": "Problemlösung, Teamarbeit"
   },
   "Footer": {
-    "downloadResume": "Lebenslauf herunterladen",
-    "downloadFullResume": "Vollständigen Lebenslauf herunterladen",
+    "downloadResume": "Initiativbewerbung (en)",
+    "downloadFullResume": "Initiativbewerbung (de) ",
     "pdfLabel": "PDF",
     "linkedin": "LinkedIn",
     "github": "GitHub"
