@@ -8,7 +8,9 @@
     "followMe": "Folge mir",
     "projects": "PROJEKTE",
     "contact": "KONTAKT",
-    "qualifications": "QUALIFIKATIONEN"
+    "qualifications": "QUALIFIKATIONEN",
+    "services": "Dienstleistungen",
+    "qr":"QR code Generator"
   },
   "Me": {
     "backToHome": "Zurück zur Startsite",

@@ -8,7 +8,9 @@
     "followMe": "Follow me",
     "projects": "PROJECTS",
     "contact": "CONTACT",
-    "qualifications": "QUALIFICATIONS"
+    "qualifications": "QUALIFICATIONS",
+    "services": "Services",
+    "qr":"QR code Generator"
   },
   "Me": {
     "backToHome": "Back to Home",

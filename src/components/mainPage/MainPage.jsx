@@ -44,16 +44,44 @@ export default function MainPage() {
                 <div className={styles.container1}>
                     <Link href="/me" className={`${fontClass} ${styles.child1}`}>
                       <div className={styles.meMobile}>{t('me')}</div>
-                    <div className={styles.spacer}></div>
-                    <div className={styles.childDiv}>
+                        <div className={styles.spacer}></div>
+                          <div className={styles.childDiv}>
                     
-                      <Link href="/me/mySlides" className={` ${styles.child}`}>{t('slide')}</Link>
-                      <Link href="/me/myPhoto" className={` ${styles.child}`}>{t('photos')}</Link>
-                      <Link href="/me/about" className={` ${styles.child}`}>{t('aboutMe')}</Link>
-                      <Link href="/me/follow" className={` ${styles.child}`}>{t('followMe')}</Link>
-                      </div>
+                            <Link href="/me/mySlides" className={` ${styles.child}`}>{t('slide')}</Link>
+                            <Link href="/me/myPhoto" className={` ${styles.child}`}>{t('photos')}</Link>
+                            <Link href="/me/about" className={` ${styles.child}`}>{t('aboutMe')}</Link>
+                            <Link href="/me/follow" className={` ${styles.child}`}>{t('followMe')}</Link>
+                          </div>
                     </Link>
-                    <Link href="/projects" className={`${bad.className} ${styles.child2}`}>{t('projects')}</Link>
+
+                    {/* ${styles.child2} */}
+                    <div className={styles.child2}>
+                      <div className={styles.childProject}>
+                      <Link href="/projects" className={`${bad.className} ${styles.childProjectButton} `}>
+                    {t('projects')}
+                    </Link>
+                      </div>
+
+
+
+                      <div className={styles.childProject}>
+                        <div className={`${bad.className} ${styles.childProjectHeader}   `}>
+                          <h2 className={`${bad.className} ${styles.childProjectHeader}   `} >
+                            {t('services')}
+                          </h2>
+                        </div>
+                        <div className={`${styles.childProjectButton}`}>
+                          <Link href="/projects/qrCode" >
+                          {t('qr')}
+                          </Link>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+                    
+                    
+                    
                 </div>
                 <div className={styles.container1}>
                     <Link href="/contact" className={`${bad.className} ${styles.child3}`}>{t('contact')}</Link>
