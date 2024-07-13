@@ -69,7 +69,7 @@ export default function QRCodeGenerator() {
     <div className={styles.container}>
       <h1 className={styles.title}>QR Code Generator</h1>
       <p className={styles.text}>
-      Welcome to our free and easy-to-use QR Code Generator Component! This tool is designed to simplify the process of creating QR codes for any purpose, whether it's for business, education, events, or personal use. Here's how you can make the most out of it:
+      Welcome to our free and easy-to-use QR Code Generator Component! This tool is designed to simplify the process of creating QR codes for any purpose, whether it&apos;s for business, education, events, or personal use. Here&apos;s how you can make the most out of it:
       </p>
       <input type="text" ref={textInputRef} placeholder="Enter text or URL" className={styles.input} />
       <label className={styles.label}>Size:</label>
