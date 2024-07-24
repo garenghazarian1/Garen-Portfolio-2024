@@ -10,7 +10,7 @@
     "contact": "KONTAKT",
     "qualifications": "QUALIFIKATIONEN",
     "services": "Dienstleistungen",
-    "qr":"QR code Generator"
+    "qr": "QR code Generator"
   },
   "Me": {
     "backToHome": "Zurück zur Startsite",
@@ -119,5 +119,20 @@
         "description": "Eine schön gestaltete Portfolio-Website."
       }
     ]
+  },
+  "QRCodeGenerator": {
+    "title": "QR Code Generator",
+    "description": "Willkommen zu unserem kostenlosen und einfach zu bedienenden QR-Code-Generator! Dieses Tool ist darauf ausgelegt, den Prozess der Erstellung von QR-Codes für jeden Zweck zu vereinfachen, sei es für geschäftliche, pädagogische, Veranstaltungen oder persönliche Nutzung. So können Sie das Beste daraus machen:",
+    "placeholder": "Text oder URL eingeben",
+    "size": "Größe:",
+    "color": "Farbe:",
+    "errorCorrection": "Fehlerkorrekturlevel:",
+    "low": "Niedrig",
+    "medium": "Mittel",
+    "quartile": "Quartil",
+    "high": "Hoch",
+    "format": "Format:",
+    "generate": "QR Code generieren",
+    "download": "QR Code herunterladen"
   }
 }

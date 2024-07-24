@@ -10,7 +10,7 @@
     "contact": "CONTACT",
     "qualifications": "QUALIFICATIONS",
     "services": "Services",
-    "qr":"QR code Generator"
+    "qr": "QR code Generator"
   },
   "Me": {
     "backToHome": "Back to Home",
@@ -59,7 +59,8 @@
       "title": "Conclusion:",
       "text": "Looking ahead, I am eager to continue developing and leading projects that integrate technology with business needs..."
     }
-  },  "AboutMe": {
+  },
+  "AboutMe": {
     "myName": "My Name:",
     "name": "Garen Ghazarian",
     "birthday": "Birthday:",
@@ -80,7 +81,7 @@
     "skills5List": "MONGODB, MONGOOSE, FIREBASE, API",
     "importantSkills": "Important Skills:",
     "importantSkillsList": "Problem solving, Team work"
-  },  
+  },
   "Footer": {
     "downloadResume": "Download Resume",
     "downloadFullResume": "Download Full Resume",
@@ -118,5 +119,20 @@
         "description": "A nicely styled Portfolio website."
       }
     ]
+  },
+  "QRCodeGenerator": {
+    "title": "QR Code Generator",
+    "description": "Welcome to our free and easy-to-use QR Code Generator Component! This tool is designed to simplify the process of creating QR codes for any purpose, whether it's for business, education, events, or personal use. Here's how you can make the most out of it:",
+    "placeholder": "Enter text or URL",
+    "size": "Size:",
+    "color": "Color:",
+    "errorCorrection": "Error Correction Level:",
+    "low": "Low",
+    "medium": "Medium",
+    "quartile": "Quartile",
+    "high": "High",
+    "format": "Format:",
+    "generate": "Generate QR Code",
+    "download": "Download QR Code"
   }
 }
