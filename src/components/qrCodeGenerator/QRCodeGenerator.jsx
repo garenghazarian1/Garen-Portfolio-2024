@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import QRCode from "qrcode";
 import { jsPDF } from "jspdf";
-import { canvg } from "canvg";
+import { Canvg } from "canvg";
 import styles from "./QRCodeGenerator.module.css";
 import { useTranslations } from "next-intl";
 
@@ -70,7 +70,7 @@ export default function QRCodeGenerator() {
       },
       errorCorrectionLevel: errorCorrection,
     });
-    const svg = canvg.fromString(svgCanvas, svgCanvas.toDataURL());
+    const svg = Canvg.fromString(svgCanvas, svgCanvas.toDataURL());
     return svg;
   };
 
