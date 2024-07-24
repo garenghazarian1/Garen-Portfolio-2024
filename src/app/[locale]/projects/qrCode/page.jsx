@@ -1,3 +1,4 @@
+"use client";
 import QRCodeGenerator from "@/components/qrCodeGenerator/QRCodeGenerator";
 import styles from "./QrCode.module.css";
 import { Link } from "@/navigation";
