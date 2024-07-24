@@ -10,10 +10,6 @@ export default function NotFounded() {
         <h1 className={styles.header}>{t("header")}</h1>
         <p className={styles.subHeader}>{t("subHeader")}</p>
         <p className={styles.description}>{t("description")}</p>
-
-        <Link href="/" className={styles.linkButton}>
-          {t("backToHome")}
-        </Link>
       </div>
     </div>
   );
