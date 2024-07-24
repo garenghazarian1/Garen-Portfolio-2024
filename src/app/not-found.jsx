@@ -1,3 +1,4 @@
+"use client";
 import NotFounded from "@/components/notFound/NotFounded";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -7,7 +8,7 @@ export default function NotFound() {
   return (
     <>
       <NotFounded />
-      <Link href="/" className={styles.linkButton}>
+      <Link href="/" className="nav">
         {t("backToHome")}
       </Link>
     </>
