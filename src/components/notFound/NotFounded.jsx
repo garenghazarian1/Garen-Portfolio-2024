@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 import styles from "./NotFound.module.css";
 import { useTranslations } from "next-intl";
 
