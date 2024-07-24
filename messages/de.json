@@ -134,5 +134,11 @@
     "format": "Format:",
     "generate": "QR Code generieren",
     "download": "QR Code herunterladen"
+  },
+  "NotFound": {
+    "header": "404",
+    "subHeader": "Hoppla! Seite nicht gefunden.",
+    "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben.",
+    "backToHome": "Zurück zur Startseite"
   }
 }
