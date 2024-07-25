@@ -155,7 +155,6 @@
   .child1A,
   .child1B {
     font-size: 2rem;
-    flex: 100%;
   }
   .child1:hover,
   .child2:hover,
@@ -175,7 +174,6 @@
   .child1A,
   .child1B {
     font-size: 1rem;
-    flex: 100%;
   }
   .child1:hover,
   .child2:hover,
