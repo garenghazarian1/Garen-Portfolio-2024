@@ -11,8 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 50%;
   background-color: var(--background-color);
 }
 
@@ -36,8 +36,86 @@
   background: var(--gradient1);
 }
 
+.child1A {
+  min-width: 200px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--child-text-color);
+  transition: 0.1s ease, 0.1s ease, 0.1s ease;
+  background: var(--gradient1);
+}
+
+.child1B {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+
+.child1C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 25%;
+  transition: font-size 0.1s ease-in-out;
+  box-shadow: var(--box-shadow);
+  color: var(--hover-text-color);
+}
+
+.child1C:hover {
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 .child2 {
   background: var(--gradient2);
+}
+
+.child2A {
+  min-width: 200px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--child-text-color);
+  transition: 0.1s ease, 0.1s ease, 0.1s ease;
+  background: var(--gradient1);
+}
+
+.child2B {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+.child2C {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 50%;
+  transition: font-size 0.1s ease-in-out;
+  box-shadow: var(--box-shadow);
+  color: var(--hover-text-color);
+}
+
+.child2C:hover {
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .child3 {
@@ -51,7 +129,9 @@
 .child1:hover,
 .child2:hover,
 .child3:hover,
-.child4:hover {
+.child4:hover,
+.child1A:hover,
+.child2A:hover {
   background-color: var(--hover-bg-color);
   cursor: pointer;
   box-shadow: var(--hover-shadow-color) 0px -23px 25px 0px inset,
@@ -60,83 +140,6 @@
     rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
     rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-size: 3.5rem;
-}
-
-.child1:focus,
-.child2:focus {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-}
-
-.childDiv {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 0.8rem;
-  width: 25%;
-  transition: font-size 0.1s ease-in-out;
-  box-shadow: var(--box-shadow);
-  color: var(--hover-text-color);
-}
-.childProject {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-  font-size: 0.8rem;
-  width: 100%;
-  height: 50%;
-  transition: font-size 0.3s ease-in-out;
-  box-shadow: var(--box-shadow);
-  color: var(--hover-text-color);
-}
-
-.childProjectHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-.childProjectButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
-  font-size: 0.8rem;
-  width: 100%;
-  height: 100%;
-  transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
-    transform 0.3s ease-in-out;
-  box-shadow: var(--box-shadow);
-  color: var(--hover-text-color);
-}
-.childProjectButton:hover {
-  font-size: 1rem;
-  box-shadow: var(--hover-shadow-color) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  transform: scale(1.05);
-}
-
-.child:hover {
-  font-size: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .projectTest {
@@ -148,15 +151,19 @@
   .child1,
   .child2,
   .child3,
-  .child4 {
-    font-size: 2.5rem;
+  .child4,
+  .child1A,
+  .child1B {
+    font-size: 2rem;
     flex: 100%;
   }
   .child1:hover,
   .child2:hover,
   .child3:hover,
-  .child4:hover {
-    font-size: 3rem;
+  .child4:hover,
+  .child1A:hover,
+  .child1B:hover {
+    font-size: 2.5rem;
   }
 }
 
@@ -164,40 +171,44 @@
   .child1,
   .child2,
   .child3,
-  .child4 {
-    font-size: 1.5rem;
+  .child4,
+  .child1A,
+  .child1B {
+    font-size: 1rem;
     flex: 100%;
   }
   .child1:hover,
   .child2:hover,
   .child3:hover,
-  .child4:hover {
-    font-size: 2rem;
+  .child4:hover,
+  .child1A:hover,
+  .child1B:hover {
+    font-size: 1.5rem;
+  }
+  .child1B {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .child1C {
+    width: 100px;
   }
 }
 
 @media (max-width: 480px) {
-  .meMobile {
-    height: 100px;
-    padding-top: 70px;
-  }
   .child1,
   .child2,
   .child3,
-  .child4 {
-    font-size: 1rem;
+  .child4,
+  .child1A,
+  .child1B {
+    font-size: 0.8rem;
   }
   .child1:hover,
   .child2:hover,
   .child3:hover,
-  .child4:hover {
-    font-size: 1.5rem;
-  }
-  .childDiv {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .child {
-    width: 100px;
+  .child4:hover,
+  .child1A:hover,
+  .child1B:hover {
+    font-size: 1.2rem;
   }
 }
