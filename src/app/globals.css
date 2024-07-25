@@ -2,66 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Color Variables */
+:root {
+  /* globals */
+  --nav-bg-color: rgb(192, 192, 70);
+  --nav-text-color: white;
+  --swiper-button-color: #ffffff;
+  --swiper-button-bg: rgba(0, 0, 0, 0.5);
+  --swiper-button-bg-hover: rgba(0, 0, 0, 0.8);
+  --swiper-progress-fill: rgb(213, 235, 15);
+  --swiper-bullet-bg: rgb(208, 243, 112);
+  --swiper-bullet-active-bg: rgb(139, 160, 19);
+  /* mainPage */
+  --background-color: rgb(0, 0, 0);
+  --child-text-color: rgba(255, 255, 255, 0.705);
+  --hover-bg-color: #cfadad;
+  --hover-text-color: rgba(255, 255, 255, 0.829);
+  --hover-shadow-color: rgba(0, 0, 0, 0.17);
+  --child-project-bg: rgba(0, 0, 0, 0.1);
+  --child-hover-font-size: 1rem;
+  --child-hover-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  --gradient1: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(192, 192, 70, 1) 100%
+  );
+  --gradient2: linear-gradient(
+    210deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(238, 209, 63) 100%
+  );
+  --gradient3: linear-gradient(
+    70deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 215, 0, 1) 100%
+  );
+  --gradient4: linear-gradient(
+    300deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(229, 190, 1, 1) 100%
+  );
+}
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-wrap: break-word;
 }
-html, body {
-  width: 100%;
+
+html,
+body {
+  width: 100vw;
   overflow-x: hidden;
   position: relative;
   scroll-behavior: smooth;
 }
 
 Image {
-    width: auto;
-    height: auto;
-  }
+  width: auto;
+  height: auto;
+}
 
-  .nav {
-    position: fixed;
-    bottom: 10px;
-    right: 30px;
-    background: rgb(192,192,70) ;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    transition:  0.3s ease, transform 0.3s ease;
-    z-index: 100;
-    opacity: 0.4;
-  }
-  
-  .nav:hover {
-    opacity: 1;
-    background:rgb(192,192,70) ;
-    transform: scale(1.05);
-  }
-
-  @media (max-width: 375px) {
-    .nav{
-      font-size: 0.5rem;
-      right: 40px;
-      bottom: 70px;
-    }
-    }
-  
-  @media (max-width: 700px) {
-.nav{
-  font-size: 0.5rem;
+.nav {
+  position: fixed;
+  bottom: 10px;
   right: 30px;
-  bottom: 70px;
-}
+  background: var(--nav-bg-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--nav-text-color);
+  transition: 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+  opacity: 0.4;
 }
 
-  /* Swipe Navigation Button */
+.nav:hover {
+  opacity: 1;
+  background: var(--nav-bg-color);
+  transform: scale(1.05);
+}
+
+@media (max-width: 375px) {
+  .nav {
+    font-size: 0.5rem;
+    right: 40px;
+    bottom: 70px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav {
+    font-size: 0.5rem;
+    right: 30px;
+    bottom: 70px;
+  }
+}
+
+/* Swipe Navigation Button */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ffffff !important; /* Change color to white */
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Add semi-transparent background */
+  color: var(--swiper-button-color) !important;
+  background-color: var(--swiper-button-bg) !important;
   padding: 1px !important;
   border-radius: 50% !important;
   width: 40px !important;
@@ -74,23 +118,22 @@ Image {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: rgba(0, 0, 0, 0.8) !important; /* Darker background on hover */
+  background-color: var(--swiper-button-bg-hover) !important;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px !important; /* Adjust icon size */
+  font-size: 20px !important;
 }
 
 .swiper-pagination-progressbar-fill {
-  background-color: rgb(213, 235, 15) !important;
+  background-color: var(--swiper-progress-fill) !important;
 }
 
-
 .swiper-pagination-bullet {
-  background-color: rgb(208, 243, 112) !important; 
+  background-color: var(--swiper-bullet-bg) !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgb(139, 160, 19) !important; 
+  background-color: var(--swiper-bullet-active-bg) !important;
 }

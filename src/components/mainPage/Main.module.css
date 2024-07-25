@@ -1,201 +1,203 @@
-
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);     
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
 }
 .container1 {
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
 }
 
-
-.child1, .child2, .child3, .child4 {
-    min-width: 200px;
-    flex:50%;
-    box-sizing: border-box;
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.705);
-    transition: 0.3s ease,0.3s ease, 0.3s ease;
+.child1,
+.child2,
+.child3,
+.child4 {
+  min-width: 200px;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--child-text-color);
+  transition: 0.1s ease, 0.1s ease, 0.1s ease;
 }
 
 .child1 {
-    background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(192,192,70,1) 100%);
-    padding-top: 2rem;
-
+  background: var(--gradient1);
 }
 
 .child2 {
-    background: linear-gradient(210deg, rgba(0,0,0,1) 0%, rgb(238, 209, 63) 100%);
+  background: var(--gradient2);
 }
 
 .child3 {
-    background: linear-gradient(70deg, rgba(0,0,0,1) 0%, rgba(255,215,0,1) 100%); /* Classic Gold */
+  background: var(--gradient3);
 }
 
 .child4 {
-    background: linear-gradient(300deg, rgba(0,0,0,1) 0%, rgba(229,190,1,1) 100%);
+  background: var(--gradient4);
 }
 
-
-.child1:hover, .child2:hover, .child3:hover, .child4:hover {
-    background-color: #cfadad;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
-                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-                rgba(0, 0, 0, 0.09) 0px 32px 16px;
-                font-size: 6rem;
+.child1:hover,
+.child2:hover,
+.child3:hover,
+.child4:hover {
+  background-color: var(--hover-bg-color);
+  cursor: pointer;
+  box-shadow: var(--hover-shadow-color) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-size: 3.5rem;
 }
 
-.child1:focus, .child2:focus{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999;
+.child1:focus,
+.child2:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
 }
-.spacer {
-    flex-grow: 1; 
-}
-.childDiv{
-    margin-top: 2rem;
-    display: flex;
-    width: 100%;
-    height: 50%;
-    
+
+.childDiv {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-    font-size: 0.8rem;
-    width: 25%;
-    transition: font-size 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: rgba(255, 255, 255, 0.829);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  width: 25%;
+  transition: font-size 0.1s ease-in-out;
+  box-shadow: var(--box-shadow);
+  color: var(--hover-text-color);
 }
-.childProject{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-    font-size: 0.8rem;
-    width: 100%;
-    height: 50%;
-    transition: font-size 0.3s ease-in-out;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: rgba(255, 255, 255, 0.829);
+.childProject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 50%;
+  transition: font-size 0.3s ease-in-out;
+  box-shadow: var(--box-shadow);
+  color: var(--hover-text-color);
 }
 
-.childProjectHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
+.childProjectHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
-.childProjectButton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
-    font-size: 0.8rem;
-    width: 100%;
-    height: 100%;
-    transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
-    /* border: 1px solid black; */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: rgba(255, 255, 255, 0.829);
+.childProjectButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 100%;
+  transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+  box-shadow: var(--box-shadow);
+  color: var(--hover-text-color);
 }
-.childProjectButton:hover{
-    font-size: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
-                rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, 
-                rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
-                rgba(0, 0, 0, 0.06) 0px 2px 1px, 
-                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-                rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-                rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    transform: scale(1.05);
+.childProjectButton:hover {
+  font-size: 1rem;
+  box-shadow: var(--hover-shadow-color) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transform: scale(1.05);
 }
 
 .child:hover {
-    font-size: 1rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-size: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.projectTest{
-    border: 1px solid red;
+.projectTest {
+  border: 1px solid red;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1250px) {
-    .child1, .child2, .child3, .child4 {
-        font-size: 2.5rem; 
-        flex: 100%; 
-    }
-    .child1:hover, .child2:hover, .child3:hover, .child4:hover{
-        font-size: 3rem; 
-    }
+  .child1,
+  .child2,
+  .child3,
+  .child4 {
+    font-size: 2.5rem;
+    flex: 100%;
+  }
+  .child1:hover,
+  .child2:hover,
+  .child3:hover,
+  .child4:hover {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .child1, .child2, .child3, .child4 {
-        font-size: 1.5rem; 
-        flex: 100%; 
-    }
-    .child1:hover, .child2:hover, .child3:hover, .child4:hover{
-        font-size: 2rem; 
-    }
-
-   
+  .child1,
+  .child2,
+  .child3,
+  .child4 {
+    font-size: 1.5rem;
+    flex: 100%;
+  }
+  .child1:hover,
+  .child2:hover,
+  .child3:hover,
+  .child4:hover {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .meMobile{
-        height: 100px;
-        padding-top: 70px;
-    }
-    .child1, .child2, .child3, .child4 {
-        font-size: 1rem;   
-    }
-    .child1:hover, .child2:hover, .child3:hover, .child4:hover{
-        font-size: 1.5rem; 
-    }
-    .childDiv{
-        flex-wrap: wrap;
-        justify-content: center;
-        
-    }
-    .child{
-        width: 100px;
-    }
-   
+  .meMobile {
+    height: 100px;
+    padding-top: 70px;
+  }
+  .child1,
+  .child2,
+  .child3,
+  .child4 {
+    font-size: 1rem;
+  }
+  .child1:hover,
+  .child2:hover,
+  .child3:hover,
+  .child4:hover {
+    font-size: 1.5rem;
+  }
+  .childDiv {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .child {
+    width: 100px;
+  }
 }
