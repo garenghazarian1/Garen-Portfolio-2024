@@ -1,32 +1,35 @@
-
-.container { 
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 100%;
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
   padding: 1rem;
 }
 
 .title {
   font-size: 2rem;
-  color: #b8860b;
+  color: var(--title-color);
   margin-bottom: 1rem;
   font-weight: bold;
 }
-.text{
+
+.text {
   width: 50%;
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--text-color);
 }
 
- .input, .select, .inputColor {
+.input,
+.select,
+.inputColor {
   padding: 0.5rem;
   font-size: 1rem;
   margin-bottom: 0.5rem;
-  border: 3px solid #b8860b;
+  border: 3px solid var(--input-border-color);
   border-radius: 8px;
   width: 80%;
   max-width: 18.75rem;
@@ -35,14 +38,14 @@
 .label {
   margin-top: 0.625rem;
   font-size: 1rem;
-  color: #b8860b;
+  color: var(--title-color);
 }
 
 .button {
   padding: 0.625rem 1.25rem;
   font-size: 1rem;
-  color: #fff;
-  background-color: #b8860b;
+  color: var(--button-text-color);
+  background-color: var(--button-bg-color);
   border: none;
   border-radius: 0.3125rem;
   cursor: pointer;
@@ -50,7 +53,7 @@
 }
 
 .button:hover {
-  background-color: #a3750a;
+  background-color: var(--button-hover-bg-color);
 }
 
 .canvas {
@@ -60,6 +63,7 @@
 .downloadLink {
   text-decoration: none;
   margin-top: 0.625rem;
+  color: var(--title-color);
 }
 
 @media (max-width: 600px) {
@@ -70,12 +74,14 @@
   .title {
     font-size: 1.5rem;
   }
+
   .text {
-    width:90%;
-    
+    width: 90%;
   }
 
-  .input, .select, .button {
+  .input,
+  .select,
+  .button {
     width: 100%;
     max-width: none;
   }

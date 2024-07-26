@@ -59,6 +59,21 @@
   --qualifications-card-bg-color: #333; /* Darker background for cards */
   --qualifications-card-border-color: #f5c518; /* Gold border */
   --qualifications-muted-text-color: #ccc; /* Light grey text */
+
+  /* My Projects Page Colors - Dark Mode */
+  --projects-title-color: #ffd700; /* Gold */
+  --projects-preview-bg-color: #333333; /* Dark grey */
+  --projects-preview-border-color: #20b2aa; /* Light Sea Green (Teal) */
+  --projects-preview-text-color: #d3d3d3; /* Light grey (Silver) */
+
+  /* Colors for the Project Page */
+  --background-color: #1a1a1a; /* Dark background */
+  --title-color: #ffd700; /* Gold */
+  --input-border-color: #4682b4; /* Steel Blue */
+  --button-bg-color: #4682b4; /* Steel Blue */
+  --button-hover-bg-color: #5a9bd4; /* Lighter Steel Blue */
+  --text-color: #d3d3d3; /* Light Grey */
+  --button-text-color: #ffffff; /* White */
 }
 
 * {
