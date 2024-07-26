@@ -43,6 +43,15 @@
     rgba(0, 0, 0, 1) 0%,
     rgba(229, 190, 1, 1) 100%
   );
+
+  /* contactPage */
+  --contact-bg: rgb(0, 0, 0); /* Black */
+  --contact-container-bg: rgb(24, 24, 24); /* Very dark gray */
+  --contact-header-color: rgb(212, 175, 55); /* Gold */
+  --contact-text-color: rgb(192, 192, 192); /* Silver */
+  --contact-link-color: rgb(255, 215, 0); /* Gold (bright) */
+  --contact-link-hover: rgb(218, 165, 32); /* Goldenrod */
+  --contact-map-bg: rgba(192, 192, 192, 0.1); /* Silver with opacity */
 }
 
 * {

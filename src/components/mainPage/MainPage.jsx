@@ -41,11 +41,9 @@ export default function MainPage() {
       <div className={styles.container}>
         <div className={styles.container1}>
           <div className={` ${styles.child1}`}>
-            <div className={` ${styles.child1A}`}>
-              <Link href="/me" className={`${fontClass} `}>
-                {t("me")}
-              </Link>
-            </div>
+            <Link href="/me" className={`${fontClass} ${styles.child1A} `}>
+              {t("me")}
+            </Link>
 
             <div className={styles.child1B}>
               <Link href="/me/mySlides" className={` ${styles.child1C}`}>
@@ -70,8 +68,8 @@ export default function MainPage() {
             </div>
 
             <div className={styles.child2B}>
-              <div className={`${bad.className} ${styles.child2C} `}>
-                <h2>{t("services")}</h2>
+              <div className={` ${styles.child2CText} `}>
+                <h2 className={`${bad.className}`}>{t("services")}</h2>
               </div>
               <div className={`${styles.child2C} `}>
                 <Link href="/projects/qrCode">{t("qr")}</Link>

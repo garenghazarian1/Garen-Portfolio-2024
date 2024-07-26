@@ -1,95 +1,60 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f0f0f0; 
-  }
-  
-  .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;
-    height: 80vh; 
-    background-color: rgb(233, 241, 219);
-  }
-  
-  .imageWrapper {
-    width: 100%;
-    margin-top: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .section {
-    padding: 20px;
-  }
-  
-  .sectionHeader {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .input,
-  .textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .textarea {
-    height: 100px;
-    resize: vertical; /* Allows the user to resize the textarea vertically */
-  }
-  
-  .button {
-    background-color: #0056b3; /* Blue background color */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #004494; /* Darker blue on hover */
-  }
-  
-  .mapContainer {
-    width: 100%;
-    height: 200px; /* Fixed height for the map */
-    margin-top: 20px;
-  }
-  
-  .map {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .p {
-    color: #666;
-    line-height: 1.5;
-  }
-  
-  .a {
-    color: #0066cc; /* Link color */
-    text-decoration: none;
-  }
-  
-  .a:hover {
-    text-decoration: underline; /* Underline on hover */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--contact-bg);
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50rem;
+  width: 100%;
+  background-color: var(--contact-container-bg);
+  box-shadow: var(--box-shadow);
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+
+.section {
+  width: 100%;
+}
+
+.sectionHeader {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--contact-header-color);
+}
+
+.p {
+  font-size: 1rem;
+  color: var(--contact-text-color);
+  margin: 0.5rem 0;
+}
+
+.a {
+  color: var(--contact-link-color);
+  text-decoration: none;
+}
+
+.a:hover {
+  text-decoration: underline;
+  color: var(--contact-link-hover);
+}
+
+.mapContainer {
+  margin-top: 2rem;
+  width: 100%;
+  height: 300px;
+  background-color: var(--contact-map-bg);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
