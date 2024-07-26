@@ -93,11 +93,11 @@
 
 .child2B {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
 .child2C {
@@ -107,7 +107,7 @@
   text-align: center;
   font-size: 0.8rem;
   width: 100%;
-  height: 50%;
+  height: 100%;
   transition: font-size 0.1s ease-in-out;
   box-shadow: var(--box-shadow);
   color: var(--hover-text-color);

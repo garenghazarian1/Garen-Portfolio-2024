@@ -111,6 +111,21 @@
   --swiper-slide3-bg: rgba(255, 183, 0, 0.7); /* Bright Gold */
   --info-h1-color: #444;
   --info-h1-text-shadow: rgba(0, 0, 0, 0.3);
+
+  /* BMI Calculator Colors */
+  --bmi-container-bg: rgb(35, 46, 6); /* Dark background */
+  --bmi-title-color: rgb(255, 255, 255); /* White text */
+  --bmi-label-color: rgb(255, 255, 255); /* White text */
+  --bmi-input-bg: rgb(24, 24, 24); /* Darker background for input */
+  --bmi-input-border: rgb(192, 192, 70); /* Yellow border */
+  --bmi-input-text: rgb(192, 192, 192); /* Light grey text */
+  --bmi-button-bg: rgb(192, 192, 70); /* Yellow button */
+  --bmi-button-text: rgb(0, 0, 0); /* Black text on button */
+  --bmi-button-hover-bg: rgb(255, 215, 0); /* Lighter yellow button on hover */
+  --bmi-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+  --bmi-box-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  --bmi-result-text: rgb(192, 192, 192); /* Light grey result text */
+  --bmi-result-value: rgb(255, 255, 255); /* White result value */
 }
 
 * {

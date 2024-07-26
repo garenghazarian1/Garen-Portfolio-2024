@@ -60,3 +60,8 @@
 .date {
   font-style: italic;
 }
+
+.certImage {
+  width: 250px;
+  height: auto;
+}

@@ -68,11 +68,14 @@ export default function MainPage() {
             </div>
 
             <div className={styles.child2B}>
-              <div className={` ${styles.child2CText} `}>
+              {/* <div className={` ${styles.child2CText} `}>
                 <h2 className={`${bad.className}`}>{t("services")}</h2>
-              </div>
+              </div> */}
               <div className={`${styles.child2C} `}>
                 <Link href="/projects/qrCode">{t("qr")}</Link>
+              </div>
+              <div className={`${styles.child2C} `}>
+                <Link href="/projects/bmi">BMI</Link>
               </div>
             </div>
           </div>
