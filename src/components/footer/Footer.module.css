@@ -1,86 +1,83 @@
 .socialLinks {
-    width: 100vw;
-    height: 100vh;
-    background-color: goldenrod;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color-goldenrod);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .imageContainer {
-    margin: 1rem;
-    font-size: 2rem; 
-    color: #DAA520; 
-    font-weight: bold; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    padding: 0.5rem; 
-    transition: color 0.3s ease, text-shadow 0.3s ease; 
+  margin: 1rem;
+  font-size: 2rem;
+  color: var(--color-goldenrod-dark);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px var(--text-shadow-dark);
+  padding: 0.5rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .imageContainer:hover {
-    color: #FFD700; 
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  color: var(--color-goldenrod-light);
+  text-shadow: 3px 3px 6px var(--text-shadow-light);
 }
 
 .infoA {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 3rem; 
-    color: white;
-    background: rgb(110, 110, 33);
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    width: 50vw;
-    height: 50vh;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
-    border-radius: 10px; /* Add border radius for rounded corners */
-    padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3rem;
+  color: var(--infoA-color);
+  background: var(--infoA-background);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  width: 50vw;
+  height: 50vh;
+  box-shadow: var(--box-shadow-initial); /* Initial shadow */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 1rem;
 }
 
 .infoA:hover {
-    transform: scale(1.1);
-    color: white; /* Change color on hover */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.1);
+  color: var(--infoA-color); /* Change color on hover */
+  box-shadow: var(--box-shadow-hover); /* Enhanced shadow on hover */
 }
 
 .infoA:active {
-    transform: scale(1.05); /* Slightly reduce the scale on active state */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adjust shadow on active state */
+  transform: scale(1.05); /* Slightly reduce the scale on active state */
+  box-shadow: var(--box-shadow-active); /* Adjust shadow on active state */
 }
 
 @media (max-width: 1160px) {
-    .infoA {
-
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
-    }
+  .infoA {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
 }
 
 @media (max-width: 850px) {
-    .infoA {
-
-        font-size: 2rem; /* Adjust font size for smaller screens */
-    }
+  .infoA {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
 }
 
 @media (max-width: 700px) {
-    .infoA {
-        width: 50vw; /* Full width for smaller screens */
-        height: 50vh; /* Adjust height for smaller screens */
-        font-size: 1.6rem; /* Adjust font size for smaller screens */
-    }
+  .infoA {
+    width: 50vw; /* Full width for smaller screens */
+    height: 50vh; /* Adjust height for smaller screens */
+    font-size: 1.6rem; /* Adjust font size for smaller screens */
+  }
 }
 
 @media (max-width: 550px) {
-    .infoA {
-        width: 50vw; /* Full width for very small screens */
-        height: 50vh; /* Adjust height for very small screens */
-        font-size: 1rem; /* Adjust font size for very small screens */
-    }
-    .imageContainer {
-        margin: 0.2rem;
-        font-size: 1rem; 
-        padding: 0.3rem; 
-      
-    }
+  .infoA {
+    width: 50vw; /* Full width for very small screens */
+    height: 50vh; /* Adjust height for very small screens */
+    font-size: 1rem; /* Adjust font size for very small screens */
+  }
+  .imageContainer {
+    margin: 0.2rem;
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
 }

@@ -90,6 +90,27 @@
   --swiper-slide-text-h-bg: rgba(0, 0, 0, 0.678);
   --swiper-slide-text-p-color: rgb(98, 104, 46);
   --swiper-slide-text-p-color-small: rgb(16, 68, 3);
+
+  /* FOOTER */
+  --background-color-goldenrod: goldenrod;
+  --color-goldenrod-dark: #daa520;
+  --color-goldenrod-light: #ffd700;
+  --text-shadow-dark: rgba(0, 0, 0, 0.3);
+  --text-shadow-light: rgba(0, 0, 0, 0.4);
+  --infoA-background: rgb(110, 110, 33);
+  --infoA-color: white;
+  --box-shadow-initial: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.2);
+  --box-shadow-active: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  /* ABOUT ME */
+
+  --profile-container-bg: rgb(35, 46, 6);
+  --swiper-slide1-bg: rgba(255, 217, 0, 0.7); /* Gold */
+  --swiper-slide2-bg: rgba(209, 174, 49, 0.7); /* Dark Gold */
+  --swiper-slide3-bg: rgba(255, 183, 0, 0.7); /* Bright Gold */
+  --info-h1-color: #444;
+  --info-h1-text-shadow: rgba(0, 0, 0, 0.3);
 }
 
 * {
