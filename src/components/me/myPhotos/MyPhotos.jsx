@@ -37,7 +37,9 @@ export default function MyPhotos() {
           <Image
             src="/g01a.jpg"
             alt="Me in EU"
-            layout="fill"
+            width={500}
+            height={500}
+            priority={false} // {false} | {true}
             className={styles.img}
           />
         </SwiperSlide>
@@ -45,7 +47,9 @@ export default function MyPhotos() {
           <Image
             src="/g02.jpg"
             alt="Me in Nature"
-            layout="fill"
+            width={500}
+            height={500}
+            priority={false} // {false} | {true}
             className={styles.img}
           />
         </SwiperSlide>
@@ -53,7 +57,9 @@ export default function MyPhotos() {
           <Image
             src="/g03.jpg"
             alt="Me at Grand Place"
-            layout="fill"
+            width={500}
+            height={500}
+            priority={false} // {false} | {true}
             className={styles.img}
           />
         </SwiperSlide>

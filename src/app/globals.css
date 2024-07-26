@@ -74,6 +74,22 @@
   --button-hover-bg-color: #5a9bd4; /* Lighter Steel Blue */
   --text-color: #d3d3d3; /* Light Grey */
   --button-text-color: #ffffff; /* White */
+
+  /* MySlide */
+  --container-bg-gradient: linear-gradient(
+    120deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(192, 192, 70, 1) 100%
+  );
+  --swiper-slide-bg-gradient: linear-gradient(
+    210deg,
+    rgb(255, 255, 255) 0%,
+    rgb(238, 209, 63) 100%
+  );
+  --swiper-slide-text-h-color: rgb(192, 192, 70);
+  --swiper-slide-text-h-bg: rgba(0, 0, 0, 0.678);
+  --swiper-slide-text-p-color: rgb(98, 104, 46);
+  --swiper-slide-text-p-color-small: rgb(16, 68, 3);
 }
 
 * {
