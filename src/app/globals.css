@@ -45,13 +45,20 @@
   );
 
   /* contactPage */
-  --contact-bg: rgb(0, 0, 0); /* Black */
-  --contact-container-bg: rgb(24, 24, 24); /* Very dark gray */
-  --contact-header-color: rgb(212, 175, 55); /* Gold */
-  --contact-text-color: rgb(192, 192, 192); /* Silver */
-  --contact-link-color: rgb(255, 215, 0); /* Gold (bright) */
-  --contact-link-hover: rgb(218, 165, 32); /* Goldenrod */
-  --contact-map-bg: rgba(192, 192, 192, 0.1); /* Silver with opacity */
+  --contact-bg: rgb(0, 0, 0);
+  --contact-container-bg: rgb(24, 24, 24);
+  --contact-header-color: rgb(212, 175, 55);
+  --contact-text-color: rgb(192, 192, 192);
+  --contact-link-color: rgb(255, 215, 0);
+  --contact-link-hover: rgb(218, 165, 32);
+  --contact-map-bg: rgba(192, 192, 192, 0.1);
+
+  /* Qualifications Page Colors */
+  --qualifications-bg-color: #1a1a1a; /* Dark background */
+  --qualifications-text-color: #f5c518; /* Gold text */
+  --qualifications-card-bg-color: #333; /* Darker background for cards */
+  --qualifications-card-border-color: #f5c518; /* Gold border */
+  --qualifications-muted-text-color: #ccc; /* Light grey text */
 }
 
 * {
