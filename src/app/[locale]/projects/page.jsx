@@ -8,9 +8,9 @@ export default function Projects() {
   const t = useTranslations("Me");
   return (
     <>
-      <Link href="/" className="nav">
-        {t("backToHome")}
-      </Link>
+      <div className="nav">
+        <Link href="/">{t("backToHome")}</Link>
+      </div>
       <MyProjects />
     </>
   );

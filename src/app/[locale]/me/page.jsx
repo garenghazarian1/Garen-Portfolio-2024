@@ -10,31 +10,28 @@ export default function Page() {
   return (
     <>
       <div className={styles.container}>
-        <Link href="/" className="nav">
-          {t("backToHome")}
-        </Link>
-        <main>
-          <div className={styles.container}>
-            <div className={styles.container1}>
-              <Link href="/me/mySlides" className={` ${styles.child1}`}>
-                {t("mySlide")}
-              </Link>
-              <Link href="/me/myPhoto" className={` ${styles.child2}`}>
-                {t("myPhotos")}
-              </Link>
-            </div>
-            <div className={styles.container1}>
-              <Link href="/me/about" className={` ${styles.child3}`}>
-                {t("aboutMe")}
-              </Link>
-              <Link href="/me/follow" className={` ${styles.child4}`}>
-                {t("followMe")}
-              </Link>
-            </div>
-          </div>
-        </main>
+        <div className="nav">
+          <Link href="/">{t("backToHome")}</Link>
+        </div>
 
-        {/* <Footer/> */}
+        <div className={styles.container}>
+          <div className={styles.container1}>
+            <Link href="/me/mySlides" className={` ${styles.child1}`}>
+              {t("mySlide")}
+            </Link>
+            <Link href="/me/myPhoto" className={` ${styles.child2}`}>
+              {t("myPhotos")}
+            </Link>
+          </div>
+          <div className={styles.container1}>
+            <Link href="/me/about" className={` ${styles.child3}`}>
+              {t("aboutMe")}
+            </Link>
+            <Link href="/me/follow" className={` ${styles.child4}`}>
+              {t("followMe")}
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

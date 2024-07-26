@@ -8,9 +8,9 @@ export default function QrCode() {
   const t = useTranslations("Me");
   return (
     <>
-      <Link href="/" className="nav">
-        {t("backToHome")}
-      </Link>
+      <div className="nav">
+        <Link href="/">{t("backToHome")}</Link>
+      </div>
       <QRCodeGenerator />
     </>
   );

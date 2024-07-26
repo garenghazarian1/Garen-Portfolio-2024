@@ -9,9 +9,9 @@ export default function Page() {
   const t = useTranslations("Me");
   return (
     <>
-      <Link href="/" className="nav">
-        {t("backToHome")}
-      </Link>
+      <div className="nav">
+        <Link href="/">{t("backToHome")}</Link>
+      </div>
       <Qualification />
     </>
   );
