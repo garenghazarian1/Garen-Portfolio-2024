@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={styles.socialLinks}>
         <a
           className={styles.infoA}
-          href="/GAREN-CV-FIRST-PAGE-ENG-07-08-2024-gold-version.pdf"
+          href="/Garen-Ghazarian-eng-11-sep-2024.pdf"
           target="_blank"
         >
           <p>{t("downloadResume")}</p>
@@ -34,7 +34,7 @@ export default function Footer() {
         </a>
         <a
           className={styles.infoA}
-          href="/GAREN-CV-ALL-PAGES-ENG_DEU-07-08-2024-gold-version.pdf"
+          href="/Garen-Ghazarian-full-11-sep-2024.pdf"
           target="_blank"
         >
           <p>{t("downloadFullResume")}</p>
