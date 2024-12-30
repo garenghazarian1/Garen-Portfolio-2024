@@ -1,41 +1,45 @@
 /* LangBox.module.css */
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 4rem; 
-    height: 4rem; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%; 
-    background-color: #e0c558; 
-    z-index: 30; 
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #e0c558;
+  z-index: 30;
+  border: none;
+  box-shadow: 0 0px 40px 20px rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.container:hover {
+  background-color: #000000;
+  box-shadow: 0 0px 40px 12px rgb(0, 0, 0);
+}
 
 .option {
-    padding: 0.2rem;
-    color: #ffffff;
-    text-align: center;
-    font-size: 0.9rem;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: background-color 0.2s ease; 
+  padding: 0.2rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
 }
 
-.option:hover, .option:focus {
-    background-color: #5c5703; 
-    outline: none;
+.option:hover,
+.option:focus {
+  background-color: #5c5703;
+  outline: none;
 }
 
 .option:active {
-    background-color: #7d8f04; 
+  background-color: #7d8f04;
 }

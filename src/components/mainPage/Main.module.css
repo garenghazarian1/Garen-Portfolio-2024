@@ -333,13 +333,6 @@
   transition: all 0.3s ease;
 }
 
-/* .container3:hover {
-  border-radius: 50% 10% 50% 10%;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-  transform: scale(1.05);
-  background: rgba(255, 217, 0, 0.4);
-} */
-
 .child3 {
   display: flex;
   justify-content: center;
