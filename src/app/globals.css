@@ -5,53 +5,96 @@
 /* Color Variables */
 :root {
   /* globals */
-  --nav-bg-color: rgb(192, 192, 70);
+  --nav-bg-color: #c0c046;
   --nav-text-color: white;
   --swiper-button-color: #ffffff;
-  --swiper-button-bg: rgba(0, 0, 0, 0.5);
-  --swiper-button-bg-hover: rgba(0, 0, 0, 0.8);
-  --swiper-progress-fill: rgb(213, 235, 15);
-  --swiper-bullet-bg: rgb(208, 243, 112);
-  --swiper-bullet-active-bg: rgb(139, 160, 19);
-  /* mainPage */
-  --background-color: rgb(0, 0, 0);
-  --child-text-color: rgba(255, 255, 255, 0.705);
-  --hover-bg-color: #cfadad;
-  --hover-text-color: rgba(255, 255, 255, 0.829);
-  --hover-shadow-color: rgba(0, 0, 0, 0.17);
-  --child-project-bg: rgba(0, 0, 0, 0.1);
-  --child-hover-font-size: 1rem;
-  --child-hover-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  --gradient1: linear-gradient(
-    120deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(192, 192, 70, 1) 100%
+  --swiper-button-bg: #00000080;
+  --swiper-button-bg-hover: #000000cc;
+  --swiper-progress-fill: #d5eb0f;
+  --swiper-bullet-bg: #d0f370;
+  --swiper-bullet-active-bg: #8ba013;
+
+  /* ------------------- */
+  --main-page-background-color: #0d1117;
+  --main-page-gradient: linear-gradient(
+    45deg,
+    #ffcc00c5,
+    #ff9900b3,
+    #d4af37b3,
+    #c5b358,
+    #d2c102bb,
+    #b8870b62,
+    #78600275,
+    #aa6c3982,
+    #e1c06e7b
   );
-  --gradient2: linear-gradient(
-    210deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgb(238, 209, 63) 100%
-  );
-  --gradient3: linear-gradient(
-    70deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 215, 0, 1) 100%
-  );
-  --gradient4: linear-gradient(
-    300deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(229, 190, 1, 1) 100%
+  --el-gradient: conic-gradient(
+    from 180deg at 50% 70%,
+    #fafafa 0deg,
+    #eec32d 72deg,
+    #ec4b4b 144deg,
+    #709ab9 216deg,
+    #4dffbf 288deg,
+    #fafafa 1turn
   );
 
+  --elA-gradient: conic-gradient(
+    from 180deg at 50% 70%,
+    hsla(0, 0%, 98%, 1) 0deg,
+    #eec32d 72deg,
+    #ec4b4b 144deg,
+    #709ab9 216deg,
+    #4dffbf 288deg,
+    hsla(0, 0%, 98%, 1) 1turn
+  );
+
+  --mask-gradient: radial-gradient(
+        circle at 50% 50%,
+        white 2px,
+        transparent 2.5px
+      )
+      50% 50% / 20px 20px,
+    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px
+      256px;
+
+  --container1-border-color: gold;
+  --container1-box-shadow: 0 0 20px #ffd70080;
+  /* ------------- */
+  --child-text-color: #ffffff;
+  --primary-glow: #ffcc00cc;
+  --secondary-glow: #ff990099;
+  --gradient-colors: linear-gradient(
+    45deg,
+    #ffcc00,
+    #ff9900,
+    #d4af37,
+    #b8860b,
+    #aa6c39
+  );
+  /* ---------------- */
+  /* mainPage */
+  --background-color: #000000;
+  --child-text-color: #ffffffb4;
+  --hover-bg-color: #caab0f;
+  --hover-text-color: #ffffffd3;
+  --hover-shadow-color: #0000002b;
+  --child-project-bg: #0000001a;
+  --child-hover-font-size: 1rem;
+  --child-hover-shadow: 0 5px 15px #00000033;
+  --box-shadow: 0 2px 5px #0000001a;
+  --gradient1: linear-gradient(120deg, #000000 0%, #c0c046 100%);
+  --gradient2: linear-gradient(210deg, #000000 0%, #eed13f 100%);
+  --gradient3: linear-gradient(70deg, #000000 0%, #ffd700 100%);
+  --gradient4: linear-gradient(300deg, #000000 0%, #e5be01 100%);
+
   /* contactPage */
-  --contact-bg: rgb(0, 0, 0);
-  --contact-container-bg: rgb(24, 24, 24);
-  --contact-header-color: rgb(212, 175, 55);
-  --contact-text-color: rgb(192, 192, 192);
-  --contact-link-color: rgb(255, 215, 0);
-  --contact-link-hover: rgb(218, 165, 32);
-  --contact-map-bg: rgba(192, 192, 192, 0.1);
+  --contact-bg: #000000;
+  --contact-container-bg: #181818;
+  --contact-header-color: #d4af37;
+  --contact-text-color: #c0c0c0;
+  --contact-link-color: #ffd700;
+  --contact-link-hover: #daa520;
+  --contact-map-bg: #c0c0c01a;
 
   /* Qualifications Page Colors */
   --qualifications-bg-color: #1a1a1a; /* Dark background */
@@ -76,56 +119,48 @@
   --button-text-color: #ffffff; /* White */
 
   /* MySlide */
-  --container-bg-gradient: linear-gradient(
-    120deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(192, 192, 70, 1) 100%
-  );
-  --swiper-slide-bg-gradient: linear-gradient(
-    210deg,
-    rgb(255, 255, 255) 0%,
-    rgb(238, 209, 63) 100%
-  );
-  --swiper-slide-text-h-color: rgb(192, 192, 70);
-  --swiper-slide-text-h-bg: rgba(0, 0, 0, 0.678);
-  --swiper-slide-text-p-color: rgb(98, 104, 46);
-  --swiper-slide-text-p-color-small: rgb(16, 68, 3);
+  --container-bg-gradient: linear-gradient(120deg, #000000 0%, #c0c046 100%);
+  --swiper-slide-bg-gradient: linear-gradient(210deg, #ffffff 0%, #eed13f 100%);
+  --swiper-slide-text-h-color: #c0c046;
+  --swiper-slide-text-h-bg: #000000ad;
+  --swiper-slide-text-p-color: #62682e;
+  --swiper-slide-text-p-color-small: #104403;
 
   /* FOOTER */
   --background-color-goldenrod: goldenrod;
   --color-goldenrod-dark: #daa520;
   --color-goldenrod-light: #ffd700;
-  --text-shadow-dark: rgba(0, 0, 0, 0.3);
-  --text-shadow-light: rgba(0, 0, 0, 0.4);
-  --infoA-background: rgb(110, 110, 33);
+  --text-shadow-dark: #0000004d;
+  --text-shadow-light: #00000066;
+  --infoA-background: #6e6e21;
   --infoA-color: white;
-  --box-shadow-initial: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --box-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.2);
-  --box-shadow-active: 0 5px 10px rgba(0, 0, 0, 0.2);
+  --box-shadow-initial: 0 4px 6px #0000001a;
+  --box-shadow-hover: 0 10px 15px #00000033;
+  --box-shadow-active: 0 5px 10px #00000033;
 
   /* ABOUT ME */
 
-  --profile-container-bg: rgb(35, 46, 6);
-  --swiper-slide1-bg: rgba(255, 217, 0, 0.7); /* Gold */
-  --swiper-slide2-bg: rgba(209, 174, 49, 0.7); /* Dark Gold */
-  --swiper-slide3-bg: rgba(255, 183, 0, 0.7); /* Bright Gold */
+  --profile-container-bg: #232e06;
+  --swiper-slide1-bg: #ffd900b3; /* Gold */
+  --swiper-slide2-bg: #d1ae31b3; /* Dark Gold */
+  --swiper-slide3-bg: #ffb700b3; /* Bright Gold */
   --info-h1-color: #444;
-  --info-h1-text-shadow: rgba(0, 0, 0, 0.3);
+  --info-h1-text-shadow: #0000004d;
 
   /* BMI Calculator Colors */
-  --bmi-container-bg: rgb(35, 46, 6); /* Dark background */
-  --bmi-title-color: rgb(255, 255, 255); /* White text */
-  --bmi-label-color: rgb(255, 255, 255); /* White text */
-  --bmi-input-bg: rgb(24, 24, 24); /* Darker background for input */
-  --bmi-input-border: rgb(192, 192, 70); /* Yellow border */
-  --bmi-input-text: rgb(192, 192, 192); /* Light grey text */
-  --bmi-button-bg: rgb(192, 192, 70); /* Yellow button */
-  --bmi-button-text: rgb(0, 0, 0); /* Black text on button */
-  --bmi-button-hover-bg: rgb(255, 215, 0); /* Lighter yellow button on hover */
-  --bmi-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
-  --bmi-box-shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
-  --bmi-result-text: rgb(192, 192, 192); /* Light grey result text */
-  --bmi-result-value: rgb(255, 255, 255); /* White result value */
+  --bmi-container-bg: #232e06; /* Dark background */
+  --bmi-title-color: #ffffff; /* White text */
+  --bmi-label-color: #ffffff; /* White text */
+  --bmi-input-bg: #181818; /* Darker background for input */
+  --bmi-input-border: #c0c046; /* Yellow border */
+  --bmi-input-text: #c0c0c0; /* Light grey text */
+  --bmi-button-bg: #c0c046; /* Yellow button */
+  --bmi-button-text: #000000; /* Black text on button */
+  --bmi-button-hover-bg: #ffd700; /* Lighter yellow button on hover */
+  --bmi-box-shadow: 0 2px 5px #0000001a; /* Box shadow */
+  --bmi-box-shadow-hover: 0 10px 15px #00000033; /* Box shadow on hover */
+  --bmi-result-text: #c0c0c0; /* Light grey result text */
+  --bmi-result-value: #ffffff; /* White result value */
 }
 
 * {
