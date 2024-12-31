@@ -48,7 +48,7 @@
 .container {
   position: fixed;
   top: 8%;
-  left: 8%;
+  right: 8%;
   width: 4rem;
   height: 4rem;
   display: flex;
