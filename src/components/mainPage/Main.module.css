@@ -100,7 +100,8 @@
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
-  color: #ffffff;
+  color: #f6e58d;
+
   background: rgba(47, 44, 66, 0.85);
   border-radius: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
@@ -118,9 +119,37 @@
 .child4:hover {
   background: linear-gradient(135deg, #928dab, #746fa3);
   color: black;
-
   transform: scale(1.1) translateZ(70px);
   box-shadow: 0 0 20px rgba(146, 141, 171, 0.8);
+}
+
+/* Focus State */
+.child1ALink:focus,
+.child1BLink:focus,
+.child2ALink:focus,
+.child2BLink:focus,
+.child2CLink:focus,
+.child3:focus,
+.child4:focus {
+  outline: none; /* Remove browser's default focus ring */
+  background: linear-gradient(135deg, #746fa3, #928dab);
+  color: rgb(255, 255, 255);
+  transform: scale(1.05) translateZ(50px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+/* Active State */
+.child1ALink:active,
+.child1BLink:active,
+.child2ALink:active,
+.child2BLink:active,
+.child2CLink:active,
+.child3:active,
+.child4:active {
+  background: linear-gradient(135deg, #6e5b9e, #8b7fb5);
+  color: #ffffff;
+  transform: scale(0.95) translateZ(30px);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 /* Fantastic Glow Effect on Hover */
