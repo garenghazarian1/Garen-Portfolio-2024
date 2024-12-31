@@ -17,19 +17,17 @@ export default function LangBox() {
   return (
     <div className={styles.container} onClick={toggleDropdown}>
       <div className={styles.dropdown}>
-        <div className={`${styles.menu} ${isOpen ? "active" : ""}`}>
-          <div
-            className={styles.option}
-            onClick={() => handleLanguageChange("en")}
-          >
-            EN
-          </div>
-          <div
-            className={styles.option}
-            onClick={() => handleLanguageChange("de")}
-          >
-            DE
-          </div>
+        <div
+          className={styles.option}
+          onClick={() => handleLanguageChange("en")}
+        >
+          EN
+        </div>
+        <div
+          className={styles.option}
+          onClick={() => handleLanguageChange("de")}
+        >
+          DE
         </div>
       </div>
     </div>

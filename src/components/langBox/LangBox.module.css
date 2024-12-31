@@ -1,5 +1,5 @@
 /* LangBox.module.css */
-.container {
+/* .container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,7 +21,7 @@
 
 .container:hover {
   background-color: #000000;
-  box-shadow: 0 0px 40px 12px rgb(0, 0, 0);
+  box-shadow: 0 0px 40px px rgb(0, 0, 0);
 }
 
 .option {
@@ -42,4 +42,77 @@
 
 .option:active {
   background-color: #7d8f04;
+} */
+
+/* Main Container */
+.container {
+  position: fixed;
+  top: 8%;
+  left: 8%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    #928dab,
+    #746fa3
+  ); /* Gradient for modern look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+}
+
+/* Hover Effect */
+.container:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 40px rgba(146, 141, 171, 0.8);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Arrange options vertically */
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden; /* Ensures options stay inside the round container */
+}
+
+/* Language Options */
+.option {
+  width: 100%; /* Occupy full width of the container */
+  height: 50%; /* Each language option occupies 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: rgba(47, 44, 66, 0.85);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Option Hover and Focus */
+.option:hover,
+.option:focus {
+  background: linear-gradient(135deg, #746fa3, #928dab); /* Reverse gradient */
+  box-shadow: 0 0 15px rgba(146, 141, 171, 0.8);
+  transform: scale(1.05);
+}
+
+/* Option Active State */
+.option:active {
+  background: linear-gradient(135deg, #5c5703, #7d8f04);
+  transform: scale(0.95); /* Simulate press effect */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
