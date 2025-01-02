@@ -63,6 +63,37 @@ export default function MyProjects() {
       </div>
 
       <div className={styles.projectPreview}>
+        <h2 className={styles.h2}>
+          Interactive Music and Video Platform for Vartan Ghazarian
+        </h2>
+
+        <Link
+          href="https://garenghazarian1.github.io/Vartan-/"
+          className={styles.h2}
+          target="_blank"
+        >
+          CLick here to open the link
+        </Link>
+        <div className={styles.iframeContainer}>
+          <iframe
+            src="https://garenghazarian1.github.io/Vartan-/"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        <p className={styles.p}>
+          Project Overview: Developed an immersive web platform for Vartan
+          Ghazarian, a celebrated artist, to showcase his musical and video
+          content. The website features a dynamic user interface with a modern
+          design that includes a full-screen carousel, dedicated music and video
+          sections, and interactive elements such as contact forms and social
+          media integration.
+        </p>
+      </div>
+
+      <div className={styles.projectPreview}>
         <h2 className={styles.h2}>Game Interface</h2>
 
         <Link
