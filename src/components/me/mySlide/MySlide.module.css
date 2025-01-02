@@ -156,7 +156,8 @@
   }
 
   .text {
-    font-size: 0.7rem; /* Reduce text size */
+    font-size: 0.7rem;
+    max-width: 95%;
   }
 }
 
@@ -166,6 +167,8 @@
   }
 
   .text {
-    font-size: 0.7rem; /* Further reduce text size */
+    font-size: 0.7rem;
+    max-width: 95%;
+    /* Further reduce text size */
   }
 }
