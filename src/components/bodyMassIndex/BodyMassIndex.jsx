@@ -66,7 +66,7 @@ export default function BodyMassIndex() {
           The BMI ranges are based on the effect excess body fat has on disease
           and death.
         </p>
-        <form onSubmit={handleSubmit}>
+        <form className={styles.form} onSubmit={handleSubmit}>
           <div className={styles.formGroup}>
             <label className={styles.label}>
               Weight (kg):
