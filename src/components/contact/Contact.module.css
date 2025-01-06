@@ -1,9 +1,17 @@
+/* Contact.module.css */
+
+/* Main Container */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
   padding: 2rem;
-  background-color: var(--contact-bg);
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  overflow: hidden;
 }
 
 .flex {
@@ -11,50 +19,114 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50rem;
   width: 100%;
-  background-color: var(--contact-container-bg);
-  box-shadow: var(--box-shadow);
-  padding: 4rem;
-  border-radius: 0.5rem;
+  max-width: 1200px;
+  gap: 2rem;
 }
 
 .section {
   width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  background: rgba(31, 28, 44, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(146, 141, 171, 0.8);
 }
 
 .sectionHeader {
   font-size: 2rem;
-  margin-bottom: 2rem;
-  color: var(--contact-header-color);
+  margin-bottom: 1.5rem;
+  color: #f6e58d;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .p {
   font-size: 1rem;
-  color: var(--contact-text-color);
-  margin: 0.5rem 0;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  color: #dcdde1;
 }
 
 .a {
-  color: var(--contact-link-color);
+  color: #8df6a7;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .a:hover {
-  text-decoration: underline;
-  color: var(--contact-link-hover);
+  color: #f6e58d;
 }
 
 .mapContainer {
   margin-top: 2rem;
-  width: 100%;
-  height: 300px;
-  background-color: var(--contact-map-bg);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .map {
   width: 100%;
-  height: 100%;
+  height: 300px;
   border: none;
-  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.map:hover {
+  transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 1.5rem;
+  }
+
+  .sectionHeader {
+    font-size: 1.5rem;
+  }
+
+  .map {
+    height: 250px;
+  }
+
+  .p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1rem;
+  }
+
+  .sectionHeader {
+    font-size: 1.2rem;
+  }
+
+  .map {
+    height: 200px;
+  }
+
+  .p {
+    font-size: 0.8rem;
+  }
 }
