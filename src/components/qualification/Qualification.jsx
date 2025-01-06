@@ -112,6 +112,7 @@ export default function Qualification() {
                   alt={cert.title}
                   width={250}
                   height={250}
+                  priority
                   className={styles.certImage}
                 />
               </div>
