@@ -1,67 +1,136 @@
+/* Qualification.module.css */
+
 .container {
-  width: 100vw;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  padding: 3rem 1rem;
+  overflow: hidden;
 }
 
 .qualifications {
-  padding: 2rem;
-  background-color: var(--qualifications-bg-color);
-  color: var(--qualifications-text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f6e58d;
   text-align: center;
-  font-size: 2rem;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
-  color: var(--qualifications-text-color);
 }
 
 .certifications {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .certificationCard {
-  background-color: var(--qualifications-card-bg-color);
-  border: 1px solid var(--qualifications-card-border-color);
-  border-radius: 12px;
-  padding: 1.5rem;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  justify-content: center;
+  background: rgba(47, 44, 66, 0.85);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.certificationCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(146, 141, 171, 0.8);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.certImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.certImage:hover {
+  transform: scale(1.1);
 }
 
 .title {
   font-size: 1.5rem;
-  color: var(--qualifications-text-color);
-  margin-bottom: 0.5rem;
-}
-
-.issuer,
-.date,
-.description {
-  color: var(--qualifications-muted-text-color);
-  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin: 0.5rem 0;
 }
 
 .issuer {
-  font-weight: bold;
+  font-size: 1rem;
+  color: #dcdde1;
+  text-align: center;
+  margin: 0.3rem 0;
 }
 
 .date {
-  font-style: italic;
+  font-size: 0.9rem;
+  color: #8c8c8c;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
-.certImage {
-  width: 250px;
-  height: auto;
+.description {
+  font-size: 1rem;
+  color: #dcdde1;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem;
+  }
+
+  .certifications {
+    grid-template-columns: 1fr;
+  }
+
+  .certificationCard {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .issuer {
+    font-size: 0.9rem;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
 }
