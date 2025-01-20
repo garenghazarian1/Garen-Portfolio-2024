@@ -69,7 +69,7 @@ export default function MyProjects() {
           </h2>
 
           <Link
-            href="https://garenghazarian1.github.io/Vartan-/"
+            href="https://vartanghazarian.com/"
             className={styles.h2}
             target="_blank"
           >
@@ -77,7 +77,7 @@ export default function MyProjects() {
           </Link>
           <div className={styles.iframeContainer}>
             <iframe
-              src="https://garenghazarian1.github.io/Vartan-/"
+              src="https://vartanghazarian.com/"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
