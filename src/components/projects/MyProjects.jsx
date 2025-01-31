@@ -13,10 +13,10 @@ export default function MyProjects() {
           <h2 className={styles.h2}>KEN Beauty Center: Project Overview</h2>
           <Link
             href="https://kenbeautysalon.com/"
-            className={styles.h2}
+            className={styles.link}
             target="_blank"
           >
-            CLick here to open the link
+            🔗 Click here to open the Link
           </Link>
           <div className={styles.iframeContainer}>
             <iframe
@@ -63,42 +63,77 @@ export default function MyProjects() {
           </p>
         </div>
 
+        {/* ------------------------------------ */}
+
         <div className={styles.projectPreview}>
           <h2 className={styles.h2}>
-            Eurojackpot Number Analyzer A Smart Approach to Winning!
+            🎰 Eurojackpot Number Analyzer &ndash; A Smart Approach to Winning!
           </h2>
 
+          {/* 🔗 Clickable External Link */}
           <Link
             href="https://garenghazarian1.github.io/Eurojackpot/"
-            className={styles.h2}
+            className={styles.link} // Corrected className
             target="_blank"
+            rel="noopener noreferrer"
           >
-            CLick here to open the link
+            🔗 Click here to open the Link
           </Link>
+
+          {/* 🖼️ Responsive iFrame */}
           <div className={styles.iframeContainer}>
             <iframe
               src="https://garenghazarian1.github.io/Eurojackpot/"
               frameBorder="0"
+              className={styles.iframe} // Proper styling
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              title="Eurojackpot Number Analyzer"
             ></iframe>
           </div>
 
+          {/* 📜 Project Description */}
           <p className={styles.p}>
-            Hey everyone! 👋 I've been working on an intelligent Eurojackpot
-            number analyzer that helps analyze past draw results, track number
-            frequencies, and generate strategic number combinations based on
-            different methods: ✅ 🔥 Hot Numbers – Picks the most frequently
-            drawn numbers. ✅ ❄️ Cold Numbers – Selects numbers that haven’t
-            appeared much. ✅ 🎯 Balanced Strategy – A mix of both hot and cold
-            numbers with additional balancing rules. 💡 Features of the App: 🔢
-            Dynamic Input Handling – No more static text! Easily enter and edit
-            past draws using intuitive input fields. 📊 Visual Frequency Charts
-            – Analyzes number trends and displays them in an interactive chart.
-            🎲 Smart Combination Generator – Uses real-time calculations to
-            predict number patterns.
+            Hey everyone! 👋 I&#39;ve been working on an{" "}
+            <strong>intelligent Eurojackpot number analyzer</strong> that helps
+            analyze past draw results, track number frequencies, and generate{" "}
+            <strong>strategic number combinations</strong> based on different
+            methods:
           </p>
+
+          <ul className={styles.list}>
+            <li className={styles.listItem}>
+              ✅ <strong>🔥 Hot Numbers</strong> &ndash; Picks the most
+              frequently drawn numbers.
+            </li>
+            <li className={styles.listItem}>
+              ✅ <strong>❄️ Cold Numbers</strong> &ndash; Selects numbers that
+              haven&#39;t appeared much.
+            </li>
+            <li className={styles.listItem}>
+              ✅ <strong>🎯 Balanced Strategy</strong> &ndash; A mix of both hot
+              and cold numbers with additional balancing rules.
+            </li>
+          </ul>
+
+          <h3 className={styles.h3}>💡 Features of the App:</h3>
+          <ul className={styles.list}>
+            <li className={styles.listItem}>
+              🔢 <strong>Dynamic Input Handling</strong> &ndash; No more static
+              text! Easily enter and edit past draws using intuitive input
+              fields.
+            </li>
+            <li className={styles.listItem}>
+              📊 <strong>Visual Frequency Charts</strong> &ndash; Analyzes
+              number trends and displays them in an interactive chart.
+            </li>
+            <li className={styles.listItem}>
+              🎲 <strong>Smart Combination Generator</strong> &ndash; Uses
+              real-time calculations to predict number patterns.
+            </li>
+          </ul>
         </div>
+        {/* ------------------------------------ */}
 
         <div className={styles.projectPreview}>
           <h2 className={styles.h2}>
@@ -107,10 +142,10 @@ export default function MyProjects() {
 
           <Link
             href="https://vartanghazarian.com/"
-            className={styles.h2}
+            className={styles.link}
             target="_blank"
           >
-            CLick here to open the link
+            🔗 Click here to open the Link
           </Link>
           <div className={styles.iframeContainer}>
             <iframe
@@ -130,16 +165,17 @@ export default function MyProjects() {
             social media integration.
           </p>
         </div>
+        {/* ------------------------------------ */}
 
         <div className={styles.projectPreview}>
           <h2 className={styles.h2}>Game Interface</h2>
 
           <Link
             href="https://garenghazarian1.github.io/Kostas-Garen-group-project/#"
-            className={styles.h2}
+            className={styles.link}
             target="_blank"
           >
-            CLick here to open the link
+            🔗 Click here to open the Link
           </Link>
           <div className={styles.iframeContainer}>
             <iframe
@@ -159,15 +195,16 @@ export default function MyProjects() {
             seamless gameplay experience.
           </p>
         </div>
+        {/* ------------------------------------ */}
 
         <div className={styles.projectPreview}>
           <h2 className={styles.h2}>NIght moon</h2>
           <Link
             href="https://garenghazarian1.github.io/night-moon/#"
-            className={styles.h2}
+            className={styles.link}
             target="_blank"
           >
-            CLick here to open the link
+            🔗 Click here to open the Link
           </Link>
           <div className={styles.iframeContainer}>
             <iframe
@@ -183,15 +220,15 @@ export default function MyProjects() {
             effect.
           </p>
         </div>
-
+        {/* ------------------------------------ */}
         <div className={styles.projectPreview}>
           <h2 className={styles.h2}>Portfolio</h2>
           <Link
             href="https://garenghazarian1.github.io/portfolio-28-06-2023/index.html"
-            className={styles.h2}
+            className={styles.link}
             target="_blank"
           >
-            CLick here to open the link
+            🔗 Click here to open the Link
           </Link>
           <div className={styles.iframeContainer}>
             <iframe
