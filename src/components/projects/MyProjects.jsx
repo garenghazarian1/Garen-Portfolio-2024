@@ -65,6 +65,43 @@ export default function MyProjects() {
 
         <div className={styles.projectPreview}>
           <h2 className={styles.h2}>
+            Eurojackpot Number Analyzer A Smart Approach to Winning!
+          </h2>
+
+          <Link
+            href="https://garenghazarian1.github.io/Eurojackpot/"
+            className={styles.h2}
+            target="_blank"
+          >
+            CLick here to open the link
+          </Link>
+          <div className={styles.iframeContainer}>
+            <iframe
+              src="https://garenghazarian1.github.io/Eurojackpot/"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          <p className={styles.p}>
+            Hey everyone! 👋 I've been working on an intelligent Eurojackpot
+            number analyzer that helps analyze past draw results, track number
+            frequencies, and generate strategic number combinations based on
+            different methods: ✅ 🔥 Hot Numbers – Picks the most frequently
+            drawn numbers. ✅ ❄️ Cold Numbers – Selects numbers that haven’t
+            appeared much. ✅ 🎯 Balanced Strategy – A mix of both hot and cold
+            numbers with additional balancing rules. 💡 Features of the App: 🔢
+            Dynamic Input Handling – No more static text! Easily enter and edit
+            past draws using intuitive input fields. 📊 Visual Frequency Charts
+            – Analyzes number trends and displays them in an interactive chart.
+            🎲 Smart Combination Generator – Uses real-time calculations to
+            predict number patterns.
+          </p>
+        </div>
+
+        <div className={styles.projectPreview}>
+          <h2 className={styles.h2}>
             Interactive Music and Video Platform for Vartan Ghazarian
           </h2>
 
