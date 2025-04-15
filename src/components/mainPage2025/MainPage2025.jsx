@@ -302,39 +302,43 @@ export default function MainPage2025() {
       </motion.section>
       {/* page 007 */}
       <motion.section className={styles.section}>
-        <motion.h1 className={styles.animatedText} variants={itemVariants}>
-          {t("qrTitle")}
-        </motion.h1>
+        <div className={styles.content}>
+          <motion.h1 className={styles.animatedText} variants={itemVariants}>
+            {t("qrTitle")}
+          </motion.h1>
 
-        <motion.p className={styles.animateP} variants={itemVariants}>
-          {t("qrDesc")}
-        </motion.p>
-        <Link href="/projects/qrCode" className={styles.ultraButton}>
-          {t("qrBtn")}
-        </Link>
+          <motion.p className={styles.animateP} variants={itemVariants}>
+            {t("qrDesc")}
+          </motion.p>
+          <Link href="/projects/qrCode" className={styles.ultraButton}>
+            {t("qrBtn")}
+          </Link>
+        </div>
       </motion.section>
       {/* page 008 */}
       <motion.section className={styles.section}>
-        <motion.h1 className={styles.animatedText} variants={itemVariants}>
-          {t("bmiTitle")}
-        </motion.h1>
+        <div className={styles.content}>
+          <motion.h1 className={styles.animatedText} variants={itemVariants}>
+            {t("bmiTitle")}
+          </motion.h1>
 
-        <motion.p className={styles.animateP} variants={itemVariants}>
-          {t("bmiDesc")}
-        </motion.p>
+          <motion.p className={styles.animateP} variants={itemVariants}>
+            {t("bmiDesc")}
+          </motion.p>
 
-        <motion.ul className={styles.projectList}>
-          <motion.li variants={itemVariants}>{t("bmiFeature1")}</motion.li>
-          <motion.li variants={itemVariants}>{t("bmiFeature2")}</motion.li>
-          <motion.li variants={itemVariants}>{t("bmiFeature3")}</motion.li>
-        </motion.ul>
+          <motion.ul className={styles.projectList}>
+            <motion.li variants={itemVariants}>{t("bmiFeature1")}</motion.li>
+            <motion.li variants={itemVariants}>{t("bmiFeature2")}</motion.li>
+            <motion.li variants={itemVariants}>{t("bmiFeature3")}</motion.li>
+          </motion.ul>
 
-        <div className={styles.buttonGroup}>
-          <motion.div {...motionEffect} variants={itemVariants}>
-            <Link href="/projects/bmi" className={styles.ultraButton}>
-              {t("bmiBtn")}
-            </Link>
-          </motion.div>
+          <div className={styles.buttonGroup}>
+            <motion.div {...motionEffect} variants={itemVariants}>
+              <Link href="/projects/bmi" className={styles.ultraButton}>
+                {t("bmiBtn")}
+              </Link>
+            </motion.div>
+          </div>
         </div>
       </motion.section>
       {/* page 009 */}
@@ -367,6 +371,10 @@ export default function MainPage2025() {
               </Link>
             </motion.div>
           </div>
+
+          <Link href="/sitemap" className={styles.ultraButton}>
+            {t("sitemap")}
+          </Link>
         </div>
 
         <div className={styles.bgImage} />
