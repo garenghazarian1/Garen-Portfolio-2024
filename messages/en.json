@@ -139,5 +139,55 @@
     "header": "404",
     "subHeader": "Oops! Page not found.",
     "description": "The page you are looking for does not exist or has been moved."
+  },
+  "MainPage2025": {
+    "meet": "Meet Garen Ghazarian",
+    "intro": "A passionate Full-Stack Developer, Tech Enthusiast & Creative Thinker  transforming ideas into digital realities with clean code & bold design.",
+    "profileButton": "View Full Profile",
+
+    "spaceTitle": "My Personal Space",
+    "spaceDesc": "Explore my slides, photos, learn about me, and stay connected.",
+    "slides": "Slides",
+    "photos": "Photos",
+    "about": "About",
+    "follow": "Follow",
+
+    "journeyTitle": "Welcome to My Journey",
+    "journeyDesc": "Discover the path that shaped who I am today  from Belgium to Germany and beyond.",
+    "timelineBtn": "View My Timeline",
+
+    "natureTitle": "Serenity in Nature",
+    "natureDesc": "A glimpse into my world through visual memories. Click to see more.",
+    "galleryBtn": "View Gallery",
+
+    "connectTitle": "Let us Connect",
+    "connectDesc": "Whether you're looking to collaborate, hire, or just say hello I am always open to connect.",
+    "resumeEng": "Resume ENG",
+    "resumeFull": "Full Resume",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+
+    "projectsTitle": "My Projects Showcase",
+    "projectsDesc": "Dive into real client projects, smart tools, creative platforms, and experimental designs I've built from scratch.",
+    "ken": "KEN Beauty Center  Multi-store salon management platform with booking system, employee scheduling, service controls.",
+    "euro": "Eurojackpot Analyzer  Smart number generator & analyzer tool using Hot, Cold & Balanced strategies.",
+    "projectsBtn": "Explore All Projects",
+
+    "qrTitle": "Smart QR Code Generator",
+    "qrDesc": "Create customized QR codes within seconds! Control size, color, error protection, and export them in multiple formats like PNG, JPG, SVG, or even PDF  ready for print or digital use.",
+    "qrBtn": "Generate Your QR Code",
+
+    "bmiTitle": "BMI Calculator",
+    "bmiDesc": "Calculate your Body Mass Index (BMI) instantly. Enter your height and weight to find out your BMI score, health category, and get visual feedback with tips for improvement.",
+    "bmiFeature1": "Instant BMI Result: Auto calculation based on height & weight.",
+    "bmiFeature2": "Health Category: Underweight, Normal, Overweight or Obese with advice.",
+    "bmiFeature3": "Visual Illustration: Dynamic image based on your result.",
+    "bmiBtn": "Try BMI Calculator",
+
+    "qualTitle": "My Certifications & Qualifications",
+    "qualDesc": "Explore my certifications, academic background, language skills, and professional training journey that shaped my career path.",
+    "qual1": "Full-Stack Web & Software Developer  Trained at DCI Digital Career Institute, Germany.",
+    "qual2": "Testing Center for Professions  Web Development & Online Marketing Modules.",
+    "qualBtn": "View My Certifications"
   }
 }

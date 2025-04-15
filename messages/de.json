@@ -139,5 +139,55 @@
     "header": "404",
     "subHeader": "Hoppla! Seite nicht gefunden.",
     "description": "Die Seite, die Sie suchen, existiert nicht oder wurde verschoben."
+  },
+  "MainPage2025": {
+    "meet": "Lerne Garen Ghazarian kennen",
+    "intro": "Leidenschaftlicher Full-Stack-Entwickler, Technik-Enthusiast & kreativer Denker — ich verwandle Ideen in digitale Realität mit sauberem Code & mutigem Design.",
+    "profileButton": "Zum vollständigen Profil",
+
+    "spaceTitle": "Mein Persönlicher Bereich",
+    "spaceDesc": "Entdecke meine Präsentationen, Fotos, erfahre mehr über mich und bleibe in Kontakt.",
+    "slides": "Präsentationen",
+    "photos": "Fotos",
+    "about": "Über mich",
+    "follow": "Folgen",
+
+    "journeyTitle": "Willkommen auf meiner Reise",
+    "journeyDesc": "Erkunde meinen Weg von Belgien nach Deutschland und darüber hinaus.",
+    "timelineBtn": "Zeitleiste anzeigen",
+
+    "natureTitle": "Ruhe in der Natur",
+    "natureDesc": "Ein Einblick in meine Welt durch visuelle Erinnerungen. Klicke für mehr.",
+    "galleryBtn": "Galerie ansehen",
+
+    "connectTitle": "Lass uns verbinden",
+    "connectDesc": "Ob Zusammenarbeit, Jobanfrage oder einfach ein Hallo ich bin offen für Kontakte.",
+    "resumeEng": "Lebenslauf ENG",
+    "resumeFull": "Vollständiger Lebenslauf",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+
+    "projectsTitle": "Meine Projektübersicht",
+    "projectsDesc": "Echte Kundenprojekte, clevere Tools, kreative Plattformen und experimentelle Designs alles von Grund auf entwickelt.",
+    "ken": "KEN Beauty Center Plattform zur Verwaltung mehrerer Salons mit Buchungen, Mitarbeitereinsatzplanung und Services.",
+    "euro": "Eurojackpot Analysator Intelligenter Zahlen Generator & Analysator mit Hot-, Cold- und Balance-Strategien.",
+    "projectsBtn": "Alle Projekte erkunden",
+
+    "qrTitle": "Intelligenter QR-Code-Generator",
+    "qrDesc": "Erstelle individuelle QR-Codes in Sekundenschnelle! Passe Größe, Farbe, Fehlerkorrektur an und exportiere als PNG, JPG, SVG oder PDF.",
+    "qrBtn": "QR-Code erstellen",
+
+    "bmiTitle": "BMI-Rechner",
+    "bmiDesc": "Berechne sofort deinen Body-Mass-Index (BMI). Gib Größe und Gewicht ein und erhalte dein Ergebnis samt Kategorie und Tipps.",
+    "bmiFeature1": "Sofortiges Ergebnis: Automatische Berechnung basierend auf Größe & Gewicht.",
+    "bmiFeature2": "Gesundheitskategorie: Untergewicht, Normalgewicht, Übergewicht oder Adipositas mit Ratschlägen.",
+    "bmiFeature3": "Visuelle Darstellung: Dynamisches Bild entsprechend deinem Ergebnis.",
+    "bmiBtn": "BMI-Rechner ausprobieren",
+
+    "qualTitle": "Meine Zertifikate & Qualifikationen",
+    "qualDesc": "Entdecke meine Zertifikate, akademischen Abschlüsse, Sprachkenntnisse und berufliche Ausbildung.",
+    "qual1": "Full-Stack Web- & Softwareentwickler Ausbildung am DCI Digital Career Institute, Deutschland.",
+    "qual2": "Testzentrum für Berufe Webentwicklung & Online-Marketing Module.",
+    "qualBtn": "Meine Zertifikate anzeigen"
   }
 }
