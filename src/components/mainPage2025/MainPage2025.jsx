@@ -87,7 +87,7 @@ export default function MainPage2025() {
       {/* <div className={styles.earthBackground}>
         <Earth3D />
       </div> */}
-      {/* Section 4 */}
+      {/* page 001 */}
       <motion.section
         className={styles.section}
         variants={sectionVariants}
@@ -125,7 +125,7 @@ export default function MainPage2025() {
           // style={{ backgroundImage: "url(/ao.png)" }}
         />
       </motion.section>
-      {/* Section 1 */}
+      {/* page 002 */}
       <motion.section
         ref={vantaRef}
         className={styles.section}
@@ -162,7 +162,7 @@ export default function MainPage2025() {
         />
       </motion.section>
       b1
-      {/* Section 2 */}
+      {/* page 003 */}
       <motion.section
         className={styles.section}
         variants={sectionVariants}
@@ -190,7 +190,7 @@ export default function MainPage2025() {
           style={{ backgroundImage: "url(/003.png)" }}
         />
       </motion.section>
-      {/* Section 3 */}
+      {/* page 004 */}
       <motion.section
         className={styles.section}
         variants={sectionVariants}
@@ -218,7 +218,7 @@ export default function MainPage2025() {
           style={{ backgroundImage: "url(/g02.jpg)" }}
         />
       </motion.section>
-      {/* Section 5 */}
+      {/* page 005 */}
       <motion.section
         className={styles.section}
         variants={sectionVariants}
@@ -271,7 +271,7 @@ export default function MainPage2025() {
         />
       </motion.section>
       {/* ---------------------- */}
-      {/* section 6 */}
+      {/* page 006 */}
       {/* -------- */}
       <motion.section className={styles.section}>
         <div className={styles.content}>
@@ -300,6 +300,7 @@ export default function MainPage2025() {
 
         <div className={styles.bgImage} />
       </motion.section>
+      {/* page 007 */}
       <motion.section className={styles.section}>
         <motion.h1 className={styles.animatedText} variants={itemVariants}>
           {t("qrTitle")}
@@ -312,6 +313,7 @@ export default function MainPage2025() {
           {t("qrBtn")}
         </Link>
       </motion.section>
+      {/* page 008 */}
       <motion.section className={styles.section}>
         <motion.h1 className={styles.animatedText} variants={itemVariants}>
           {t("bmiTitle")}
@@ -335,6 +337,7 @@ export default function MainPage2025() {
           </motion.div>
         </div>
       </motion.section>
+      {/* page 009 */}
       <motion.section
         className={styles.section}
         variants={sectionVariants}
