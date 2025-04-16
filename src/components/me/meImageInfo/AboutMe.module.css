@@ -1,4 +1,4 @@
-/* Main Profile Container */
+/* 
 .profileContainer {
   width: 100%;
   height: 100vh;
@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-/* Swiper Styling */
+
 .imageSlider {
   width: 90%;
   height: 80%;
@@ -49,7 +49,7 @@
   box-shadow: 0 10px 20px rgba(146, 141, 171, 0.7);
 }
 
-/* Text Styling */
+
 .infoH1 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -65,7 +65,7 @@
   max-width: 80%;
 }
 
-/* Pagination Styling */
+
 .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 0.7;
@@ -76,7 +76,7 @@
   opacity: 1;
 }
 
-/* Hover Effects for Slides */
+
 .swiperSlide1:hover::after,
 .swiperSlide2:hover::after,
 .swiperSlide3:hover::after {
@@ -111,7 +111,7 @@
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .imageSlider {
     width: 95%;
@@ -156,5 +156,73 @@
   .swiperSlide2 p,
   .swiperSlide3 p {
     font-size: 0.8rem;
+  }
+} */
+
+.profileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  color: #e4dede;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.imageSlider {
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 15px;
+  text-align: center;
+  padding: 2rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  height: auto;
+}
+
+.swiperSlide1,
+.swiperSlide2,
+.swiperSlide3 {
+  composes: swiper-slide;
+}
+
+.infoH1 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .infoH1 {
+    font-size: 1.2rem;
+  }
+
+  .swiper-slide {
+    padding: 1rem;
+  }
+
+  .imageSlider {
+    padding: 0.5rem;
   }
 }

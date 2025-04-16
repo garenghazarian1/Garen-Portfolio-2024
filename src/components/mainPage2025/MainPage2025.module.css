@@ -241,17 +241,6 @@
   overflow: hidden;
 }
 
-.earthBackground {
-  position: absolute;
-  top: 0;
-  right: 0;
-  min-width: 400px;
-  min-height: 400px;
-  z-index: 1;
-  opacity: 0.8;
-  pointer-events: none;
-}
-
 .projectListWrapper {
   margin-top: 1rem;
   display: flex;

@@ -8,8 +8,7 @@ import Loading from "@/components/loading/Loading";
 import styles from "./MainPage2025.module.css";
 import Camera3D from "../Camera3D/Camera3D";
 import { useTranslations } from "next-intl";
-
-// import Earth3D from "../Earth3D/Earth3D";
+import PhotoFrame3D from "../photoFrame/PhotoFrame3D";
 
 export default function MainPage2025() {
   const [isLoading, setIsLoading] = useState(true);
@@ -84,9 +83,7 @@ export default function MainPage2025() {
     <div className={styles.pageWrapper}>
       <div ref={cursorRef} className={styles.cursorGlow}></div>
       {/* 🌍 Floating Earth3D as background corner */}
-      {/* <div className={styles.earthBackground}>
-        <Earth3D />
-      </div> */}
+      {/**/}
       {/* page 001 */}
       <motion.section
         className={styles.section}
@@ -379,6 +376,15 @@ export default function MainPage2025() {
 
         <div className={styles.bgImage} />
       </motion.section>
+      {/* <motion.section
+        className={styles.section}
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <PhotoFrame3D />
+      </motion.section> */}
     </div>
   );
 }
