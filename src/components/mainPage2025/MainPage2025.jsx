@@ -8,7 +8,7 @@ import Loading from "@/components/loading/Loading";
 import styles from "./MainPage2025.module.css";
 import Camera3D from "../Camera3D/Camera3D";
 import { useTranslations } from "next-intl";
-import PhotoFrame3D from "../photoFrame/PhotoFrame3D";
+// import PhotoFrame3D from "../photoFrame/PhotoFrame3D";
 
 export default function MainPage2025() {
   const [isLoading, setIsLoading] = useState(true);
@@ -110,7 +110,7 @@ export default function MainPage2025() {
 
           <div className={styles.buttonGroup}>
             <motion.div {...motionEffect} variants={itemVariants}>
-              <Link href="/me/about" className={styles.ultraButton}>
+              <Link href="/me/" className={styles.ultraButton}>
                 {t("profileButton")}
               </Link>
             </motion.div>
@@ -122,7 +122,7 @@ export default function MainPage2025() {
           // style={{ backgroundImage: "url(/ao.png)" }}
         />
       </motion.section>
-      {/* page 002 */}
+      {/* page 002 ------------------------------------------------------------------------------------*/}
       <motion.section
         ref={vantaRef}
         className={styles.section}

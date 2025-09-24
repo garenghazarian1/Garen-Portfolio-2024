@@ -28,6 +28,7 @@
     "react-dom": "^18",
     "react-email": "2.1.3",
     "react-parallax-tilt": "^1.7.291",
+    "react-xarrows": "^2.0.2",
     "resend": "^3.2.0",
     "swiper": "^11.1.3",
     "three": "^0.175.0",
