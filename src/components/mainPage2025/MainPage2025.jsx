@@ -115,6 +115,13 @@ export default function MainPage2025() {
               </Link>
             </motion.div>
           </div>
+          <div className={styles.buttonGroup}>
+            <motion.div {...motionEffect} variants={itemVariants}>
+              <Link href="/contact/" className={styles.ultraButton}>
+                {t("contactButton")}
+              </Link>
+            </motion.div>
+          </div>
         </div>
 
         <div

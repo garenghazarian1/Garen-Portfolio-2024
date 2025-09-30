@@ -161,6 +161,37 @@
   --bmi-box-shadow-hover: 0 10px 15px #00000033; /* Box shadow on hover */
   --bmi-result-text: #c0c0c0; /* Light grey result text */
   --bmi-result-value: #ffffff; /* White result value */
+
+  /* === Brand / Accent Colors ==================================================================== */
+  --brand: #053554;
+  --accent-1: #00ffff; /* Cyan */
+  --accent-2: #ff00ff; /* Magenta */
+  --bg-dark: #0a0a0a;
+
+  /* === Text Colors === */
+  --text-main: #ffffff;
+  --text-muted: #cfcfcf;
+
+  /* === Effects === */
+  --border-radius: 12px;
+  --blur-light: 4px;
+  --blur-strong: 6px;
+  --shadow-glow: 0 0 25px var(--accent-1);
+  --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  /* === Gradients === */
+  --gradient-accent: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  --gradient-accent-loop: linear-gradient(
+    90deg,
+    var(--accent-1),
+    var(--accent-2),
+    var(--accent-1)
+  );
+  --gradient-accent-reverse: linear-gradient(
+    135deg,
+    var(--accent-2),
+    var(--accent-1)
+  );
 }
 
 * {
