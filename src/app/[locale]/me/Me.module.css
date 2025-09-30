@@ -1,15 +1,18 @@
 /* Main Container */
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Add more space between elements */
+  gap: 2rem;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background: var(--bg-dark);
   padding: 3rem 2rem;
-  box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: var(--shadow-inset-strong); /* now from var */
+  position: relative;
+  overflow: hidden;
 }
 
 /* Individual Links */
@@ -17,21 +20,24 @@
 .child2,
 .child3,
 .child4 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40%;
   height: 40%;
-  background: rgba(31, 28, 44, 0.95);
-  color: #ffffff;
+  background: var(--card-gradient), var(--card-bg);
+  backdrop-filter: blur(var(--blur-strong));
+  color: var(--text-main);
   font-size: 1.3rem;
   font-weight: bold;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
   text-decoration: none;
   transition: all 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-strong);
   cursor: pointer;
+  overflow: hidden;
 }
 
 /* Hover Effects */
@@ -39,10 +45,10 @@
 .child2:hover,
 .child3:hover,
 .child4:hover {
-  background: linear-gradient(135deg, #928dab, #6a5eac);
-  color: black;
+  background: var(--gradient-accent);
+  color: var(--bg-dark);
   transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 30px rgba(146, 141, 171, 0.8);
+  box-shadow: 0 15px 35px var(--accent-1), 0 0 25px var(--accent-2);
 }
 
 /* Active Effects */
@@ -50,27 +56,21 @@
 .child2:active,
 .child3:active,
 .child4:active {
+  background: var(--gradient-accent-reverse);
   transform: translateY(0) scale(0.95);
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--shadow-inset-soft); /* from var */
 }
 
-/* Add Subtle Glow Effect */
+/* Glow */
 .child1:hover::after,
 .child2:hover::after,
 .child3:hover::after,
 .child4:hover::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 1rem;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.3) 10%,
-    transparent 70%
-  );
+  inset: 0;
+  border-radius: var(--border-radius);
+  background: var(--glow-radial);
   z-index: -1;
   animation: glowPulse 1.5s infinite;
 }
@@ -99,22 +99,23 @@
   .child2,
   .child3,
   .child4 {
-    /* width: 80%;
-    height: 120px; */
     font-size: 1.1rem;
+    width: 80%;
+    height: 20%;
   }
 }
 
 @media (max-width: 375px) {
   .container {
     padding: 5rem 0.8rem;
+    gap: 1.5rem;
   }
   .child1,
   .child2,
   .child3,
   .child4 {
-    /* width: 90%;
-    height: 100px; */
     font-size: 1rem;
+    width: 90%;
+    height: 20%;
   }
 }

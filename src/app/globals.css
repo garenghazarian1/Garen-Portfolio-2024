@@ -162,7 +162,7 @@
   --bmi-result-text: #c0c0c0; /* Light grey result text */
   --bmi-result-value: #ffffff; /* White result value */
 
-  /* === Brand / Accent Colors ==================================================================== */
+  /* === Brand / Accent Colors ================================================== */
   --brand: #053554;
   --accent-1: #00ffff; /* Cyan */
   --accent-2: #ff00ff; /* Magenta */
@@ -176,8 +176,13 @@
   --border-radius: 12px;
   --blur-light: 4px;
   --blur-strong: 6px;
+
+  /* === Shadows === */
   --shadow-glow: 0 0 25px var(--accent-1);
   --shadow-strong: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-inset-strong: inset 0 10px 20px rgba(0, 0, 0, 0.7);
+  --shadow-inset-soft: inset 0 10px 20px rgba(0, 0, 0, 0.4);
+  --shadow-inset-lang: inset 0 0 10px rgba(0, 0, 0, 0.35);
 
   /* === Gradients === */
   --gradient-accent: linear-gradient(90deg, var(--accent-1), var(--accent-2));
@@ -192,6 +197,22 @@
     var(--accent-2),
     var(--accent-1)
   );
+
+  /* === Glass / Cards === */
+  --card-bg: rgba(255, 255, 255, 0.04); /* base glass layer */
+  --card-gradient: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.12),
+    rgba(255, 0, 255, 0.12)
+  );
+  --glow-radial: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 10%,
+    transparent 70%
+  );
+
+  /* === LangBox Specific === */
+  --lang-option-bg: rgba(0, 0, 0, 0.55);
 }
 
 * {
