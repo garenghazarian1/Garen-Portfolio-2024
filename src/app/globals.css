@@ -241,22 +241,23 @@ Image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 40px;
   width: 150px;
   top: 15px;
   right: 20px;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  background: var(--gradient-accent);
   padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
-  color: #ffffff;
+  color: var(--text-main);
   font-size: 0.8rem;
   font-weight: bold;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  box-shadow: var(--shadow-strong);
   transition: all 0.3s ease;
   z-index: 100;
-  opacity: 0.8;
+  opacity: 0.85;
   overflow: hidden;
 }
 
@@ -264,31 +265,24 @@ Image {
 .nav:hover {
   opacity: 1;
   transform: scale(1.1);
-  background: linear-gradient(135deg, #928dab, #746fa3);
-  box-shadow: 0 10px 25px rgba(146, 141, 171, 0.6);
+  background: var(--gradient-accent-reverse);
+  box-shadow: 0 0 20px var(--accent-1), 0 0 20px var(--accent-2);
   cursor: pointer;
 }
 
 /* Active State */
 .nav:active {
   transform: scale(0.95);
-  background: linear-gradient(135deg, #746fa3, #928dab);
-  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.3);
+  background: var(--gradient-accent);
+  box-shadow: var(--shadow-inset-soft);
 }
 
 /* Text Glow Effect */
 .nav::after {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.2) 10%,
-    transparent 70%
-  );
+  inset: 0;
+  background: var(--glow-radial);
   opacity: 0.5;
   transition: opacity 0.3s ease, transform 0.3s ease;
   transform: scale(1.2);
@@ -297,13 +291,13 @@ Image {
 
 .nav:hover::after {
   opacity: 1;
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
 /* Responsive Design */
 @media (max-width: 700px) {
   .nav {
-    height: 40px;
+    height: 35px;
     width: 120px;
     font-size: 0.6rem;
     top: 10px;
@@ -313,7 +307,7 @@ Image {
 
 @media (max-width: 375px) {
   .nav {
-    height: 35px;
+    height: 30px;
     width: 100px;
     font-size: 0.7rem;
     top: 10px;
@@ -321,11 +315,11 @@ Image {
   }
 }
 
-/* Swipe Navigation Button */
+/* === Swiper Navigation Overrides (still using vars) === */
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--swiper-button-color) !important;
-  background-color: var(--swiper-button-bg) !important;
+  color: var(--text-main) !important;
+  background-color: var(--bg-dark) !important;
   padding: 1px !important;
   border-radius: 50% !important;
   width: 40px !important;
@@ -338,7 +332,7 @@ Image {
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  background-color: var(--swiper-button-bg-hover) !important;
+  background-color: var(--accent-1) !important;
 }
 
 .swiper-button-next::after,
@@ -347,13 +341,13 @@ Image {
 }
 
 .swiper-pagination-progressbar-fill {
-  background-color: var(--swiper-progress-fill) !important;
+  background-color: var(--accent-2) !important;
 }
 
 .swiper-pagination-bullet {
-  background-color: var(--swiper-bullet-bg) !important;
+  background-color: var(--text-muted) !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: var(--swiper-bullet-active-bg) !important;
+  background-color: var(--accent-1) !important;
 }
