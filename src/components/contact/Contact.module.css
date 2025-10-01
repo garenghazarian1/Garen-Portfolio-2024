@@ -1,132 +1,446 @@
-/* Contact.module.css */
+/* Futuristic Contact Page - MainPage2025 Pattern */
 
-/* Main Container */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.pageWrapper {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  padding: 2rem;
-  color: #ffffff;
-  font-family: "Arial", sans-serif;
-  overflow: hidden;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  overflow-x: hidden;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.pageWrapper::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 1200px;
-  gap: 2rem;
+  height: 100%;
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(0, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 0, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(0, 255, 255, 0.05) 0%,
+      transparent 50%
+    );
+  animation: gridMove 20s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 3rem);
+  z-index: 2;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 600px;
-  padding: 2rem;
-  background: rgba(31, 28, 44, 0.9);
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(0, 255, 255, 0.02) 50%,
+    transparent 70%
+  );
+  animation: gradientShift 8s ease-in-out infinite;
+  pointer-events: none;
 }
 
-.section:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(146, 141, 171, 0.8);
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: clamp(300px, 80vw, 1200px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 2vw, 2rem);
+  padding: clamp(1rem, 2vw, 2rem);
+  box-sizing: border-box;
 }
 
-.sectionHeader {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #f6e58d;
+.animatedText {
+  font-size: clamp(1.5rem, calc(1rem + 3vw), 4rem);
+  font-weight: 700;
+  background: linear-gradient(
+    45deg,
+    #00ffff 0%,
+    #ffffff 25%,
+    #ff00ff 50%,
+    #ffffff 75%,
+    #00ffff 100%
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-align: center;
-  animation: fadeIn 1.5s ease-in-out;
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+  animation: gradientShift 3s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
 }
 
-.p {
-  font-size: 1rem;
+.animateP {
+  font-size: clamp(0.8rem, calc(0.6rem + 1vw), 1.2rem);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
   line-height: 1.6;
-  margin-bottom: 0.5rem;
-  color: #dcdde1;
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  max-width: clamp(300px, 60vw, 800px);
 }
 
-.a {
-  color: #8df6a7;
+/* Contact Grid */
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(250px, 30vw, 350px), 1fr)
+  );
+  gap: clamp(1rem, 2vw, 2rem);
+  width: 100%;
+  max-width: clamp(800px, 90vw, 1000px);
+  margin: clamp(1rem, 2vw, 2rem) 0;
+}
+
+.contactCard {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.05) 0%,
+    rgba(255, 0, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid transparent;
+  border-radius: clamp(12px, 2vw, 20px);
+  padding: clamp(1.5rem, 2.5vw, 2.5rem);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+
+.contactCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.contactCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.08) 0%,
+    rgba(255, 0, 255, 0.08) 100%
+  );
+  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.3),
+    0 0 40px rgba(255, 0, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.contactCard:hover::before {
+  left: 100%;
+}
+
+.cardIcon {
+  font-size: clamp(2rem, calc(1.5rem + 2vw), 3rem);
+  margin-bottom: clamp(0.5rem, 0.8vw, 0.8rem);
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+}
+
+.cardTitle {
+  font-size: clamp(1rem, calc(0.8rem + 1vw), 1.5rem);
+  font-weight: 600;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: clamp(0.5rem, 0.8vw, 0.8rem);
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.4rem, 0.6vw, 0.6rem);
+  width: 100%;
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.2rem, 0.3vw, 0.3rem);
+  align-items: center;
+}
+
+.detailText {
+  font-size: clamp(0.7rem, calc(0.6rem + 0.5vw), 0.9rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.detailLabel {
+  font-size: clamp(0.6rem, calc(0.5rem + 0.4vw), 0.8rem);
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.detailLink {
+  font-size: clamp(0.7rem, calc(0.6rem + 0.5vw), 0.9rem);
+  color: #00ffff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
-.a:hover {
-  color: #f6e58d;
+.detailLink:hover {
+  color: #ff00ff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.cardGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contactCard:hover .cardGlow {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+}
+
+/* Map Section */
+.mapSection {
+  width: 100%;
+  max-width: clamp(400px, 70vw, 800px);
+  margin-top: clamp(1rem, 2vw, 2rem);
+}
+
+.mapTitle {
+  font-size: clamp(1.2rem, calc(1rem + 1vw), 1.8rem);
+  font-weight: 600;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: clamp(0.8rem, 1.2vw, 1.2rem);
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
 }
 
 .mapContainer {
-  margin-top: 2rem;
-  border-radius: 1rem;
+  position: relative;
+  border-radius: clamp(12px, 2vw, 20px);
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 255, 255, 0.2);
 }
 
 .map {
   width: 100%;
-  height: 300px;
+  height: clamp(250px, 30vw, 400px);
   border: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
-.map:hover {
+.mapContainer:hover .map {
   transform: scale(1.02);
 }
 
+.mapOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(0, 255, 255, 0.05) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: gradientShift 6s ease-in-out infinite;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 30% 20%,
+      rgba(0, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 80%,
+      rgba(255, 0, 255, 0.1) 0%,
+      transparent 50%
+    );
+  animation: pulseGlow 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cursorGlow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.8) 0%,
+    rgba(255, 0, 255, 0.4) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: screen;
+  transition: transform 0.1s ease;
+}
+
 /* Animations */
-@keyframes fadeIn {
+@keyframes gridMove {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  33% {
+    transform: translate(30px, -30px) rotate(120deg);
+  }
+  66% {
+    transform: translate(-20px, 20px) rotate(240deg);
+  }
+}
+
+@keyframes gradientShift {
   0% {
-    opacity: 0;
-    transform: translateY(20px);
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    background-position: 0% 50%;
   }
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .section {
-    padding: 1.5rem;
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1);
   }
-
-  .sectionHeader {
-    font-size: 1.5rem;
-  }
-
-  .map {
-    height: 250px;
-  }
-
-  .p {
-    font-size: 0.9rem;
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
-@media (max-width: 480px) {
+/* Enhanced Responsive Design */
+@media screen and (min-width: 768px) {
   .section {
-    padding: 1rem;
+    padding: clamp(1rem, 3vw, 3rem);
   }
 
-  .sectionHeader {
-    font-size: 1.2rem;
+  .content {
+    gap: clamp(1.5rem, 2.5vw, 3rem);
+  }
+
+  .contactGrid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: clamp(900px, 80vw, 1200px);
+  }
+
+  .animatedText {
+    font-size: clamp(2rem, calc(1.5rem + 2.5vw), 4.5rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    gap: clamp(1rem, 2vw, 1.5rem);
+    padding: clamp(0.8rem, 2vw, 1.5rem);
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: clamp(0.8rem, 1.5vw, 1.2rem);
+  }
+
+  .contactCard {
+    padding: clamp(1rem, 1.8vw, 1.8rem);
+  }
+
+  .animatedText {
+    font-size: clamp(1.2rem, calc(1rem + 2vw), 2.5rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: clamp(0.5rem, 2vw, 1rem);
+    gap: clamp(0.8rem, 1.5vw, 1rem);
+  }
+
+  .contactCard {
+    padding: clamp(0.8rem, 1.5vw, 1.2rem);
   }
 
   .map {
-    height: 200px;
+    height: clamp(200px, 25vw, 300px);
   }
 
-  .p {
-    font-size: 0.8rem;
+  .animatedText {
+    font-size: clamp(1rem, calc(0.8rem + 1.5vw), 2rem);
   }
 }
