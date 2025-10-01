@@ -33,31 +33,31 @@
   "Slides": {
     "introduction": {
       "title": "Einführung:",
-      "text": "Hallo, ich bin Garen Ghazarian. Ich wurde 1986 in der lebendigen Stadt Qamishli in Syrien geboren. Ich freue mich darauf, Ihnen meine Reise vom Jura-Studenten und Computerladenbesitzer in Syrien über einen Koch in Belgien bis hin zu einem Full-Stack-Software-Entwickler in Deutschland zu erzählen."
+      "text": "Hallo, ich bin Garen Ghazarian, Full-Stack-Entwickler mit starkem Fokus auf den Aufbau skalierbarer SaaS-Plattformen und moderner Webanwendungen. Meine Expertise liegt in Next.js, TypeScript, React und KI-gestützten Lösungen."
     },
     "earlyCareer": {
-      "title": "Frühe Karriere in Syrien:",
-      "text": "Meine berufliche Laufbahn begann während meines Jura-Studiums in Syrien. Während meines Studiums verfolgte ich auch meine Leidenschaft für Technologie, indem ich meinen eigenen Computerladen eröffnete und leitete. Diese Unternehmung ermöglichte es mir, Computergeräte zu reparieren und zu verkaufen, was mir unschätzbare geschäftliche und technische Fähigkeiten vermittelte."
+      "title": "Technische Grundlagen:",
+      "text": "Meine Laufbahn begann mit Hardware- und Softwareprojekten sowie dem Betrieb eines eigenen Computer-Geschäfts. Diese frühe Erfahrung vermittelte mir ein solides Fundament in Problemlösung, Kundenservice und technischer Umsetzung."
     },
     "movingToBelgium": {
-      "title": "Umzug nach Belgien:",
-      "text": "Das Schicksal führte mich anschließend nach Belgien, wo ich zunächst in einem Restaurant arbeitete. Meine Hingabe und Liebe zur Kochkunst zahlten sich schnell aus, als ich zum Chefkoch aufstieg. Innerhalb von zwei Jahren halfen meine Bemühungen, unser Restaurant zur zweitbesten  exklusiv Restaurant in Belgien zu machen. Es war eine herausfordernde, aber lohnende Erfahrung, die mich viel über Ausdauer und Qualitätsmanagement lehrte."
+      "title": "Internationale Erfahrung:",
+      "text": "Das Leben und Arbeiten in verschiedenen Ländern hat meine Perspektive erweitert und meine Anpassungsfähigkeit gestärkt. Mein internationaler Hintergrund ermöglicht mir eine effektive Zusammenarbeit mit vielfältigen Teams und Kunden weltweit."
     },
     "personalLife": {
-      "title": "Privatleben:",
-      "text": "In Belgien lernte ich auch meine Partnerin kennen, und wir heirateten. Diese Zeit meines Lebens war reich an persönlichem und beruflichem Wachstum."
+      "title": "Lebenslanges Lernen:",
+      "text": "Neben meinen Projekten investiere ich kontinuierlich in neue Frameworks, Design-Patterns und KI-Tools. Ich bin überzeugt, dass kontinuierliches Lernen der Schlüssel ist, um in der Technologie relevant zu bleiben."
     },
     "techInGermany": {
-      "title": "Fokuswechsel zur Technik in Deutschland:",
-      "text": "Später brachte mich meine Reise nach Deutschland, wo ich die Gelegenheit ergriff, mein langjähriges Computerhobby in eine formale Ausbildung umzuwandeln. Ich meldete mich am DCI-Institut an, wo ich zum Full-Stack-Software-Entwickler ausgebildet wurde. Kürzlich habe ich mein Studium abgeschlossen und arbeite derzeit an einem bedeutenden Projekt."
+      "title": "Spezialisierung auf Web & SaaS:",
+      "text": "In Deutschland habe ich meine Karriere vollständig in die Technologie verlagert und mich auf modernes Full-Stack-Development mit Next.js, TypeScript und Cloud-Architekturen spezialisiert. Mein Fokus liegt auf performanten und nutzerzentrierten Anwendungen."
     },
     "currentProject": {
-      "title": "Aktuelles Projekt:",
-      "text": "Derzeit arbeite ich an einem anspruchsvollen Full-Stack-Entwicklungsprojekt für einen Kunden aus Abu Dhabi. Das Projekt umfasst die Erstellung einer umfassenden Anwendung für eine Kette von Schönheitssalons. Diese App organisiert Termine, verfolgt die monatlichen Einnahmen und automatisiert die Berechnungen für zwei Geschäfte mit 40 Mitarbeitern. Sie ist darauf ausgelegt, den Betrieb zu optimieren und die Geschäftseffizienz zu steigern."
+      "title": "Flaggschiffprojekt - AutoPreisScheck:",
+      "text": "Aktuell entwickle ich AutoPreisScheck.de, eine KI-gestützte Automotive-SaaS-Plattform für Gebrauchtwagenbewertungen im deutschen Markt. Sie kombiniert KBA-Fahrzeugdaten, GPT-basierte Analysen und ein modernes Next.js-Frontend, um schnelle und präzise Bewertungen zu liefern."
     },
     "conclusion": {
-      "title": "Fazit:",
-      "text": "Ich freue mich darauf, weiterhin Projekte zu entwickeln und zu leiten, die Technologie mit geschäftlichen Anforderungen integrieren, um innovative und effektive Lösungen zu schaffen. Meine Reise ist ein Zeugnis für die Kraft der Anpassungsfähigkeit an neue Gelegenheiten und kontinuierliches Lernen. Vielen Dank für Ihre Aufmerksamkeit, und ich freue mich auf das nächste Kapitel dieser spannenden Reise."
+      "title": "Zukunftsvision:",
+      "text": "Mein Ziel ist es, weiterhin SaaS-Produkte und Plattformen zu entwickeln, die KI mit realen Business-Cases verbinden – skalierbare, intuitive und wirkungsvolle Lösungen, die echten Mehrwert für Nutzer und Unternehmen schaffen."
     }
   },
   "AboutMe": {
