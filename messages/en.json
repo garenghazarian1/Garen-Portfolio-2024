@@ -29,7 +29,12 @@
     "country": "Country: Germany",
     "mobile": "Mobile:",
     "email": "Email:",
-    "contactSubtitle": "Let's connect and discuss your next project. I'm always excited to work on new challenges and bring ideas to life."
+    "contactSubtitle": "Let's connect and discuss your next project. I'm always excited to work on new challenges and bring ideas to life.",
+    "addressTitle": "Address",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "mapTitle": "Location",
+    "mapIframeTitle": "Contact Location"
   },
   "Slides": {
     "introduction": {
@@ -110,34 +115,110 @@
   },
   "MyProjects": {
     "title": "MY PROJECTS",
-    "projects": [
-      {
-        "name": "KEN Beauty Center: Project Overview",
-        "linkText": "Click here to open the link",
-        "description": "KEN Beauty Center is my inaugural real-world project, developed for a client in Abu Dhabi. This comprehensive application empowers the business owner to seamlessly manage multiple salon locations through a single interface.",
+    "subtitle": "Explore my diverse portfolio of web applications, from business management systems to educational games and innovative AI-powered solutions.",
+    "visitButton": "Visit Project →",
+    "keyFeatures": "Key Features:",
+    "projects": {
+      "kenBeauty": {
+        "title": "KEN Beauty Center",
+        "description": "Comprehensive salon management system for multiple locations with employee scheduling, service booking, and store management features.",
+        "category": "Business Management",
         "features": [
-          "Store Management: Owners can establish new store locations, complete with customizable operational hours, off days, and service offerings.",
-          "Employee Coordination: The platform facilitates the hiring of new employees and the precise management of their schedules.",
-          "Service Booking: Clients can conveniently schedule appointments, choosing their preferred store, time, and service provider.",
-          "Quality Assurance: All functionalities are rigorously tested to maintain high standards of reliability and user satisfaction."
+          "Multi-location management",
+          "Employee scheduling",
+          "Service booking",
+          "Client management"
         ]
       },
-      {
-        "name": "Game Interface",
-        "linkText": "Click here to open the link",
-        "description": "This project showcases an educational game web application, developed as a group endeavor. It features a user-friendly hero page designed to engage and educate users through interactive gaming experiences."
+      "eurojackpot": {
+        "title": "🎰 Eurojackpot Analyzer",
+        "description": "Intelligent number analyzer for lottery strategies with hot/cold number analysis and visual frequency charts.",
+        "category": "Data Analysis",
+        "features": [
+          "Hot number analysis",
+          "Cold number tracking",
+          "Visual charts",
+          "Strategy generation"
+        ]
       },
-      {
-        "name": "Night Moon",
-        "linkText": "Click here to open the link",
-        "description": "This project showcases an educational JavaScript website with a scroll effect."
+      "musicPlatform": {
+        "title": "Music Platform",
+        "description": "Interactive platform for showcasing musical content with dynamic UI and modern design elements.",
+        "category": "Entertainment",
+        "features": [
+          "Dynamic UI",
+          "Music streaming",
+          "Video content",
+          "Social integration"
+        ]
       },
-      {
-        "name": "Portfolio",
-        "linkText": "Click here to open the link",
-        "description": "A nicely styled Portfolio website."
+      "babyban": {
+        "title": "🐠 BabyBan.kids",
+        "description": "Educational app for children aged 2+ to learn about emotions through interactive fish characters.",
+        "category": "Educational",
+        "features": [
+          "13 interactive fish",
+          "Emotion learning",
+          "Audio features",
+          "Child-friendly design"
+        ]
+      },
+      "baptismInvitation": {
+        "title": "💒 Ania & Agathi Baptism Invitation",
+        "description": "Beautiful and elegant baptism invitation website for Ania and Agathi's special ceremony with personalized guest experience and Armenian language support.",
+        "category": "Event Management",
+        "features": [
+          "Personalized guest loading",
+          "Armenian language interface",
+          "Elegant design",
+          "Guest management system"
+        ]
+      },
+      "autopreisscheck": {
+        "title": "🚗 Autopreisscheck.de",
+        "description": "AI-powered car valuation platform providing instant price estimates in 10 seconds without registration.",
+        "category": "Automotive Technology",
+        "features": [
+          "AI valuation",
+          "Instant results",
+          "No registration",
+          "Mobile app"
+        ]
+      },
+      "educationalGame": {
+        "title": "🎮 Educational Game",
+        "description": "Interactive educational gaming experience with user-friendly interface and engaging gameplay.",
+        "category": "Educational Gaming",
+        "features": [
+          "Interactive gameplay",
+          "Educational content",
+          "User-friendly UI",
+          "Group project"
+        ]
+      },
+      "nightMoon": {
+        "title": "🌙 Night Moon",
+        "description": "JavaScript scroll effects showcase demonstrating modern web development techniques.",
+        "category": "Web Development",
+        "features": [
+          "Scroll effects",
+          "Smooth animations",
+          "Modern techniques",
+          "Interactive elements"
+        ]
+      },
+      "portfolioOld": {
+        "title": "💼 Portfolio (2023)",
+        "description": "Professional portfolio website showcasing work and projects with modern design elements.",
+        "category": "Portfolio",
+        "features": [
+          "Professional design",
+          "Project showcase",
+          "Responsive layout",
+          "Clean interface"
+        ]
       }
-    ]
+    }
   },
   "QRCodeGenerator": {
     "title": "QR Code Generator",

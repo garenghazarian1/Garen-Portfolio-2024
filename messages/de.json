@@ -29,7 +29,12 @@
     "country": "Land: Deutschland",
     "mobile": "Handy:",
     "email": "E-Mail:",
-    "contactSubtitle": "Lassen Sie uns verbinden und über Ihr nächstes Projekt sprechen. Ich bin immer begeistert, an neuen Herausforderungen zu arbeiten und Ideen zum Leben zu erwecken."
+    "contactSubtitle": "Lassen Sie uns verbinden und über Ihr nächstes Projekt sprechen. Ich bin immer begeistert, an neuen Herausforderungen zu arbeiten und Ideen zum Leben zu erwecken.",
+    "addressTitle": "Adresse",
+    "phoneTitle": "Telefon",
+    "emailTitle": "E-Mail",
+    "mapTitle": "Standort",
+    "mapIframeTitle": "Kontakt-Standort"
   },
   "Slides": {
     "introduction": {
@@ -111,34 +116,110 @@
   },
   "MyProjects": {
     "title": "MEINE PROJEKTE",
-    "projects": [
-      {
-        "name": "KEN Beauty Center: Projektübersicht",
-        "linkText": "Hier klicken, um den Link zu öffnen",
-        "description": "KEN Beauty Center ist mein erstes reales Projekt, entwickelt für einen Kunden in Abu Dhabi. Diese umfassende Anwendung ermöglicht es dem Geschäftsinhaber, mehrere Salonstandorte über eine einzige Schnittstelle nahtlos zu verwalten.",
+    "subtitle": "Entdecken Sie mein vielfältiges Portfolio von Webanwendungen, von Geschäftsmanagementsystemen bis hin zu Bildungsgames und innovativen KI-gestützten Lösungen.",
+    "visitButton": "Projekt besuchen →",
+    "keyFeatures": "Hauptfunktionen:",
+    "projects": {
+      "kenBeauty": {
+        "title": "KEN Beauty Center",
+        "description": "Umfassendes Salonmanagementsystem für mehrere Standorte mit Mitarbeiterplanung, Servicebuchung und Geschäftsverwaltung.",
+        "category": "Geschäftsmanagement",
         "features": [
-          "Geschäftsmanagement: Eigentümer können neue Geschäftsstandorte einrichten, komplett mit anpassbaren Betriebszeiten, Ruhetagen und Dienstleistungsangeboten.",
-          "Mitarbeiterkoordination: Die Plattform erleichtert die Einstellung neuer Mitarbeiter und die genaue Verwaltung ihrer Zeitpläne.",
-          "Dienstleistungsbuchung: Kunden können Termine bequem buchen, indem sie ihren bevorzugten Laden, die Zeit und den Dienstleister auswählen.",
-          "Qualitätssicherung: Alle Funktionalitäten werden rigoros getestet, um hohe Standards an Zuverlässigkeit und Benutzerzufriedenheit aufrechtzuerhalten."
+          "Multi-Standort-Verwaltung",
+          "Mitarbeiterplanung",
+          "Servicebuchung",
+          "Kundenverwaltung"
         ]
       },
-      {
-        "name": "Spieloberfläche",
-        "linkText": "Hier klicken, um den Link zu öffnen",
-        "description": "Dieses Projekt zeigt eine Bildungs-Spielwebanwendung, entwickelt als Gruppenprojekt. Es bietet eine benutzerfreundliche Helden-Seite, die darauf abzielt, Benutzer durch interaktive Spielerlebnisse zu engagieren und zu bilden."
+      "eurojackpot": {
+        "title": "🎰 Eurojackpot Analyzer",
+        "description": "Intelligenter Zahlenanalysator für Lotteriestrategien mit Heiß-/Kaltzahlenanalyse und visuellen Häufigkeitsdiagrammen.",
+        "category": "Datenanalyse",
+        "features": [
+          "Heißzahlenanalyse",
+          "Kaltzahlenverfolgung",
+          "Visuelle Diagramme",
+          "Strategiegenerierung"
+        ]
       },
-      {
-        "name": "Night Moon",
-        "linkText": "Hier klicken, um den Link zu öffnen",
-        "description": "Dieses Projekt zeigt eine Bildungs-Website mit JavaScript und einem Scroll-Effekt."
+      "musicPlatform": {
+        "title": "Musikplattform",
+        "description": "Interaktive Plattform zur Präsentation von Musikinhalten mit dynamischer Benutzeroberfläche und modernen Designelementen.",
+        "category": "Unterhaltung",
+        "features": [
+          "Dynamische Benutzeroberfläche",
+          "Musikstreaming",
+          "Videocontent",
+          "Social Media Integration"
+        ]
       },
-      {
-        "name": "Portfolio",
-        "linkText": "Hier klicken, um den Link zu öffnen",
-        "description": "Eine schön gestaltete Portfolio-Website."
+      "babyban": {
+        "title": "🐠 BabyBan.kids",
+        "description": "Bildungs-App für Kinder ab 2 Jahren zum Erlernen von Emotionen durch interaktive Fischcharaktere.",
+        "category": "Bildung",
+        "features": [
+          "13 interaktive Fische",
+          "Emotionslernen",
+          "Audio-Features",
+          "Kinderfreundliches Design"
+        ]
+      },
+      "baptismInvitation": {
+        "title": "💒 Ania & Agathi Taufeinladung",
+        "description": "Schöne und elegante Taufeinladungswebsite für Ania und Agathis besondere Zeremonie mit personalisierter Gästerfahrung und armenischer Sprachunterstützung.",
+        "category": "Eventmanagement",
+        "features": [
+          "Personalisierte Gästeladung",
+          "Armenische Sprachoberfläche",
+          "Elegantes Design",
+          "Gästeverwaltungssystem"
+        ]
+      },
+      "autopreisscheck": {
+        "title": "🚗 Autopreisscheck.de",
+        "description": "KI-gestützte Fahrzeugbewertungsplattform, die sofortige Preisschätzungen in 10 Sekunden ohne Registrierung bietet.",
+        "category": "Automobiltechnologie",
+        "features": [
+          "KI-Bewertung",
+          "Sofortige Ergebnisse",
+          "Keine Registrierung",
+          "Mobile App"
+        ]
+      },
+      "educationalGame": {
+        "title": "🎮 Bildungsgame",
+        "description": "Interaktive Bildungsgaming-Erfahrung mit benutzerfreundlicher Oberfläche und fesselndem Gameplay.",
+        "category": "Bildungsgaming",
+        "features": [
+          "Interaktives Gameplay",
+          "Bildungsinhalt",
+          "Benutzerfreundliche Oberfläche",
+          "Gruppenprojekt"
+        ]
+      },
+      "nightMoon": {
+        "title": "🌙 Night Moon",
+        "description": "JavaScript-Scroll-Effekte-Showcase, das moderne Webentwicklungstechniken demonstriert.",
+        "category": "Webentwicklung",
+        "features": [
+          "Scroll-Effekte",
+          "Sanfte Animationen",
+          "Moderne Techniken",
+          "Interaktive Elemente"
+        ]
+      },
+      "portfolioOld": {
+        "title": "💼 Portfolio (2023)",
+        "description": "Professionelle Portfolio-Website zur Präsentation von Arbeiten und Projekten mit modernen Designelementen.",
+        "category": "Portfolio",
+        "features": [
+          "Professionelles Design",
+          "Projektpräsentation",
+          "Responsive Layout",
+          "Saubere Oberfläche"
+        ]
       }
-    ]
+    }
   },
   "QRCodeGenerator": {
     "title": "QR Code Generator",
