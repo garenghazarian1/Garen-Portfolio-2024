@@ -9,9 +9,9 @@ export default function Page() {
   const t = useTranslations("Me");
   return (
     <>
-      <div className="nav">
-        <Link href="/">{t("backToHome")}</Link>
-      </div>
+      <Link className="nav" href="/">
+        {t("backToHome")}
+      </Link>
 
       <div className={styles.container}>
         <Link href="/me/mySlides" className={` ${styles.child1}`}>

@@ -83,11 +83,29 @@
     "importantSkillsList": "Problem solving, Team work"
   },
   "Footer": {
-    "downloadResume": "Download Resume",
-    "downloadFullResume": "Download Full Resume",
-    "pdfLabel": "PDF",
-    "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "title": "Connect With Me",
+    "subtitle": "Let's build something amazing together. Download my resume or connect on social platforms.",
+    "scrollInstruction": "Scroll down to access links",
+    "sectionTitle": "Professional Links",
+    "stats": {
+      "experience": "Years Experience",
+      "projects": "Projects Completed",
+      "technologies": "Technologies Mastered"
+    },
+    "contactButton": "Get In Touch",
+    "links": {
+      "resumeShort": "Download Resume",
+      "resumeFull": "Download Full Resume",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "pdfLabel": "PDF Document",
+      "professionalNetwork": "Professional Network",
+      "codeRepository": "Code Repository"
+    },
+    "cta": {
+      "text": "Ready to collaborate? Let's create something extraordinary!",
+      "button": "Get In Touch"
+    }
   },
   "MyProjects": {
     "title": "MY PROJECTS",

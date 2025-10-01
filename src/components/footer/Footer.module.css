@@ -1,75 +1,1016 @@
-/* Main Footer Container */
-.socialLinks {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 2rem;
-  background: linear-gradient(
-    135deg,
-    #1f1c2c,
-    #928dab
-  ); /* Gradient background */
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
+/* Futuristic Footer Component - Senior UI/UX Design */
+
+.pageWrapper {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  position: relative;
+  background: radial-gradient(ellipse at center, #0a0a0a 0%, #000000 100%);
+  background-attachment: fixed;
 }
 
-/* Individual Link Container */
-.infoA {
+.pageWrapper::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      45deg,
+      transparent 49%,
+      rgba(0, 255, 255, 0.03) 50%,
+      transparent 51%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 49%,
+      rgba(255, 0, 255, 0.03) 50%,
+      transparent 51%
+    );
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 1;
+  animation: gridMove 20s linear infinite;
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
+}
+
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  background: rgba(47, 44, 66, 0.9); /* Subtle dark background */
-  color: #ffffff;
   text-align: center;
-  font-size: 1.2rem;
+  padding: clamp(1rem, 3vw, 3rem);
+  overflow: hidden;
+  backdrop-filter: blur(0.5px);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.02) 0%,
+    transparent 25%,
+    transparent 75%,
+    rgba(255, 0, 255, 0.02) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.section::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.01) 0%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+  animation: pulseGlow 8s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: clamp(300px, 80vw, 1200px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.8rem, 1.5vw, 1.5rem);
+  padding: clamp(1rem, 2vw, 2rem);
+  box-sizing: border-box;
+}
+
+.animatedText {
+  font-size: clamp(1.5rem, calc(1rem + 3vw), 4rem);
+  font-weight: 700;
+  background: linear-gradient(
+    45deg,
+    #00ffff 0%,
+    #ff00ff 25%,
+    #ffff00 50%,
+    #00ff00 75%,
+    #00ffff 100%
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+  letter-spacing: clamp(0.5px, 0.8vw, 2px);
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  animation: gradientShift 4s ease-in-out infinite;
+  position: relative;
+}
+
+.animatedText::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(2px);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animateP {
+  font-size: clamp(0.9rem, calc(0.8rem + 1vw), 1.5rem);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  max-width: clamp(250px, 60vw, 600px);
+  line-height: 1.6;
+  letter-spacing: clamp(0.2px, 0.3vw, 0.5px);
+}
+
+.sectionTitle {
+  font-size: clamp(1.2rem, calc(1rem + 2vw), 2.5rem);
+  font-weight: 600;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: clamp(1rem, 2vw, 2rem);
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* Futuristic Stats - Flexbox Layout */
+.statsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: clamp(0.7rem, 1.4vw, 1.4rem);
+  width: 100%;
+  max-width: clamp(280px, 42vw, 560px);
+  margin: clamp(0.7rem, 1.4vw, 1.4rem) 0;
+}
+
+.statItem {
+  flex: 1;
+  width: clamp(64px, 11.2vw, 112px);
+  min-width: clamp(64px, 11.2vw, 112px);
+  max-width: clamp(64px, 11.2vw, 112px);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.05) 0%,
+    rgba(255, 0, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid transparent;
+  border-radius: clamp(6px, 1.1vw, 11px);
+  padding: clamp(0.56rem, 1.1vw, 1.1rem);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.statItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.statItem:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.08) 0%,
+    rgba(255, 0, 255, 0.08) 100%
+  );
+  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.3),
+    0 0 40px rgba(255, 0, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.statItem:hover::before {
+  left: 100%;
+}
+
+.statNumber {
+  font-size: clamp(0.88rem, calc(0.72rem + 1.12vw), 1.68rem);
+  font-weight: 700;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: clamp(0.28rem, 0.56vw, 0.56rem);
+  text-shadow: 0 0 16px rgba(0, 255, 255, 0.5);
+}
+
+.statLabel {
+  font-size: clamp(0.48rem, calc(0.4rem + 0.32vw), 0.64rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  letter-spacing: clamp(0.08px, 0.16vw, 0.24px);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.scrollInstruction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.5rem, 1vw, 1rem);
+  margin-top: clamp(1rem, 2vw, 2rem);
+  color: #00ffff;
+}
+
+.scrollText {
+  font-size: clamp(0.8rem, calc(0.7rem + 0.5vw), 1.1rem);
+  font-weight: 300;
+  letter-spacing: clamp(0.2px, 0.3vw, 0.5px);
+  text-align: center;
+  opacity: 0.8;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.scrollArrow {
+  font-size: clamp(1.5rem, calc(1.2rem + 1vw), 2rem);
   font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
-  width: 45%;
-  height: 45%;
+  opacity: 0.7;
+  color: #00ffff;
+  text-shadow: 0 0 clamp(5px, 1vw, 15px) rgba(0, 255, 255, 0.5);
 }
 
-/* Hover and Focus State */
-.infoA:hover,
-.infoA:focus {
-  background: linear-gradient(135deg, #928dab, #746fa3);
+/* Futuristic Links Grid - Flexbox Layout */
+.linksGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: clamp(0.7rem, 1.4vw, 1.4rem);
+  width: 100%;
+  max-width: clamp(420px, 56vw, 700px);
+  margin: clamp(0.7rem, 1.4vw, 1.4rem) 0;
+}
+
+.linkCard {
+  flex: 1;
+  width: clamp(140px, 22.4vw, 168px);
+  min-width: clamp(140px, 22.4vw, 168px);
+  max-width: clamp(140px, 22.4vw, 168px);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.05) 0%,
+    rgba(255, 0, 255, 0.05) 100%
+  );
+  backdrop-filter: blur(20px);
+  border: 1px solid transparent;
+  border-radius: clamp(6px, 1.1vw, 11px);
+  padding: clamp(0.8rem, 1.44vw, 1.44rem);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.48rem, 0.88vw, 0.88rem);
+  text-align: center;
+}
+
+.linkCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 255, 255, 0.1),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.linkCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 255, 255, 0.3),
+    rgba(255, 0, 255, 0.3),
+    rgba(0, 255, 255, 0.3)
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.linkCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.08) 0%,
+    rgba(255, 0, 255, 0.08) 100%
+  );
+  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.3),
+    0 0 40px rgba(255, 0, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.linkCard:hover::before {
+  left: 100%;
+}
+
+.linkCard:hover::after {
+  opacity: 1;
+}
+
+.linkCard.resume:hover {
+  box-shadow: 0 20px 60px rgba(0, 255, 255, 0.4),
+    0 0 40px rgba(0, 255, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.linkCard.social:hover {
+  box-shadow: 0 20px 60px rgba(255, 0, 255, 0.4),
+    0 0 40px rgba(255, 0, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.linkIcon {
+  font-size: clamp(1.12rem, calc(0.88rem + 1.12vw), 1.68rem);
+  margin-bottom: clamp(0.28rem, 0.56vw, 0.56rem);
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.5));
+}
+
+.linkContent {
+  text-align: center;
+  z-index: 2;
+}
+
+.linkTitle {
+  font-size: clamp(0.56rem, calc(0.48rem + 0.56vw), 0.88rem);
+  font-weight: 600;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: clamp(0.28rem, 0.56vw, 0.56rem);
+  text-shadow: 0 0 16px rgba(0, 255, 255, 0.5);
+}
+
+.linkSubtitle {
+  font-size: clamp(0.48rem, calc(0.4rem + 0.32vw), 0.56rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.3;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.linkGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.2) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.linkCard:hover .linkGlow {
+  width: 200%;
+  height: 200%;
+}
+
+/* Ultra Button - Contact Button */
+.ultraButton {
+  display: inline-block;
+  padding: clamp(0.8rem, 1.5vw, 1.5rem) clamp(2rem, 3vw, 3rem);
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
   color: #000000;
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 10px 20px rgba(146, 141, 171, 0.8);
   text-decoration: none;
+  border-radius: clamp(8px, 1.2vw, 12px);
+  font-weight: 700;
+  font-size: clamp(0.8rem, calc(0.7rem + 0.8vw), 1.2rem);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  letter-spacing: clamp(0.5px, 0.1vw, 1px);
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
-/* Resume PDF Links Styling */
-.imageContainer {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  font-weight: normal;
-  color: #dddddd;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+.ultraButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.6s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .socialLinks {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem;
+.ultraButton::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.ultraButton:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(0, 255, 255, 0.6),
+    0 0 40px rgba(255, 0, 255, 0.4);
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff);
+  background-size: 200% 200%;
+  animation: gradientShift 2s ease infinite;
+}
+
+.ultraButton:hover::before {
+  left: 100%;
+}
+
+.ultraButton:hover::after {
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+}
+
+.ultraButton:active {
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.5);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ctaText {
+  font-size: clamp(0.6rem, calc(0.5rem + 0.6vw), 0.9rem);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+  line-height: 1.4;
+}
+
+.ctaButton {
+  display: inline-block;
+}
+
+.ctaButton a {
+  display: inline-block;
+  padding: clamp(0.4rem, 0.8vw, 0.8rem) clamp(1rem, 2vw, 2rem);
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  color: #000000;
+  text-decoration: none;
+  border-radius: clamp(4px, 0.8vw, 6px);
+  font-weight: 600;
+  font-size: clamp(0.5rem, calc(0.5rem + 0.5vw), 0.7rem);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaButton a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.ctaButton:hover a {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 255, 255, 0.5);
+}
+
+.ctaButton:hover a::before {
+  left: 100%;
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.cursorGlow {
+  position: fixed;
+  width: clamp(20px, 2vw, 40px);
+  height: clamp(20px, 2vw, 40px);
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.8) 0%,
+    rgba(255, 0, 255, 0.4) 50%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: screen;
+  transition: transform 0.1s ease;
+  filter: blur(1px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 40px rgba(255, 0, 255, 0.3);
+}
+
+.cursorGlow::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: cursorPulse 2s ease-in-out infinite;
+}
+
+@keyframes cursorPulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.8;
+  }
+}
+
+/* Futuristic Progress Bar */
+.scrollProgress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(4px, 0.6vw, 6px);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(255, 255, 255, 0.05),
+    rgba(0, 0, 0, 0.8)
+  );
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffff 0%, #ff00ff 50%, #00ffff 100%);
+  background-size: 200% 100%;
+  transition: width 0.5s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(255, 0, 255, 0.4);
+  animation: progressGlow 3s ease-in-out infinite;
+  position: relative;
+}
+
+.progressBar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+  animation: progressShine 2s ease-in-out infinite;
+}
+
+@keyframes progressGlow {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes progressShine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Futuristic Section Indicators */
+.sectionIndicators {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1vw, 1rem);
+  z-index: 1000;
+}
+
+.indicator {
+  width: clamp(12px, 2vw, 16px);
+  height: clamp(12px, 2vw, 16px);
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(
+      45deg,
+      rgba(0, 255, 255, 0.2),
+      rgba(255, 0, 255, 0.2)
+    )
+    border-box;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 255, 0.3) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+
+.indicator:hover {
+  transform: scale(1.3);
+  background: linear-gradient(
+      45deg,
+      rgba(0, 255, 255, 0.4),
+      rgba(255, 0, 255, 0.4)
+    )
+    border-box;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 40px rgba(255, 0, 255, 0.3);
+}
+
+.indicator:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.indicator.active {
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  border-color: transparent;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 50px rgba(255, 0, 255, 0.4),
+    inset 0 0 10px rgba(255, 255, 255, 0.3);
+  animation: indicatorPulse 2s ease-in-out infinite;
+}
+
+.indicator.active::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 255, 255, 0.6);
+  animation: indicatorRing 2s ease-in-out infinite;
+}
+
+.indicator:active {
+  transform: scale(0.8);
+}
+
+@keyframes indicatorPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), 0 0 50px rgba(255, 0, 255, 0.4),
+      inset 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 35px rgba(0, 255, 255, 1), 0 0 70px rgba(255, 0, 255, 0.6),
+      inset 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes indicatorRing {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Enhanced Responsive Design */
+@media screen and (min-width: 768px) {
+  .section {
+    padding: clamp(1rem, 3vw, 3rem);
   }
 
-  .infoA {
+  .content {
+    gap: clamp(1.2rem, 2vw, 2.5rem);
+  }
+
+  .linksGrid {
+    max-width: clamp(600px, 70vw, 800px);
+  }
+
+  .statsContainer {
+    max-width: clamp(400px, 50vw, 600px);
+  }
+
+  .animatedText {
+    font-size: clamp(2rem, calc(1.5rem + 2.5vw), 4.5rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    gap: clamp(0.8rem, 2vw, 1.2rem);
+    padding: clamp(0.8rem, 2vw, 1.5rem);
+  }
+
+  .linksGrid {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(0.8rem, 1.5vw, 1.2rem);
+  }
+
+  .linkCard {
+    min-width: clamp(200px, 60vw, 300px);
+    max-width: clamp(250px, 70vw, 350px);
+  }
+
+  .statsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(0.6rem, 1.1vw, 1rem);
+  }
+
+  .statItem {
+    min-width: clamp(120px, 40vw, 200px);
+    max-width: clamp(150px, 50vw, 250px);
+  }
+
+  .animatedText {
+    font-size: clamp(1.2rem, calc(1rem + 2vw), 2.5rem);
+  }
+
+  .sectionIndicators {
+    right: clamp(0.5rem, 2vw, 1rem);
+    gap: clamp(0.25rem, 0.5vw, 0.75rem);
+  }
+
+  .indicator {
+    width: clamp(10px, 1.5vw, 14px);
+    height: clamp(10px, 1.5vw, 14px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: clamp(0.4rem, 1.5vw, 0.8rem);
+    gap: clamp(0.4rem, 1vw, 0.8rem);
+  }
+
+  .statsContainer {
+    gap: clamp(0.3rem, 0.8vw, 0.6rem);
+    margin: clamp(0.4rem, 1vw, 0.8rem) 0;
+  }
+
+  .statItem {
+    width: clamp(64px, 24vw, 96px);
+    min-width: clamp(64px, 24vw, 96px);
+    max-width: clamp(64px, 24vw, 96px);
+    padding: clamp(0.4rem, 1vw, 0.8rem);
+  }
+
+  .linksGrid {
+    gap: clamp(0.4rem, 1vw, 0.8rem);
+    margin: clamp(0.4rem, 1vw, 0.8rem) 0;
+  }
+
+  .linkCard {
     width: 100%;
-    height: 22%;
-    max-width: 300px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: clamp(0.6rem, 1.2vw, 1rem);
+  }
+
+  .contactCTA {
+    margin-top: clamp(0.4rem, 1vw, 0.8rem);
+    padding: clamp(0.4rem, 0.8vw, 0.8rem);
+    max-width: clamp(200px, 60vw, 300px);
+  }
+
+  .ctaText {
+    font-size: clamp(0.5rem, calc(0.4rem + 0.5vw), 0.7rem);
+    margin-bottom: clamp(0.3rem, 0.8vw, 0.6rem);
+  }
+
+  .ctaButton a {
+    padding: clamp(0.3rem, 0.6vw, 0.6rem) clamp(0.8rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.4rem, calc(0.4rem + 0.4vw), 0.6rem);
+  }
+
+  .animatedText {
+    font-size: clamp(0.9rem, calc(0.7rem + 1.2vw), 1.8rem);
+  }
+
+  .ultraButton {
+    padding: clamp(0.6rem, 1.2vw, 1.2rem) clamp(1.5rem, 2.5vw, 2.5rem);
+    font-size: clamp(0.7rem, calc(0.6rem + 0.6vw), 1rem);
+  }
+}
+
+/* Extra small screens (320px and below) */
+@media screen and (max-width: 320px) {
+  .content {
+    padding: clamp(0.3rem, 1vw, 0.6rem);
+    gap: clamp(0.3rem, 0.8vw, 0.6rem);
+  }
+
+  .statsContainer {
+    gap: clamp(0.2rem, 0.6vw, 0.4rem);
+    margin: clamp(0.3rem, 0.8vw, 0.6rem) 0;
+  }
+
+  .statItem {
+    width: clamp(56px, 20vw, 80px);
+    min-width: clamp(56px, 20vw, 80px);
+    max-width: clamp(56px, 20vw, 80px);
+    padding: clamp(0.3rem, 0.8vw, 0.6rem);
+  }
+
+  .linksGrid {
+    gap: clamp(0.3rem, 0.8vw, 0.6rem);
+    margin: clamp(0.3rem, 0.8vw, 0.6rem) 0;
+  }
+
+  .linkCard {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    padding: clamp(0.4rem, 1vw, 0.8rem);
+  }
+
+  .contactCTA {
+    margin-top: clamp(0.3rem, 0.8vw, 0.6rem);
+    padding: clamp(0.3rem, 0.6vw, 0.6rem);
+    max-width: clamp(160px, 55vw, 240px);
+  }
+
+  .ctaText {
+    font-size: clamp(0.4rem, calc(0.35rem + 0.4vw), 0.6rem);
+    margin-bottom: clamp(0.2rem, 0.6vw, 0.4rem);
+  }
+
+  .ctaButton a {
+    padding: clamp(0.25rem, 0.5vw, 0.5rem) clamp(0.6rem, 1.2vw, 1.2rem);
+    font-size: clamp(0.35rem, calc(0.35rem + 0.3vw), 0.5rem);
+  }
+
+  .animatedText {
+    font-size: clamp(0.8rem, calc(0.6rem + 1vw), 1.5rem);
+  }
+
+  .ultraButton {
+    padding: clamp(0.5rem, 1vw, 1rem) clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(0.6rem, calc(0.5rem + 0.5vw), 0.8rem);
   }
 }

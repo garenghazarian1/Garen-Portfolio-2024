@@ -83,11 +83,30 @@
     "importantSkillsList": "Problemlösung, Teamarbeit"
   },
   "Footer": {
-    "downloadResume": "Initiativbewerbung (en)",
-    "downloadFullResume": "Initiativbewerbung (de) ",
-    "pdfLabel": "PDF",
-    "linkedin": "LinkedIn",
-    "github": "GitHub"
+    "title": "Verbinde dich mit mir",
+    "subtitle": "Lass uns etwas Großartiges zusammen schaffen. Lade meinen Lebenslauf herunter oder verbinde dich über soziale Plattformen.",
+    "scrollInstruction": "Nach unten scrollen für Links",
+    "sectionTitle": "Professionelle Links",
+    "stats": {
+      "experience": "Jahre Erfahrung",
+      "projects": "Projekte abgeschlossen",
+      "technologies": "Technologien gemeistert"
+    },
+    "contactButton": "Kontakt aufnehmen",
+    "links": {
+      "resumeShort": "Lebenslauf herunterladen",
+      "resumeFull": "Vollständigen Lebenslauf herunterladen",
+      "linkedin": "LinkedIn",
+      "github": "GitHub",
+      "pdfLabel": "PDF-Dokument",
+      "professionalNetwork": "Professionelles Netzwerk",
+      "codeRepository": "Code-Repository",
+      "contactButton": "Kontakt aufnehmen"
+    },
+    "cta": {
+      "text": "Bereit zur Zusammenarbeit? Lass uns etwas Außergewöhnliches schaffen!",
+      "button": "Kontakt aufnehmen"
+    }
   },
   "MyProjects": {
     "title": "MEINE PROJEKTE",

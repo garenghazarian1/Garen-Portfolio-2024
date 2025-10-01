@@ -12,9 +12,10 @@ export default function Page() {
   return (
     <>
       <div className={styles.container}>
-        <div className="nav">
-          <Link href="/">{t("backToHome")}</Link>
-        </div>
+        <Link className="nav" href="/">
+          {t("backToHome")}
+        </Link>
+
         <Contact />
         {/* <ContactTest/> */}
         <Footer />

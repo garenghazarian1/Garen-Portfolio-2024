@@ -130,7 +130,7 @@ export default function MainPage2025() {
         />
       </motion.section>
       {/* page 002 ------------------------------------------------------------------------------------*/}
-      <motion.section
+      {/* <motion.section
         ref={vantaRef}
         className={styles.section}
         variants={sectionVariants}
@@ -165,9 +165,9 @@ export default function MainPage2025() {
           style={{ backgroundImage: "url(/g02.jpg)" }}
         />
       </motion.section>
-      b1
+       */}
       {/* page 003 */}
-      <motion.section
+      {/* <motion.section
         className={styles.section}
         variants={sectionVariants}
         initial="hidden"
@@ -193,9 +193,9 @@ export default function MainPage2025() {
           className={styles.bgImage}
           style={{ backgroundImage: "url(/003.png)" }}
         />
-      </motion.section>
+      </motion.section> */}
       {/* page 004 */}
-      <motion.section
+      {/* <motion.section
         className={styles.section}
         variants={sectionVariants}
         initial="hidden"
@@ -221,7 +221,7 @@ export default function MainPage2025() {
           className={styles.bgImage}
           style={{ backgroundImage: "url(/g02.jpg)" }}
         />
-      </motion.section>
+      </motion.section> */}
       {/* page 005 */}
       <motion.section
         className={styles.section}
@@ -358,9 +358,9 @@ export default function MainPage2025() {
             {t("qualTitle")}
           </motion.h1>
 
-          <motion.p className={styles.animateP} variants={itemVariants}>
+          {/* <motion.p className={styles.animateP} variants={itemVariants}>
             {t("qualDesc")}
-          </motion.p>
+          </motion.p> */}
 
           <motion.ul className={styles.projectList}>
             <motion.li variants={itemVariants}>{t("qual1")}</motion.li>
@@ -375,23 +375,25 @@ export default function MainPage2025() {
               </Link>
             </motion.div>
           </div>
+          <div className={styles.buttonGroup}>
+            <motion.div {...motionEffect} variants={itemVariants}>
+              <Link href="/sitemap" className={styles.ultraButton}>
+                {t("sitemap")}
+              </Link>
+            </motion.div>
+          </div>
 
-          <Link href="/sitemap" className={styles.ultraButton}>
-            {t("sitemap")}
-          </Link>
+          <div className={styles.buttonGroup}>
+            <motion.div {...motionEffect} variants={itemVariants}>
+              <Link href="/contact/" className={styles.ultraButton}>
+                {t("contactButton")}
+              </Link>
+            </motion.div>
+          </div>
         </div>
 
         <div className={styles.bgImage} />
       </motion.section>
-      {/* <motion.section
-        className={styles.section}
-        variants={sectionVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <PhotoFrame3D />
-      </motion.section> */}
     </div>
   );
 }

@@ -8,9 +8,9 @@ export default function Bmi() {
   return (
     <>
       <BodyMassIndex />
-      <div className="nav">
-        <Link href="/">{t("backToHome")}</Link>
-      </div>
+      <Link className="nav" href="/">
+        {t("backToHome")}
+      </Link>
     </>
   );
 }
