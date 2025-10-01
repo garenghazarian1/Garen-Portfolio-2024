@@ -2,18 +2,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./MyPhotos.module.css";
 import Loading from "@/components/loading/Loading";
-
-const images = [
-  { src: "/g01a.jpg", alt: "Me in EU", description: "Exploring Europe" },
-  { src: "/g02.jpg", alt: "Me in Nature", description: "Serenity in Nature" },
-  {
-    src: "/g03.jpg",
-    alt: "Me at Grand Place",
-    description: "Grand Place Memories",
-  },
-];
 
 export default function MyPhotos() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,6 +12,7 @@ export default function MyPhotos() {
   const cursorRef = useRef(null);
   const pageWrapperRef = useRef(null);
   const sectionsRef = useRef([]);
+  const t = useTranslations("MyPhotos");
 
   const motionEffect = {
     whileHover: { scale: 1.05, rotateX: 3, rotateY: 3 },
@@ -102,6 +94,23 @@ export default function MyPhotos() {
 
   if (isLoading) return <Loading />;
 
+  const images = [
+    {
+      src: "/g01a.jpg",
+      alt: t("image1.alt"),
+      description: t("image1.description"),
+    },
+    {
+      src: "/g02.jpg",
+      alt: t("image2.alt"),
+      description: t("image2.description"),
+    },
+    {
+      src: "/g03.jpg",
+      alt: t("image3.alt"),
+      description: t("image3.description"),
+    },
+  ];
   const totalSections = images.length + 1;
 
   return (
@@ -143,10 +152,10 @@ export default function MyPhotos() {
       >
         <div className={styles.content}>
           <motion.h1 className={styles.animatedText} variants={itemVariants}>
-            My Photo Gallery
+            {t("title")}
           </motion.h1>
           <motion.p className={styles.animateP} variants={itemVariants}>
-            Capturing moments from my journey through Europe and beyond
+            {t("subtitle")}
           </motion.p>
           <motion.div
             className={styles.scrollInstruction}
@@ -157,7 +166,7 @@ export default function MyPhotos() {
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
-              Scroll down to see more photos
+              {t("scrollInstruction")}
             </motion.div>
             <motion.div
               className={styles.scrollArrow}

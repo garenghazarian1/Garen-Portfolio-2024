@@ -192,5 +192,22 @@
     "sitemap": "Sitemap anzeigen",
 
     "contactButton": "Kontaktiere mich"
+  },
+  "MyPhotos": {
+    "title": "Meine Fotogalerie",
+    "subtitle": "Momente meiner Reise durch Europa und darüber hinaus",
+    "scrollInstruction": "Nach unten scrollen für mehr Fotos",
+    "image1": {
+      "description": "Europa erkunden",
+      "alt": "Ich in der EU"
+    },
+    "image2": {
+      "description": "Ruhe in der Natur",
+      "alt": "Ich in der Natur"
+    },
+    "image3": {
+      "description": "Grand Place Erinnerungen",
+      "alt": "Ich am Grand Place"
+    }
   }
 }

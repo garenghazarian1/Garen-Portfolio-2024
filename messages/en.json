@@ -192,5 +192,22 @@
     "sitemap": "View Site Map",
 
     "contactButton": "Contact Me"
+  },
+  "MyPhotos": {
+    "title": "My Photo Gallery",
+    "subtitle": "Capturing moments from my journey through Europe and beyond",
+    "scrollInstruction": "Scroll down to see more photos",
+    "image1": {
+      "description": "Exploring Europe",
+      "alt": "Me in EU"
+    },
+    "image2": {
+      "description": "Serenity in Nature",
+      "alt": "Me in Nature"
+    },
+    "image3": {
+      "description": "Grand Place Memories",
+      "alt": "Me at Grand Place"
+    }
   }
 }
