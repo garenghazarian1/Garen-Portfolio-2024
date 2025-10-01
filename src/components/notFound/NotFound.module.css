@@ -1,44 +1,230 @@
+/* Futuristic 404 Not Found Styling */
+
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e2e8f0; 
-    margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 20% 80%,
+      rgba(0, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 0, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 40% 40%,
+      rgba(0, 255, 255, 0.05) 0%,
+      transparent 50%
+    );
+  animation: gridMove 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
   }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+.content {
+  text-align: center;
+  margin: 0;
+  padding: clamp(2rem, 4vw, 3rem);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  border-radius: clamp(20px, 3vw, 30px);
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.3),
+    inset 0 0 20px rgba(0, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+  max-width: clamp(300px, 80vw, 500px);
+  width: 100%;
+}
+
+.header {
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  background: linear-gradient(45deg, #00ffff, #ff00ff, #00ffff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
+  animation: gradientShift 3s ease-in-out infinite;
+  letter-spacing: clamp(2px, 0.5vw, 8px);
+  text-transform: uppercase;
+  margin-bottom: clamp(0.5rem, 1vw, 1rem);
+  line-height: 1;
+}
+
+@keyframes gradientShift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.subHeader {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #00ffff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: clamp(0.5px, 0.1vw, 2px);
+  margin-bottom: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+.description {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: clamp(0.5rem, 1vw, 0.8rem);
+  margin-bottom: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.6;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.linkButton {
+  font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+  font-weight: 700;
+  color: #000000;
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  background-size: 200% 200%;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: clamp(0.8rem, 1.5vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+  border-radius: clamp(12px, 2vw, 20px);
+  margin-bottom: 0;
+  border: 2px solid transparent;
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: clamp(0.5px, 0.1vw, 1px);
+  animation: gradientShift 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.linkButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.linkButton:hover::before {
+  left: 100%;
+}
+
+.linkButton:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 255, 255, 0.6);
+}
+
+.linkButton:focus {
+  outline: none;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.linkButton:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: clamp(0.8rem, 2vw, 1.5rem);
+  }
+
   .content {
-    text-align: center;
-    margin: 16px;
+    padding: clamp(1.5rem, 3vw, 2rem);
+    max-width: clamp(250px, 85vw, 400px);
   }
+
   .header {
-    font-size: 48px; 
-    font-weight: bold;
-    color: #2d3748; 
+    font-size: clamp(3rem, 10vw, 6rem);
+    margin-bottom: clamp(0.4rem, 0.8vw, 0.8rem);
   }
+
   .subHeader {
-    font-size: 20px; 
-   
-    color: #718096; 
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: clamp(0.6rem, 1.2vw, 1rem);
   }
+
   .description {
-    color: #a0aec0; 
-    margin-top: 8px;
-    margin-bottom: 1rem;
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    margin-bottom: clamp(1.2rem, 2.5vw, 1.8rem);
   }
+
   .linkButton {
-    font-size: 0.8rem;
-    color: white;
-    background:rgb(192,192,70) ;
-    text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
-    padding: 0.7rem;
-    border-radius: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: clamp(0.8rem, 1.6vw, 1rem);
+    padding: clamp(0.6rem, 1.2vw, 0.8rem) clamp(1rem, 2vw, 1.5rem);
   }
-  .linkButton:hover {
-    transform: scale(1.1); 
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: clamp(0.5rem, 1.5vw, 1rem);
   }
-  .linkButton:focus {
-    outline: none;
-  
+
+  .content {
+    padding: clamp(1rem, 2vw, 1.5rem);
+    max-width: clamp(200px, 90vw, 300px);
   }
-  
+
+  .header {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: clamp(0.3rem, 0.6vw, 0.6rem);
+  }
+
+  .subHeader {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    margin-bottom: clamp(0.5rem, 1vw, 0.8rem);
+  }
+
+  .description {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .linkButton {
+    font-size: clamp(0.75rem, 1.4vw, 0.9rem);
+    padding: clamp(0.5rem, 1vw, 0.7rem) clamp(0.8rem, 1.5vw, 1.2rem);
+  }
+}
