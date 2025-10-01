@@ -1,130 +1,9 @@
-/* LangBox.module.css */
-/* .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #e0c558;
-  z-index: 30;
-  border: none;
-  box-shadow: 0 0px 40px 20px rgb(0, 0, 0);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.container:hover {
-  background-color: #000000;
-  box-shadow: 0 0px 40px px rgb(0, 0, 0);
-}
-
-.option {
-  padding: 0.2rem;
-  color: #ffffff;
-  text-align: center;
-  font-size: 0.9rem;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background-color 0.2s ease;
-}
-
-.option:hover,
-.option:focus {
-  background-color: #5c5703;
-  outline: none;
-}
-
-.option:active {
-  background-color: #7d8f04;
-} */
-
-/* Main Container */
-/* .container {
-  position: fixed;
-  top: 8%;
-  right: 8%;
-  width: 4rem;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: linear-gradient(
-    135deg,
-    #928dab,
-    #746fa3
-  ); 
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 10;
-}
-
-
-.container:hover {
-  transform: scale(1.1);
-  box-shadow: 0 15px 40px rgba(146, 141, 171, 0.8);
-}
-
-
-.dropdown {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  overflow: hidden; 
-}
-
-
-.option {
-  width: 100%; 
-  height: 50%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #ffffff;
-  background: rgba(47, 44, 66, 0.85);
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-
-.option:hover,
-.option:focus {
-  background: linear-gradient(135deg, #746fa3, #928dab); 
-  box-shadow: 0 0 15px rgba(146, 141, 171, 0.8);
-  transform: scale(1.05);
-}
-
-
-.option:active {
-  background: linear-gradient(135deg, #5c5703, #7d8f04);
-  transform: scale(0.95); 
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-} */
-
-/* -------------------------------------------- */
-
 .container {
   position: fixed;
-  top: 8%;
-  right: 8%;
-  width: 4rem;
-  height: 4rem;
+  top: clamp(2%, 3vw, 8%);
+  right: clamp(3%, 4vw, 8%);
+  width: clamp(2.5rem, calc(2rem + 2vw), 4rem);
+  height: clamp(2.5rem, calc(2rem + 2vw), 4rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,8 +17,9 @@
 
 /* Hover Effect */
 .container:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px var(--accent-1), 0 0 25px var(--accent-2);
+  transform: scale(clamp(1.05, calc(1 + 0.1vw), 1.15));
+  box-shadow: 0 0 clamp(15px, 3vw, 30px) var(--accent-1),
+    0 0 clamp(15px, 3vw, 30px) var(--accent-2);
 }
 
 /* Dropdown Menu */
@@ -164,43 +44,73 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: clamp(0.7rem, calc(0.6rem + 0.5vw), 1rem);
   font-weight: bold;
   color: var(--text-main);
   background: var(--lang-option-bg);
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  letter-spacing: clamp(0.5px, 0.1vw, 1px);
 }
 
 /* Option Hover and Focus */
 .option:hover,
 .option:focus {
   background: var(--gradient-accent-reverse);
-  box-shadow: 0 0 15px var(--accent-1), 0 0 15px var(--accent-2);
-  transform: scale(1.05);
+  box-shadow: 0 0 clamp(10px, 2vw, 20px) var(--accent-1),
+    0 0 clamp(10px, 2vw, 20px) var(--accent-2);
+  transform: scale(clamp(1.02, calc(1 + 0.05vw), 1.08));
   outline: none;
 }
 
 /* Option Active State */
 .option:active {
   background: var(--gradient-accent); /* keep cyan–magenta theme */
-  transform: scale(0.95); /* pressed effect */
-  box-shadow: var(--shadow-inset-lang), 0 0 10px var(--accent-1),
-    0 0 10px var(--accent-2);
+  transform: scale(clamp(0.92, calc(0.95 - 0.03vw), 0.98)); /* pressed effect */
+  box-shadow: var(--shadow-inset-lang),
+    0 0 clamp(8px, 1.5vw, 15px) var(--accent-1),
+    0 0 clamp(8px, 1.5vw, 15px) var(--accent-2);
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
+/* Enhanced Responsive Design */
+@media screen and (max-width: 480px) {
   .container {
-    top: 3%;
-    right: 5%;
-    width: 3rem;
-    height: 3rem;
+    top: clamp(1%, 2vw, 3%);
+    right: clamp(2%, 3vw, 5%);
+    width: clamp(2rem, calc(1.5rem + 1.5vw), 3rem);
+    height: clamp(2rem, calc(1.5rem + 1.5vw), 3rem);
     box-shadow: var(--shadow-glow);
   }
+
   .option {
-    font-size: 0.8rem;
-    font-weight: 400; /* instead of "light" */
+    font-size: clamp(0.6rem, calc(0.5rem + 0.4vw), 0.8rem);
+    font-weight: 500;
     color: var(--text-main);
+    letter-spacing: 0.3px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 2rem;
+    height: 2rem;
+    top: 2%;
+    right: 3%;
+  }
+
+  .option {
+    font-size: 0.6rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: clamp(4rem, calc(3.5rem + 0.5vw), 4.5rem);
+    height: clamp(4rem, calc(3.5rem + 0.5vw), 4.5rem);
+  }
+
+  .option {
+    font-size: clamp(1rem, calc(0.9rem + 0.2vw), 1.1rem);
   }
 }
