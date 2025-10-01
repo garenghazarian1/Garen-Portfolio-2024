@@ -505,7 +505,7 @@ console.log("🚀 Ready to build amazing things!");`}
         >
           <div className={styles.easterEggContent}>
             <h2>🎉 Konami Code Activated! 🎉</h2>
-            <p>You found the secret! You're a true developer!</p>
+            <p>You found the secret! You&apos;re a true developer!</p>
             <div className={styles.secretCode}>
               <pre>{`// Secret Developer Mode Unlocked
 const secretSkills = {
