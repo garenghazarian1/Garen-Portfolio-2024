@@ -119,6 +119,54 @@
     "visitButton": "Visit Project →",
     "keyFeatures": "Key Features:",
     "projects": {
+      "cheer": {
+        "title": "Cheer.ae",
+        "description": "Full-featured e-commerce platform for premium Armenian heritage dried fruits, signature gifts, and specialty snacks — built for the UAE market with a polished shopping experience.",
+        "category": "E-Commerce",
+        "features": [
+          "Product catalog & collections",
+          "Multi-language storefront",
+          "Tamara & Tabby payments",
+          "Gift arrangements & promotions",
+          "Next.js shopping experience"
+        ]
+      },
+      "schreiderBaukeramik": {
+        "title": "Schreider-Baukeramik",
+        "description": "Professional business website for a Wilhelmshaven tile and ceramic specialist — showcasing services, references, customer reviews, and lead capture for private, commercial, and public projects.",
+        "category": "Business Website",
+        "features": [
+          "Service & reference showcase",
+          "Customer review integration",
+          "Contact & quote requests",
+          "Jobs & company information",
+          "Next.js responsive design"
+        ]
+      },
+      "vikenMeghrig": {
+        "title": "Viken & Meghrig Wedding",
+        "description": "Elegant Armenian wedding invitation with an animated envelope reveal, ceremony and reception details for Yerevan venues, and a warm bilingual guest experience in English and Armenian.",
+        "category": "Event Management",
+        "features": [
+          "Animated envelope intro",
+          "English & Armenian (i18n)",
+          "Church & venue chapters",
+          "Google Maps directions",
+          "WhatsApp RSVP flow"
+        ]
+      },
+      "kenCard": {
+        "title": "Ken Card",
+        "description": "Personal digital loyalty card for KEN Beauty Center clients — stamps, Ken coins, and a scannable QR code in a clean mobile-first card view.",
+        "category": "Customer Loyalty",
+        "features": [
+          "Personalized guest card",
+          "Stamp progress tracking",
+          "Ken coins rewards",
+          "QR code salon check-in",
+          "Mobile-first card design"
+        ]
+      },
       "kenBeauty": {
         "title": "KEN Beauty Center",
         "description": "Comprehensive salon management system for multiple locations with employee scheduling, service booking, and store management features.",

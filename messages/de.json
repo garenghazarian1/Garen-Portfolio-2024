@@ -120,6 +120,54 @@
     "visitButton": "Projekt besuchen →",
     "keyFeatures": "Hauptfunktionen:",
     "projects": {
+      "cheer": {
+        "title": "Cheer.ae",
+        "description": "Voll ausgestattete E-Commerce-Plattform für Premium-Trockenfrüchte armenischer Tradition, Geschenkarrangements und Spezialsnacks – entwickelt für den UAE-Markt mit einem durchdachten Shopping-Erlebnis.",
+        "category": "E-Commerce",
+        "features": [
+          "Produktkatalog & Kollektionen",
+          "Mehrsprachiger Storefront",
+          "Tamara & Tabby Zahlungen",
+          "Geschenkarrangements & Aktionen",
+          "Next.js Shopping-Erlebnis"
+        ]
+      },
+      "schreiderBaukeramik": {
+        "title": "Schreider-Baukeramik",
+        "description": "Professionelle Unternehmenswebsite für einen Fliesen- und Keramikspezialisten in Wilhelmshaven – mit Leistungen, Referenzen, Kundenbewertungen und Anfrageformular für Privat-, Gewerbe- und öffentliche Projekte.",
+        "category": "Unternehmenswebsite",
+        "features": [
+          "Leistungen & Referenzen",
+          "Kundenbewertungen",
+          "Kontakt & Angebotsanfragen",
+          "Jobs & Unternehmensinfos",
+          "Responsives Next.js Design"
+        ]
+      },
+      "vikenMeghrig": {
+        "title": "Viken & Meghrig Hochzeit",
+        "description": "Elegante armenische Hochzeits-Einladung mit animierter Briefumschlag-Animation, Zeremonie- und Festdetails für Yerevaner Locations und ein herzliches zweisprachiges Gästeerlebnis auf Englisch und Armenisch.",
+        "category": "Eventmanagement",
+        "features": [
+          "Animierte Briefumschlag-Intro",
+          "Englisch & Armenisch (i18n)",
+          "Kirche & Location-Abschnitte",
+          "Google Maps Wegbeschreibung",
+          "WhatsApp RSVP"
+        ]
+      },
+      "kenCard": {
+        "title": "Ken Card",
+        "description": "Persönliche digitale Treuekarte für KEN Beauty Center Kunden – Stempel, Ken Coins und ein scannbarer QR-Code in einer klaren, mobilen Kartenansicht.",
+        "category": "Kundenbindung",
+        "features": [
+          "Personalisierte Gästekarte",
+          "Stempel-Fortschritt",
+          "Ken Coins Prämien",
+          "QR-Code Check-in",
+          "Mobile Kartenansicht"
+        ]
+      },
       "kenBeauty": {
         "title": "KEN Beauty Center",
         "description": "Umfassendes Salonmanagementsystem für mehrere Standorte mit Mitarbeiterplanung, Servicebuchung und Geschäftsverwaltung.",

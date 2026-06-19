@@ -18,6 +18,42 @@ export default function MyProjects() {
 
   const projects = [
     {
+      id: "cheer",
+      title: t("projects.cheer.title"),
+      url: "https://www.cheer.ae/en",
+      description: t("projects.cheer.description"),
+      category: t("projects.cheer.category"),
+      image: "/projectsLogo/Cheer.png",
+      features: getFeatures("cheer"),
+    },
+    {
+      id: "schreider-baukeramik",
+      title: t("projects.schreiderBaukeramik.title"),
+      url: "https://www.schreider-baukeramik.com/",
+      description: t("projects.schreiderBaukeramik.description"),
+      category: t("projects.schreiderBaukeramik.category"),
+      image: "/projectsLogo/SchreiderBaukeramik.png",
+      features: getFeatures("schreiderBaukeramik"),
+    },
+    {
+      id: "viken-meghrig",
+      title: t("projects.vikenMeghrig.title"),
+      url: "https://viken-meghrig.vercel.app/",
+      description: t("projects.vikenMeghrig.description"),
+      category: t("projects.vikenMeghrig.category"),
+      image: "/projectsLogo/VikenMeghrig.png",
+      features: getFeatures("vikenMeghrig"),
+    },
+    {
+      id: "ken-card",
+      title: t("projects.kenCard.title"),
+      url: "https://card.kenbeautysalon.com/card?name=Garen&surname=Ghazarian&email=garenghazarian1%40gmail.com",
+      description: t("projects.kenCard.description"),
+      category: t("projects.kenCard.category"),
+      image: "/projectsLogo/KenCard.png",
+      features: getFeatures("kenCard"),
+    },
+    {
       id: "ken-beauty",
       title: t("projects.kenBeauty.title"),
       url: "https://kenbeautysalon.com/",
@@ -140,7 +176,7 @@ export default function MyProjects() {
                 width={400}
                 height={250}
                 className={styles.projectImage}
-                priority={project.id === "ken-beauty"}
+                priority={project.id === "cheer"}
               />
               <div className={styles.imageOverlay}>
                 <Link
